@@ -1,25 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
+const SEND_TO = "kl743@cornell.edu";
+const SUBJECT = "Hey kavin";
+const BODY = "Wassup";
+
+const App: React.FC = () => {
   return (
-    <div className="App">
+    <div className="App" >
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+          Click below to send an email to your congressperson.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <a className="App-link" href={`mailto:${SEND_TO}?subject=${SUBJECT}&body=${BODY}`}>Email Us</a>
       </header>
-    </div>
+    </div >
   );
 }
 
