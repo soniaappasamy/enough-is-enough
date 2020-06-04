@@ -20,7 +20,7 @@ export const EmailSenderForm: React.FC<IEmailSenderFormProps> = ({ emails }) => 
 
     const mailToLink = getEmailMailToLink(selectedEmail, name, location);
 
-    const textInputStyle: React.CSSProperties = { backgroundColor: "#10161A", textAlign: "center", height: "5vh" }; // Todo: figure out why disapearing when move to styles
+    const textInputStyle: React.CSSProperties = { backgroundColor: "#10161A", textAlign: "center" }; // Todo: figure out why disapearing when move to styles
 
     return (
         <div className={"form-container"}>
@@ -52,7 +52,7 @@ export const EmailSenderForm: React.FC<IEmailSenderFormProps> = ({ emails }) => 
                     onItemSelect={setSelectedEmail}
                 >
                     <Button
-                        style={{ width: "80vw", height: "3vh" }}
+                        style={{ width: "300px" }}
                         text={selectedEmail ? selectedEmail.title : "No selection"}
                         icon={"envelope"}
                         rightIcon={"caret-down"}
@@ -63,7 +63,6 @@ export const EmailSenderForm: React.FC<IEmailSenderFormProps> = ({ emails }) => 
             <div>
                 <a className={"mailto-link"} href={mailToLink}>
                     <Button
-                        style={{ height: "3vh" }}
                         text={"SEND"}
                         intent={"none"}
                         fill={true}
@@ -78,7 +77,7 @@ export const EmailSenderForm: React.FC<IEmailSenderFormProps> = ({ emails }) => 
 const emailSelectItemListRenderer: ItemListRenderer<IEmail> = ({ items, itemsParentRef, query, renderItem }) => {
     const renderedItems = items.map(renderItem).filter(item => item != null);
     return (
-        <Menu ulRef={itemsParentRef} style={{ minWidth: "79vw", maxWidth: "79vw" }}>
+        <Menu ulRef={itemsParentRef} style={{ minWidth: "290px", maxWidth: "290px" }}>
             <MenuItem
                 disabled={true}
                 text={`Found ${renderedItems.length} items matching "${query}"`}
