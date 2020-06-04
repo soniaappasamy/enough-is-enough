@@ -54,6 +54,7 @@ export const EmailSenderForm: React.FC<IEmailSenderFormProps> = ({ emails }) => 
                     onItemSelect={setSelectedEmail}
                 >
                     <Button
+                        style={{ width: 700 }}
                         text={selectedEmail ? selectedEmail.title : "No selection"}
                         icon={"envelope"}
                         rightIcon={"caret-down"}
