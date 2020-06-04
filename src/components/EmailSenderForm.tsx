@@ -54,7 +54,7 @@ export const EmailSenderForm: React.FC<IEmailSenderFormProps> = ({ emails }) => 
                     onItemSelect={setSelectedEmail}
                 >
                     <Button
-                        style={{ width: 700 }}
+                        style={{ width: "300px" }}
                         text={selectedEmail ? selectedEmail.title : "No selection"}
                         icon={"envelope"}
                         rightIcon={"caret-down"}
@@ -79,7 +79,7 @@ export const EmailSenderForm: React.FC<IEmailSenderFormProps> = ({ emails }) => 
 const emailSelectItemListRenderer: ItemListRenderer<IEmail> = ({ items, itemsParentRef, query, renderItem }) => {
     const renderedItems = items.map(renderItem).filter(item => item != null);
     return (
-        <Menu ulRef={itemsParentRef}>
+        <Menu ulRef={itemsParentRef} style={{ width: "290px" }}>
             <MenuItem
                 disabled={true}
                 text={`Found ${renderedItems.length} items matching "${query}"`}
