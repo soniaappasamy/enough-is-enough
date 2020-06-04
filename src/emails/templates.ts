@@ -71,4 +71,24 @@ export const allEmails: IEmail[] = [
             ${NEW_LINE}${name}
             `,
     },
+     {
+        title: 'New York City',
+        subject: '8 Can&apost Wait',
+        sendTo: [
+            'bdeblasio@cityhall.nyc.gov',
+        ],
+        body: (name, location) => `Dear Mayor Bill DeBlasio, 
+            ${NEW_LINE}${NEW_LINE}I am writing to you from ${location} demanding you pass the policies outlined in Campaign Zero's #8CANTWAIT. Implementing these life-saving policies can reduce police violence by 72% and you have the power to adopt them all right now. Learn more at https://8cantwait.org/.
+            ${NEW_LINE}${NEW_LINE}I demand:
+            ${NEW_LINE}1. New York City ban the use of chokeholds and strangleholds by the NYPD
+            ${NEW_LINE}2. New York City require NYPD officers to issue a verbal warning prior to using deadly force
+            ${NEW_LINE}3. Reinstate the language that was removed from the NYPD's use of force policy in 2016, and require officers to exhaust all alternatives prior to using deadly force
+            ${NEW_LINE}4. Require comprehensive reporting by the NYPD, including all incidents where officers point their firearms at civilians
+            ${NEW_LINE}${NEW_LINE}If the above changes are not implemented, the NYPD will continue to murder, assault, and terrorize the very residents they have sworn to protect and serve. Communities of color in New York are disproportionately affected by this abuse. 
+            ${NEW_LINE}${NEW_LINE} Now is the time to act, and commit to implementing clear and researched policies that will protect your citizens. I implore you to make these changes. 
+            ${NEW_LINE}${NEW_LINE}Black Lives Matter.
+            ${NEW_LINE}Sincerely,
+            ${NEW_LINE}${name}
+            `,
+    },
 ];
