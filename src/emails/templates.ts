@@ -175,7 +175,7 @@ export const allEmails: IEmail[] = [
         group: '8Can\'tWait',
         subject: '8 Can\'t Wait',
         sendTo: [
-            '  mayor@houstontx.gov',
+            'mayor@houstontx.gov',
         ],
         body: (name, location) => `Dear Mayor Sylvester Turner, 
             ${NEW_LINE}${NEW_LINE}I am writing to you from ${location} demanding you pass the policies outlined in Campaign Zero's #8CANTWAIT. Implementing these life-saving policies can reduce police violence by 72% and you have the power to adopt them all right now. Learn more at https://8cantwait.org/.
@@ -192,11 +192,11 @@ export const allEmails: IEmail[] = [
             ${NEW_LINE}${name}
             `,
     },
-    title: 'Phoenix',
+    { title: 'Phoenix',
         group: '8Can\'tWait',
         subject: '8 Can\'t Wait',
         sendTo: [
-            '  mayor.gallego@phoenix.gov',
+            'mayor.gallego@phoenix.gov',
         ],
         body: (name, location) => `Dear Mayor Kate Gallego, 
             ${NEW_LINE}${NEW_LINE}I am writing to you from ${location} demanding you pass the policies outlined in Campaign Zero's #8CANTWAIT. Implementing these life-saving policies can reduce police violence by 72% and you have the power to adopt them all right now. Learn more at https://8cantwait.org/.
@@ -212,11 +212,11 @@ export const allEmails: IEmail[] = [
             ${NEW_LINE}${name}
             `,
     },
-    title: 'Philadelphia',
+    { title: 'Philadelphia',
         group: '8Can\'tWait',
         subject: '8 Can\'t Wait',
         sendTo: [
-            '   james.kenney@phila.gov',
+            'james.kenney@phila.gov',
         ],
         body: (name, location) => `Dear Mayor Jim Kenney, 
             ${NEW_LINE}${NEW_LINE}I am writing to you from ${location} demanding you pass the policies outlined in Campaign Zero's #8CANTWAIT. Implementing these life-saving policies can reduce police violence by 72% and you have the power to adopt them all right now. Learn more at https://8cantwait.org/.
@@ -230,11 +230,11 @@ export const allEmails: IEmail[] = [
             `,
     },
         
-    title: 'San Antonio',
+    { title: 'San Antonio',
         group: '8Can\'tWait',
         subject: '8 Can\'t Wait',
         sendTo: [
-            '   ron.nirenberg@sanantonio.gov',
+            'ron.nirenberg@sanantonio.gov',
         ],
         body: (name, location) => `Dear Mayor Ron Nirenberg, 
             ${NEW_LINE}${NEW_LINE}I am writing to you from ${location} demanding you pass the policies outlined in Campaign Zero's #8CANTWAIT. Implementing these life-saving policies can reduce police violence by 72% and you have the power to adopt them all right now. Learn more at https://8cantwait.org/.
@@ -250,13 +250,13 @@ export const allEmails: IEmail[] = [
             ${NEW_LINE}${name}
             `,
     },
-        
+       { 
         
     title: 'San Diego',
         group: '8Can\'tWait',
         subject: '8 Can\'t Wait',
         sendTo: [
-            '   kevinfaulconer@sandiego.gov',
+            'kevinfaulconer@sandiego.gov',
         ],
         body: (name, location) => `Dear Mayor Kevin Faulconer, 
             ${NEW_LINE}${NEW_LINE}I am writing to you from ${location} demanding you pass the policies outlined in Campaign Zero's #8CANTWAIT. Implementing these life-saving policies can reduce police violence by 72% and you have the power to adopt them all right now. Learn more at https://8cantwait.org/.
@@ -273,11 +273,12 @@ export const allEmails: IEmail[] = [
             ${NEW_LINE}${name}
             `,
     },
+    {
          title: 'Dallas',
         group: '8Can\'tWait',
         subject: '8 Can\'t Wait',
         sendTo: [
-            '   eric.johnson@dallascityhall.com',
+            'eric.johnson@dallascityhall.com',
         ],
         body: (name, location) => `Dear Mayor Eric Johnson, 
             ${NEW_LINE}${NEW_LINE}I am writing to you from ${location} demanding you pass the policies outlined in Campaign Zero's #8CANTWAIT. Implementing these life-saving policies can reduce police violence by 72% and you have the power to adopt them all right now. Learn more at https://8cantwait.org/.
@@ -293,11 +294,12 @@ export const allEmails: IEmail[] = [
             ${NEW_LINE}${name}
             `,
     },
+    {
          title: 'San Jose',
         group: '8Can\'tWait',
         subject: '8 Can\'t Wait',
         sendTo: [
-            '   mayoremail@sanjoseca.gov',
+            'mayoremail@sanjoseca.gov',
         ],
         body: (name, location) => `Dear Mayor Sam Liccardo, 
             ${NEW_LINE}${NEW_LINE}I am writing to you from ${location} demanding you pass the policies outlined in Campaign Zero's #8CANTWAIT. Implementing these life-saving policies can reduce police violence by 72% and you have the power to adopt them all right now. Learn more at https://8cantwait.org/.
@@ -313,12 +315,13 @@ export const allEmails: IEmail[] = [
             ${NEW_LINE}${name}
             `,
     },
+    {
         
          title: 'Austin, TX',
         group: '8Can\'tWait',
         subject: '8 Can\'t Wait',
         sendTo: [
-            '    steve.adler@austintexas.gov',
+            'steve.adler@austintexas.gov',
         ],
         body: (name, location) => `Dear Mayor Steve Adler, 
             ${NEW_LINE}${NEW_LINE}I am writing to you from ${location} demanding you pass the policies outlined in Campaign Zero's #8CANTWAIT. Implementing these life-saving policies can reduce police violence by 72% and you have the power to adopt them all right now. Learn more at https://8cantwait.org/.
