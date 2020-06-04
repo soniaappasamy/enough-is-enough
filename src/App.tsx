@@ -2,7 +2,11 @@ import React from "react";
 import { Classes, H1, H4 } from "@blueprintjs/core";
 import { EmailSenderForm } from "./components/EmailSenderForm";
 import { allEmails } from "./emails/templates";
+import ReactGA from "react-ga";
+import { GOOGLE_ANALYTICS_TRACKING_ID } from "./consts";
 import "./App.scss";
+
+ReactGA.initialize(GOOGLE_ANALYTICS_TRACKING_ID);
 
 const App: React.FC = () => {
     return (

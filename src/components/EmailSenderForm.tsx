@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useMemo } from "react";
 import { FormGroup, InputGroup, Button, MenuItem, Menu } from "@blueprintjs/core";
 import { Select, ItemRenderer, ItemListRenderer, ItemPredicate } from "@blueprintjs/select";
 import { IEmail } from "../emails/types";
+import ReactGA from "react-ga";
 import { getEmailMailToLink } from "../utils/getEmailMailToLink";
 import "./EmailSenderForm.scss";
 
@@ -10,6 +11,9 @@ interface IEmailSenderFormProps {
 }
 
 export const EmailSenderForm: React.FC<IEmailSenderFormProps> = ({ emails }) => {
+    // Only want event to trigger once
+    useMemo(() => ReactGA.pageview("Email form"), []);
+
     const [name, setName] = useState<string | undefined>(undefined);
     const [location, setLocation] = useState<string | undefined>(undefined);
     const [selectedEmail, setSelectedEmail] = useState<IEmail | undefined>(emails.length > 0 ? emails[0] : undefined);
@@ -38,7 +42,7 @@ export const EmailSenderForm: React.FC<IEmailSenderFormProps> = ({ emails }) => 
                 <InputGroup
                     style={textInputStyle}
                     value={location}
-                    placeholder={"LOCATION..."}
+                    placeholder={"CITY..."}
                     fill={true}
                     large={true}
                     onChange={onTypeLocation} />
@@ -67,6 +71,7 @@ export const EmailSenderForm: React.FC<IEmailSenderFormProps> = ({ emails }) => 
                         intent={"none"}
                         fill={true}
                         disabled={mailToLink === undefined}
+                        onClick={sendReactGAEvent(selectedEmail, location)}
                     />
                 </a>
             </div>
@@ -103,4 +108,8 @@ const emailSelectItemRenderer: ItemRenderer<IEmail> = (email, { handleClick, mod
             text={email.title}
         />
     );
+};
+
+const sendReactGAEvent = (email: IEmail | undefined, location: string | undefined) => () => {
+    ReactGA.event({ category: "Email form", action: "Clicked send", label: `Location ${location} Sent ${email?.title}` });
 };
