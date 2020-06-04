@@ -109,7 +109,7 @@ const emailSelectItemListRenderer: ItemListRenderer<IEmail> = ({
                 text={`Found ${filteredEmails.length} items matching "${query}"`}
             />
             {Array.from(groupedEmails.keys()).map((groupName) => (
-                <div key={groupName}>
+                <div key={groupName || ''}>
                     {groupName !== undefined
                     && <Tag style={{ margin: '10px 0 5px 0' }} minimal fill>{groupName}</Tag>}
                     {getRenderedEmails(groupedEmails.get(groupName) || [])}

@@ -71,7 +71,7 @@ export const allEmails: IEmail[] = [
             ${NEW_LINE}${name}
             `,
     },
-     {
+    {
         title: 'New York City',
         group: '8Can\'tWait',
         subject: '8 Can\'t Wait',
@@ -92,8 +92,8 @@ export const allEmails: IEmail[] = [
             ${NEW_LINE}${name}
             `,
     },
-    
-     {
+
+    {
         title: 'Washington D.C.',
         group: '8Can\'tWait',
         subject: '8 Can\'t Wait',
@@ -192,7 +192,8 @@ export const allEmails: IEmail[] = [
             ${NEW_LINE}${name}
             `,
     },
-    { title: 'Phoenix',
+    {
+        title: 'Phoenix',
         group: '8Can\'tWait',
         subject: '8 Can\'t Wait',
         sendTo: [
@@ -212,7 +213,8 @@ export const allEmails: IEmail[] = [
             ${NEW_LINE}${name}
             `,
     },
-    { title: 'Philadelphia',
+    {
+        title: 'Philadelphia',
         group: '8Can\'tWait',
         subject: '8 Can\'t Wait',
         sendTo: [
@@ -229,8 +231,9 @@ export const allEmails: IEmail[] = [
             ${NEW_LINE}${name}
             `,
     },
-        
-    { title: 'San Antonio',
+
+    {
+        title: 'San Antonio',
         group: '8Can\'tWait',
         subject: '8 Can\'t Wait',
         sendTo: [
@@ -250,9 +253,9 @@ export const allEmails: IEmail[] = [
             ${NEW_LINE}${name}
             `,
     },
-       { 
-        
-    title: 'San Diego',
+    {
+
+        title: 'San Diego',
         group: '8Can\'tWait',
         subject: '8 Can\'t Wait',
         sendTo: [
@@ -274,7 +277,7 @@ export const allEmails: IEmail[] = [
             `,
     },
     {
-         title: 'Dallas',
+        title: 'Dallas',
         group: '8Can\'tWait',
         subject: '8 Can\'t Wait',
         sendTo: [
@@ -295,7 +298,7 @@ export const allEmails: IEmail[] = [
             `,
     },
     {
-         title: 'San Jose',
+        title: 'San Jose',
         group: '8Can\'tWait',
         subject: '8 Can\'t Wait',
         sendTo: [
@@ -316,8 +319,8 @@ export const allEmails: IEmail[] = [
             `,
     },
     {
-        
-         title: 'Austin, TX',
+
+        title: 'Austin, TX',
         group: '8Can\'tWait',
         subject: '8 Can\'t Wait',
         sendTo: [
