@@ -71,6 +71,7 @@ const EmailSenderForm: React.FC<IEmailSenderFormProps> = ({ emails }) => {
                         icon="envelope"
                         rightIcon="caret-down"
                         fill
+                        large
                     />
                 </Select>
             </FormGroup>
@@ -80,6 +81,7 @@ const EmailSenderForm: React.FC<IEmailSenderFormProps> = ({ emails }) => {
                         text="SEND"
                         intent="none"
                         fill
+                        large
                         disabled={mailToLink === undefined}
                         onClick={sendReactGAEvent(selectedEmail, location)}
                     />
@@ -111,7 +113,7 @@ const emailSelectItemListRenderer: ItemListRenderer<IEmail> = ({
             {Array.from(groupedEmails.keys()).map((groupName) => (
                 <div key={groupName || ''}>
                     {groupName !== undefined
-                    && <Tag style={{ margin: '10px 0 5px 0' }} minimal fill>{groupName}</Tag>}
+                    && <Tag style={{ margin: '10px 0 5px 0' }} minimal fill large>{groupName}</Tag>}
                     {getRenderedEmails(groupedEmails.get(groupName) || [])}
                 </div>
             ))}
@@ -132,7 +134,9 @@ const emailSelectItemRenderer: ItemRenderer<IEmail> = (email, { handleClick, mod
     return (
         <MenuItem
             key={email.title}
-            style={{ marginLeft: 10 }}
+            style={{
+                marginLeft: 10, height: 35, fontSize: 15, alignItems: 'center',
+            }}
             active={modifiers.active}
             onClick={handleClick}
             text={email.title}
