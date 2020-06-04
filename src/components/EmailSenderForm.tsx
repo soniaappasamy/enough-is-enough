@@ -12,7 +12,7 @@ interface IEmailSenderFormProps {
 export const EmailSenderForm: React.FC<IEmailSenderFormProps> = ({ emails }) => {
     const [name, setName] = useState<string | undefined>(undefined);
     const [location, setLocation] = useState<string | undefined>(undefined);
-    const [selectedEmail, setSelectedEmail] = useState<IEmail | undefined>(undefined);
+    const [selectedEmail, setSelectedEmail] = useState<IEmail | undefined>(emails.length > 0 ? emails[0] : undefined);
 
     const onTypeName = (event: React.FormEvent) => setName((event.target as any).value); // Todo: remove as any casts
     const onTypeLocation = (event: React.FormEvent) => setLocation((event.target as any).value);
@@ -21,10 +21,7 @@ export const EmailSenderForm: React.FC<IEmailSenderFormProps> = ({ emails }) => 
 
     return (
         <div className={"form-container"}>
-            <FormGroup
-                label={"Name"}
-                labelFor={"name-input"}
-            >
+            <FormGroup labelFor={"name-input"}>
                 <InputGroup
                     id={"name-input"}
                     value={name}
@@ -35,10 +32,7 @@ export const EmailSenderForm: React.FC<IEmailSenderFormProps> = ({ emails }) => 
                     onInput={onTypeName}
                 />
             </FormGroup>
-            <FormGroup
-                label={"Location"}
-                labelFor={"location-input"}
-            >
+            <FormGroup labelFor={"location-input"}>
                 <InputGroup
                     id={"location-input"}
                     value={location}
@@ -48,27 +42,27 @@ export const EmailSenderForm: React.FC<IEmailSenderFormProps> = ({ emails }) => 
                     large={true}
                     onChange={onTypeLocation} />
             </FormGroup>
-            <FormGroup
-                label={"Email"}
-            >
+            <FormGroup className={"select-container"}>
                 <Select
                     itemListRenderer={emailSelectItemListRenderer}
                     itemPredicate={filterEmails}
                     items={emails}
                     itemRenderer={emailSelectItemRenderer}
-                    onItemSelect={setSelectedEmail} >
+                    onItemSelect={setSelectedEmail}
+                >
                     <Button
+                        style={{ width: 350 }}
+                        text={selectedEmail ? selectedEmail.title : "No selection"}
                         icon={"envelope"}
                         rightIcon={"caret-down"}
-                        text={selectedEmail ? selectedEmail.title : "No selection"}
+                        fill={true}
                     />
                 </Select>
             </FormGroup>
-            <div className={"send-button"}>
-                <a href={mailToLink}>
+            <div>
+                <a className={"mailto-link"} href={mailToLink}>
                     <Button
                         text={"Send"}
-                        intent={Intent.PRIMARY}
                         fill={true}
                         large={true}
                         disabled={mailToLink === undefined}
@@ -82,7 +76,7 @@ export const EmailSenderForm: React.FC<IEmailSenderFormProps> = ({ emails }) => 
 const emailSelectItemListRenderer: ItemListRenderer<IEmail> = ({ items, itemsParentRef, query, renderItem }) => {
     const renderedItems = items.map(renderItem).filter(item => item != null);
     return (
-        <Menu ulRef={itemsParentRef}>
+        <Menu ulRef={itemsParentRef} style={{ width: 340 }}>
             <MenuItem
                 disabled={true}
                 text={`Found ${renderedItems.length} items matching "${query}"`}
