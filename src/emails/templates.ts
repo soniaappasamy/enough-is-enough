@@ -70,7 +70,8 @@ export const allEmails: IEmail[] = [
         ],
         body: (name, location) =>
             `To whom it may concern,
-            ${NEW_LINE}${NEW_LINE}Hello, my name is ${name}, and I urge you to advocate for the legislature to reconvene and pass Senator Bailey and Assemblyman O'Donnell's bill to repeal 50-a (A2513/S3695). In light of the recent police violence, 50-A must be fully repealed--no modifcations or amendments. Can we count your support to fully repeal 50-a and ask leadership to bring the bill to the floor and vote yes when it comes to floor?
+            ${NEW_LINE}${NEW_LINE}Hello, my name is ${name}, and I urge you to advocate for the legislature to reconvene and pass Senator Bailey and Assemblyman O'Donnell's bill to repeal 50-A (A2513/S3695). In light of the recent police violence, 50-A must be fully repealed--no modifcations or amendments. Can we count your support to fully repeal 50-A and ask leadership to bring the bill to the floor and vote yes when it comes to floor?
+            ${NEW_LINE}${NEW_LINE}Black Lives Matter.
             ${NEW_LINE}Sincerely,
             ${NEW_LINE}${name}
             `
