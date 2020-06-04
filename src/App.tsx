@@ -1,5 +1,5 @@
 import React from "react";
-import { Classes, H2 } from "@blueprintjs/core";
+import { Classes, H1, H4 } from "@blueprintjs/core";
 import { EmailSenderForm } from "./components/EmailSenderForm";
 import "./App.scss";
 import { allEmails } from "./emails/consts";
@@ -7,7 +7,10 @@ import { allEmails } from "./emails/consts";
 const App: React.FC = () => {
     return (
         <div className={`app ${Classes.DARK}`}>
-            <H2 className={"header"}>Enough is Enough</H2>
+            <div className={"header"}>
+                <H1>ENOUGH IS ENOUGH</H1>
+                <H4 className={Classes.TEXT_MUTED}>autofill emails to demand justice</H4>
+            </div>
             <EmailSenderForm emails={allEmails} />
         </div>
     );

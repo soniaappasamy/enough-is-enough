@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FormGroup, InputGroup, Button, Intent, MenuItem, Menu } from "@blueprintjs/core";
+import { FormGroup, InputGroup, Button, MenuItem, Menu } from "@blueprintjs/core";
 import { Select, ItemRenderer, ItemListRenderer, ItemPredicate } from "@blueprintjs/select";
 import { IEmail } from "../emails/types";
 import { getEmailMailToLink } from "../utils/getEmailMailToLink";
@@ -14,30 +14,33 @@ export const EmailSenderForm: React.FC<IEmailSenderFormProps> = ({ emails }) => 
     const [location, setLocation] = useState<string | undefined>(undefined);
     const [selectedEmail, setSelectedEmail] = useState<IEmail | undefined>(emails.length > 0 ? emails[0] : undefined);
 
-    const onTypeName = (event: React.FormEvent) => setName((event.target as any).value); // Todo: remove as any casts
-    const onTypeLocation = (event: React.FormEvent) => setLocation((event.target as any).value);
+    const cleanText = (rawText: string) => rawText === "" ? undefined : rawText;
+    const onTypeName = ({ target }: React.FormEvent) => setName(cleanText((target as any).value)); // Todo: remove as any casts
+    const onTypeLocation = ({ target }: React.FormEvent) => setLocation(cleanText((target as any).value));
 
     const mailToLink = getEmailMailToLink(selectedEmail, name, location);
 
+    const textInputStyle: React.CSSProperties = { backgroundColor: "#10161A", textAlign: "center" }; // Todo: figure out why disapearing when move to styles
+
     return (
         <div className={"form-container"}>
-            <FormGroup labelFor={"name-input"}>
+            <FormGroup>
                 <InputGroup
-                    id={"name-input"}
+                    style={textInputStyle}
                     value={name}
-                    placeholder={"Enter your name..."}
-                    leftIcon={"person"}
+                    placeholder={"NAME..."}
+                    // leftIcon={"person"}
                     fill={true}
                     large={true}
                     onInput={onTypeName}
                 />
             </FormGroup>
-            <FormGroup labelFor={"location-input"}>
+            <FormGroup>
                 <InputGroup
-                    id={"location-input"}
+                    style={textInputStyle}
                     value={location}
-                    placeholder={"Enter your location.."}
-                    leftIcon={"map-marker"}
+                    placeholder={"LOCATION..."}
+                    // leftIcon={"map-marker"}
                     fill={true}
                     large={true}
                     onChange={onTypeLocation} />
@@ -62,9 +65,9 @@ export const EmailSenderForm: React.FC<IEmailSenderFormProps> = ({ emails }) => 
             <div>
                 <a className={"mailto-link"} href={mailToLink}>
                     <Button
-                        text={"Send"}
+                        text={"SEND"}
+                        intent={"none"}
                         fill={true}
-                        large={true}
                         disabled={mailToLink === undefined}
                     />
                 </a>
