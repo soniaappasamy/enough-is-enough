@@ -73,7 +73,7 @@ export const allEmails: IEmail[] = [
     },
      {
         title: 'New York City',
-        group: '8Can\'tWait'
+        group: '8Can\'tWait',
         subject: '8 Can\'t Wait',
         sendTo: [
             'bdeblasio@cityhall.nyc.gov',
