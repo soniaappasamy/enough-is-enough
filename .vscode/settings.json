@@ -1,8 +1,0 @@
-{
-  "tslint.packageManager": "yarn",
-  "javascript.format.semicolons": "insert",
-  "javascript.preferences.quoteStyle": "double",
-  "typescript.format.semicolons": "insert",
-  "editor.wrappingIndent": "indent",
-  "tslint.exclude": null
-}

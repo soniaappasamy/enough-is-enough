@@ -1,0 +1,33 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "extends": [
+    "airbnb-typescript",
+    "airbnb/hooks",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "prettier/react"
+  ],
+  "rules": {
+    "max-len": "warn",
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": [
+      "off"
+    ],
+    "import/prefer-default-export": "off",
+    "indent": [
+      "warn",
+      4
+    ],
+    "@typescript-eslint/indent": [
+      "warn",
+      4
+    ],
+    "react/jsx-indent": "off"
+  }
+}
