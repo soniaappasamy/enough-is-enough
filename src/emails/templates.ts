@@ -40,7 +40,8 @@ export const allEmails: IEmail[] = [
             ${NEW_LINE}Sincerely,
             ${NEW_LINE}${name}
             `,
-    }, {
+    }, 
+    {
         title: 'REPEAL 50-A',
         subject: 'REPEAL 50-A',
         sendTo: [
@@ -54,4 +55,19 @@ export const allEmails: IEmail[] = [
             ${NEW_LINE}${name}
             `,
     },
+    {
+        title: 'DEFUND NYPD',
+        subject: 'DEFUND NYPD',
+        sendTo: [
+            'ddromm@council.nyc.gov',
+            'drichards@council.nyc.gov',
+            'action@comptroller.nyc.gov',
+        ],
+        body: (name, location) => `To whom it may concern,
+            ${NEW_LINE}${NEW_LINE}My name is ${name}, and I am a resident of ${location}. Last April, NYC Mayor Bill De Blasio proposed major budget cuts for the Fiscal Year 2021, especially to education and youth programs, while refusing to slash the NYPD budget by any significant margin. I urge you to consider pressuring the office of the mayor towards an ethical and equal reallocation of the NYC expense budget, away from NYPD, and towards social services and education programs, effective at the beginning of FY 21, July 1st.
+            ${NEW_LINE}${NEW_LINE}I am emailing to ask for an emergency council meeting among city officials regarding this matter. Governor Cuomo has doubled NYPD presence effective tonight. I am asking that city officials lobby the same amount of attention and effort towards finding sustainable, long term change.
+            ${NEW_LINE}${NEW_LINE}Black Lives Matter.
+            ${NEW_LINE}Sincerely,
+            ${NEW_LINE}${name}
+            `,
 ];
