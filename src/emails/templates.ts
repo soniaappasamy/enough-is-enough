@@ -116,7 +116,7 @@ export const allEmails: IEmail[] = [
         group: '8Can\'tWait',
         subject: '8 Can\'t Wait',
         sendTo: [
-            'helpdesk@lacity.org',
+            'mayor.helpdesk@lacity.org',
         ],
         body: (name, location) => `Dear Mayor Eric Garcetti, 
             ${NEW_LINE}${NEW_LINE}I am writing to you from ${location} demanding you pass the policies outlined in Campaign Zero's #8CANTWAIT. Implementing these life-saving policies can reduce police violence by 72% and you have the power to adopt them all right now. Learn more at https://8cantwait.org/.
@@ -158,7 +158,7 @@ export const allEmails: IEmail[] = [
         sendTo: [
             'letterforthemayor@cityofchicago.org',
         ],
-        body: (name, location) => `Dear Mayor  Lori Lightfoot, 
+        body: (name, location) => `Dear Mayor Lori Lightfoot, 
             ${NEW_LINE}${NEW_LINE}I am writing to you from ${location} demanding you pass the policies outlined in Campaign Zero's #8CANTWAIT. Implementing these life-saving policies can reduce police violence by 72% and you have the power to adopt them all right now. Learn more at https://8cantwait.org/.
             ${NEW_LINE}${NEW_LINE}I demand:
             ${NEW_LINE}1. Chicago ban shooting at moving vehicles by the CPD
@@ -185,7 +185,7 @@ export const allEmails: IEmail[] = [
             ${NEW_LINE}3. Houston require HPD officers to issue a warning prior to shooting  
             ${NEW_LINE}4. Houston require HPD officers to exhaust all other means prior to using deadly force
             ${NEW_LINE}5. Houston ban shooting at moving vehicles by the HPD
-            ${NEW_LINE}${NEW_LINE}If the above changes are not implemented, the CPD will continue to murder, assault, and terrorize the very residents they have sworn to protect and serve. Communities of color in New York are disproportionately affected by this abuse. 
+            ${NEW_LINE}${NEW_LINE}If the above changes are not implemented, the HPD will continue to murder, assault, and terrorize the very residents they have sworn to protect and serve. Communities of color in New York are disproportionately affected by this abuse. 
             ${NEW_LINE}${NEW_LINE} Now is the time to act, and commit to implementing clear and researched policies that will protect your citizens. I implore you to make these changes. 
             ${NEW_LINE}${NEW_LINE}Black Lives Matter.
             ${NEW_LINE}Sincerely,
@@ -206,6 +206,128 @@ export const allEmails: IEmail[] = [
             ${NEW_LINE}3. Phoenix require PHXPD officers to actively exhaust all other means prior to using deadly force
             ${NEW_LINE}4. Phoenix ban shooting at moving vehicles by the PHXPD
             ${NEW_LINE}${NEW_LINE}If the above changes are not implemented, the PHXPD will continue to murder, assault, and terrorize the very residents they have sworn to protect and serve. Communities of color in New York are disproportionately affected by this abuse. 
+            ${NEW_LINE}${NEW_LINE} Now is the time to act, and commit to implementing clear and researched policies that will protect your citizens. I implore you to make these changes. 
+            ${NEW_LINE}${NEW_LINE}Black Lives Matter.
+            ${NEW_LINE}Sincerely,
+            ${NEW_LINE}${name}
+            `,
+    },
+    title: 'Philadelphia',
+        group: '8Can\'tWait',
+        subject: '8 Can\'t Wait',
+        sendTo: [
+            '   james.kenney@phila.gov',
+        ],
+        body: (name, location) => `Dear Mayor Jim Kenney, 
+            ${NEW_LINE}${NEW_LINE}I am writing to you from ${location} demanding you pass the policies outlined in Campaign Zero's #8CANTWAIT. Implementing these life-saving policies can reduce police violence by 72% and you have the power to adopt them all right now. Learn more at https://8cantwait.org/.
+            ${NEW_LINE}${NEW_LINE}I demand:
+            ${NEW_LINE}1. Philadelphia ban shooting at moving vehicles by the PPD
+            ${NEW_LINE}${NEW_LINE}If the above changes are not implemented, the PPD will continue to murder, assault, and terrorize the very residents they have sworn to protect and serve. Communities of color in New York are disproportionately affected by this abuse. 
+            ${NEW_LINE}${NEW_LINE} Now is the time to act, and commit to implementing clear and researched policies that will protect your citizens. I implore you to make these changes. 
+            ${NEW_LINE}${NEW_LINE}Black Lives Matter.
+            ${NEW_LINE}Sincerely,
+            ${NEW_LINE}${name}
+            `,
+    },
+        
+    title: 'San Antonio',
+        group: '8Can\'tWait',
+        subject: '8 Can\'t Wait',
+        sendTo: [
+            '   ron.nirenberg@sanantonio.gov',
+        ],
+        body: (name, location) => `Dear Mayor Ron Nirenberg, 
+            ${NEW_LINE}${NEW_LINE}I am writing to you from ${location} demanding you pass the policies outlined in Campaign Zero's #8CANTWAIT. Implementing these life-saving policies can reduce police violence by 72% and you have the power to adopt them all right now. Learn more at https://8cantwait.org/.
+            ${NEW_LINE}${NEW_LINE}I demand:
+            ${NEW_LINE}1. San Antonio require SAPD officers to issue a warning prior to shooting  
+            ${NEW_LINE}2. San Antonio require SAPD officers to actively exhaust all other means prior to using deadly force
+            ${NEW_LINE}3. San Antonio ban shooting at moving vehicles by the SAPD
+            ${NEW_LINE}4. Require comprehensive reporting by the SAPD, including all incidents where officers point their firearms at civilians  
+            ${NEW_LINE}${NEW_LINE}If the above changes are not implemented, the SAPD will continue to murder, assault, and terrorize the very residents they have sworn to protect and serve. Communities of color in New York are disproportionately affected by this abuse. 
+            ${NEW_LINE}${NEW_LINE} Now is the time to act, and commit to implementing clear and researched policies that will protect your citizens. I implore you to make these changes. 
+            ${NEW_LINE}${NEW_LINE}Black Lives Matter.
+            ${NEW_LINE}Sincerely,
+            ${NEW_LINE}${name}
+            `,
+    },
+        
+        
+    title: 'San Diego',
+        group: '8Can\'tWait',
+        subject: '8 Can\'t Wait',
+        sendTo: [
+            '   kevinfaulconer@sandiego.gov',
+        ],
+        body: (name, location) => `Dear Mayor Kevin Faulconer, 
+            ${NEW_LINE}${NEW_LINE}I am writing to you from ${location} demanding you pass the policies outlined in Campaign Zero's #8CANTWAIT. Implementing these life-saving policies can reduce police violence by 72% and you have the power to adopt them all right now. Learn more at https://8cantwait.org/.
+            ${NEW_LINE}${NEW_LINE}I demand:
+            ${NEW_LINE}1. San Diego ban the use of chokeholds and strangleholds by the SDPD
+            ${NEW_LINE}2. San Diego require SDPD officers to de-escalate situations  
+            ${NEW_LINE}3. San Diego mandate the adoption of a duty to intervene by the SDPD
+            ${NEW_LINE}4. San Diego ban shooting at moving vehicles by the SDPD
+            ${NEW_LINE}5. Require comprehensive reporting by the SDPD, including all incidents where officers point their firearms at civilians    ${NEW_LINE}${NEW_LINE}If the above changes are not implemented, the SAPD will continue to murder, assault, and terrorize the very residents they have sworn to protect and serve. Communities of color in New York are disproportionately affected by this abuse. 
+            ${NEW_LINE}${NEW_LINE}If the above changes are not implemented, the SDPD will continue to murder, assault, and terrorize the very residents they have sworn to protect and serve. Communities of color in New York are disproportionately affected by this abuse. 
+            ${NEW_LINE}${NEW_LINE} Now is the time to act, and commit to implementing clear and researched policies that will protect your citizens. I implore you to make these changes. 
+            ${NEW_LINE}${NEW_LINE}Black Lives Matter.
+            ${NEW_LINE}Sincerely,
+            ${NEW_LINE}${name}
+            `,
+    },
+         title: 'Dallas',
+        group: '8Can\'tWait',
+        subject: '8 Can\'t Wait',
+        sendTo: [
+            '   eric.johnson@dallascityhall.com',
+        ],
+        body: (name, location) => `Dear Mayor Eric Johnson, 
+            ${NEW_LINE}${NEW_LINE}I am writing to you from ${location} demanding you pass the policies outlined in Campaign Zero's #8CANTWAIT. Implementing these life-saving policies can reduce police violence by 72% and you have the power to adopt them all right now. Learn more at https://8cantwait.org/.
+            ${NEW_LINE}${NEW_LINE}I demand:
+            ${NEW_LINE}1. Dallas ban the use of chokeholds and strangleholds by the DPD
+            ${NEW_LINE}2. Dallas require DPD officers to issue a warning prior to shooting 
+            ${NEW_LINE}3. Dallas mandate the adoption of a duty to intervene by the DPD   
+            ${NEW_LINE}4. Dallas ban shooting at moving vehicles by the DPD   
+            ${NEW_LINE}${NEW_LINE}If the above changes are not implemented, the DPD will continue to murder, assault, and terrorize the very residents they have sworn to protect and serve. Communities of color in New York are disproportionately affected by this abuse. 
+            ${NEW_LINE}${NEW_LINE} Now is the time to act, and commit to implementing clear and researched policies that will protect your citizens. I implore you to make these changes. 
+            ${NEW_LINE}${NEW_LINE}Black Lives Matter.
+            ${NEW_LINE}Sincerely,
+            ${NEW_LINE}${name}
+            `,
+    },
+         title: 'San Jose',
+        group: '8Can\'tWait',
+        subject: '8 Can\'t Wait',
+        sendTo: [
+            '   mayoremail@sanjoseca.gov',
+        ],
+        body: (name, location) => `Dear Mayor Sam Liccardo, 
+            ${NEW_LINE}${NEW_LINE}I am writing to you from ${location} demanding you pass the policies outlined in Campaign Zero's #8CANTWAIT. Implementing these life-saving policies can reduce police violence by 72% and you have the power to adopt them all right now. Learn more at https://8cantwait.org/.
+            ${NEW_LINE}${NEW_LINE}I demand:
+            ${NEW_LINE} 1. San Jose require SJPD officers to issue a warning prior to shooting 
+            ${NEW_LINE}2. San Jose require SJPD officers to actively exhaust all other means prior to using deadly force  
+            ${NEW_LINE}3. San Jose mandate the adoption of a duty to intervene by the SJPD 
+            ${NEW_LINE}4. Require comprehensive reporting by the SJPD, including all incidents where officers point their firearms at civilians   
+            ${NEW_LINE}${NEW_LINE}If the above changes are not implemented, the SJPD will continue to murder, assault, and terrorize the very residents they have sworn to protect and serve. Communities of color in New York are disproportionately affected by this abuse. 
+            ${NEW_LINE}${NEW_LINE} Now is the time to act, and commit to implementing clear and researched policies that will protect your citizens. I implore you to make these changes. 
+            ${NEW_LINE}${NEW_LINE}Black Lives Matter.
+            ${NEW_LINE}Sincerely,
+            ${NEW_LINE}${name}
+            `,
+    },
+        
+         title: 'Austin, TX',
+        group: '8Can\'tWait',
+        subject: '8 Can\'t Wait',
+        sendTo: [
+            '    steve.adler@austintexas.gov',
+        ],
+        body: (name, location) => `Dear Mayor Steve Adler, 
+            ${NEW_LINE}${NEW_LINE}I am writing to you from ${location} demanding you pass the policies outlined in Campaign Zero's #8CANTWAIT. Implementing these life-saving policies can reduce police violence by 72% and you have the power to adopt them all right now. Learn more at https://8cantwait.org/.
+            ${NEW_LINE}${NEW_LINE}I demand:
+            ${NEW_LINE}1. Austin ban the use of chokeholds and strangleholds by the APD  
+            ${NEW_LINE}2. Austin require APD officers to de-escalate situations    
+            ${NEW_LINE}3. Austin require APD officers to actively exhaust all other means prior to using deadly force  
+            ${NEW_LINE}4. Austin ban shooting at moving vehicles by the APD  
+            ${NEW_LINE}5. Require comprehensive reporting by the APD, including all incidents where officers point their firearms at civilians    ${NEW_LINE}${NEW_LINE}If the above changes are not implemented, the SJPD will continue to murder, assault, and terrorize the very residents they have sworn to protect and serve. Communities of color in New York are disproportionately affected by this abuse. 
             ${NEW_LINE}${NEW_LINE} Now is the time to act, and commit to implementing clear and researched policies that will protect your citizens. I implore you to make these changes. 
             ${NEW_LINE}${NEW_LINE}Black Lives Matter.
             ${NEW_LINE}Sincerely,
