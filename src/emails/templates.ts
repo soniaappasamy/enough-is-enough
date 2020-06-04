@@ -40,7 +40,7 @@ export const allEmails: IEmail[] = [
             ${NEW_LINE}Sincerely,
             ${NEW_LINE}${name}
             `,
-    }, 
+    },
     {
         title: 'REPEAL 50-A',
         subject: 'REPEAL 50-A',
@@ -70,4 +70,5 @@ export const allEmails: IEmail[] = [
             ${NEW_LINE}Sincerely,
             ${NEW_LINE}${name}
             `,
+    },
 ];
