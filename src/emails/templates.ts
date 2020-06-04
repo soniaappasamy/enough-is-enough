@@ -11,7 +11,6 @@ export const allEmails: IEmail[] = [
             "arif.virani@parl.gc.ca",
             "mayor_tory@toronto.ca",
             "officeofthechief@torontopolice.on.ca",
-            "sylva.jones@pc.ola.org",
             "doug.downey@pc.ola.org"
         ],
         body: (name, location) =>
