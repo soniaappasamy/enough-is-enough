@@ -2,7 +2,7 @@
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 import React, { useState, useMemo } from 'react';
 import {
-    FormGroup, InputGroup, Button, MenuItem, Menu,
+    FormGroup, InputGroup, Button, MenuItem, Menu, Tag,
 } from '@blueprintjs/core';
 import {
     Select, ItemRenderer, ItemListRenderer, ItemPredicate, IItemListRendererProps,
@@ -22,9 +22,7 @@ const EmailSenderForm: React.FC<IEmailSenderFormProps> = ({ emails }) => {
 
     const [name, setName] = useState<string | undefined>(undefined);
     const [location, setLocation] = useState<string | undefined>(undefined);
-    const [selectedEmail, setSelectedEmail] = (
-        useState<IEmail | undefined>(emails.length > 0 ? emails[0] : undefined)
-    );
+    const [selectedEmail, setSelectedEmail] = useState<IEmail | undefined>(undefined);
 
     const cleanText = (rawText: string) => (rawText === '' ? undefined : rawText);
     // Todo: remove as any casts
@@ -63,14 +61,13 @@ const EmailSenderForm: React.FC<IEmailSenderFormProps> = ({ emails }) => {
             <FormGroup className="select-container">
                 <Select
                     itemListRenderer={emailSelectItemListRenderer}
-                    itemPredicate={filterEmails}
                     items={emails}
                     itemRenderer={emailSelectItemRenderer}
                     onItemSelect={setSelectedEmail}
                 >
                     <Button
                         style={{ width: '300px' }}
-                        text={selectedEmail ? selectedEmail.title : 'No selection'}
+                        text={selectedEmail ? selectedEmail.title : 'SELECT EMAIL...'}
                         icon="envelope"
                         rightIcon="caret-down"
                         fill
@@ -93,23 +90,40 @@ const EmailSenderForm: React.FC<IEmailSenderFormProps> = ({ emails }) => {
 };
 
 const emailSelectItemListRenderer: ItemListRenderer<IEmail> = ({
-    items, itemsParentRef, query, renderItem,
+    items: allEmails, itemsParentRef, query, renderItem,
 }: IItemListRendererProps<IEmail>) => {
-    const renderedItems = items.map(renderItem).filter((item) => item != null);
+    const getRenderedEmails = (emails: IEmail[]) => (
+        emails.map(renderItem).filter((email) => email != null));
+
+    const filteredEmails = allEmails.filter((email) => filterEmails(query, email));
+    const groupedEmails = new Map<string | undefined, IEmail[]>();
+    filteredEmails.forEach((email) => {
+        const { group } = email;
+        groupedEmails.set(group, [...(groupedEmails.get(group) || []), email]);
+    });
+
     return (
         <Menu ulRef={itemsParentRef} style={{ minWidth: '290px', maxWidth: '290px' }}>
             <MenuItem
                 disabled
-                text={`Found ${renderedItems.length} items matching "${query}"`}
+                text={`Found ${filteredEmails.length} items matching "${query}"`}
             />
-            {renderedItems}
+            {Array.from(groupedEmails.keys()).map((groupName) => (
+                <div key={groupName}>
+                    {groupName !== undefined
+                    && <Tag style={{ margin: '10px 0 5px 0' }} minimal fill>{groupName}</Tag>}
+                    {getRenderedEmails(groupedEmails.get(groupName) || [])}
+                </div>
+            ))}
         </Menu>
     );
 };
 
 const filterEmails: ItemPredicate<IEmail> = (query, email) => (
-    email.title.toLowerCase().indexOf(query.toLowerCase()) >= 0
-);
+    textContains(email.title, query)
+    || (email.group !== undefined && textContains(email.group, query)));
+const textContains = (text: string, query: string): boolean => (
+    text.toLowerCase().indexOf(query.toLowerCase()) >= 0);
 
 const emailSelectItemRenderer: ItemRenderer<IEmail> = (email, { handleClick, modifiers }) => {
     if (!modifiers.matchesPredicate) {
@@ -117,8 +131,9 @@ const emailSelectItemRenderer: ItemRenderer<IEmail> = (email, { handleClick, mod
     }
     return (
         <MenuItem
-            active={modifiers.active}
             key={email.title}
+            style={{ marginLeft: 10 }}
+            active={modifiers.active}
             onClick={handleClick}
             text={email.title}
         />
