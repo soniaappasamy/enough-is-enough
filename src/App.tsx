@@ -1,8 +1,8 @@
 import React from "react";
 import { Classes, H1, H4 } from "@blueprintjs/core";
 import { EmailSenderForm } from "./components/EmailSenderForm";
+import { allEmails } from "./emails/templates";
 import "./App.scss";
-import { allEmails } from "./emails/consts";
 
 const App: React.FC = () => {
     return (
