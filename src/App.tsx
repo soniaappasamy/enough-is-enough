@@ -5,10 +5,13 @@ import {
 import ReactGA from 'react-ga';
 import EmailSenderForm from './components/EmailSenderForm';
 import { allEmails } from './emails/templates';
-import { GOOGLE_ANALYTICS_TRACKING_ID, BASE_URL, CONTACT_EMAIL } from './consts';
+import {
+    GOOGLE_ANALYTICS_TRACKING_ID, BASE_URL, CONTACT_EMAIL, BASE_DEV_URL,
+} from './consts';
 import { getUrlFilter } from './utils/getUrlFilter';
 import './App.scss';
 import { filterEmails } from './utils/filterEmails';
+import { isLocalhost } from './serviceWorker';
 
 ReactGA.initialize(GOOGLE_ANALYTICS_TRACKING_ID);
 
@@ -19,7 +22,7 @@ const App: React.FC = () => {
 
     const urlFilter = getUrlFilter();
     const filteredEmails = urlFilter !== undefined ? filterEmails(urlFilter, allEmails) : allEmails;
-    const returnToHomePage = () => window.location.assign(BASE_URL);
+    const returnToHomePage = () => window.location.assign(isLocalhost ? BASE_DEV_URL : BASE_URL);
 
     return <div className={`app ${Classes.DARK}`}>
         <div className="header">

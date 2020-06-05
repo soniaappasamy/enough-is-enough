@@ -22,17 +22,22 @@ const EmailSenderForm: React.FC<IEmailSenderFormProps> = ({ emails }) => {
     useMemo(() => ReactGA.pageview('Email form'), []);
 
     const [name, setName] = useState<string | undefined>(undefined);
-    const [location, setLocation] = useState<string | undefined>(undefined);
+    const [secondInput, setSecondInput] = useState<string | undefined>(undefined);
     const [selectedEmail, setSelectedEmail] = useState<IEmail | undefined>(undefined);
 
     const cleanText = (rawText: string) => (rawText === '' ? undefined : rawText);
     // Todo: remove as any casts
     const onTypeName = ({ target }: React.FormEvent) => setName(cleanText((target as any).value));
-    const onTypeLocation = ({ target }: React.FormEvent) => (
-        setLocation(cleanText((target as any).value))
+    const onTypeSecondInput = ({ target }: React.FormEvent) => (
+        setSecondInput(cleanText((target as any).value))
     );
 
-    const mailToLink = getEmailMailToLink(selectedEmail, name, location);
+    const onSelectEmail = (email: IEmail) => {
+        setSecondInput('');
+        setSelectedEmail(email);
+    };
+
+    const mailToLink = getEmailMailToLink(selectedEmail, name, secondInput);
 
     // Todo: figure out why disapearing when move to styles
     const textInputStyle: React.CSSProperties = { backgroundColor: '#10161A', textAlign: 'center' };
@@ -55,7 +60,7 @@ const EmailSenderForm: React.FC<IEmailSenderFormProps> = ({ emails }) => {
                         itemListRenderer={emailSelectItemListRenderer}
                         items={emails}
                         itemRenderer={emailSelectItemRenderer}
-                        onItemSelect={setSelectedEmail}
+                        onItemSelect={onSelectEmail}
                     >
                         <Button
                             style={{ width: '300px' }}
@@ -71,11 +76,11 @@ const EmailSenderForm: React.FC<IEmailSenderFormProps> = ({ emails }) => {
             && <FormGroup>
                 <InputGroup
                     style={textInputStyle}
-                    value={location}
+                    value={secondInput}
                     placeholder={selectedEmail.secondInputPlaceholder}
                     fill
                     large
-                    onChange={onTypeLocation}
+                    onChange={onTypeSecondInput}
                 />
             </FormGroup>}
             </div>
@@ -87,7 +92,7 @@ const EmailSenderForm: React.FC<IEmailSenderFormProps> = ({ emails }) => {
                         fill
                         large
                         disabled={mailToLink === undefined}
-                        onClick={sendReactGAEvent(selectedEmail, location)}
+                        onClick={sendReactGAEvent(selectedEmail, secondInput)}
                     />
                 </a>
             </div>
@@ -142,8 +147,12 @@ const emailSelectItemRenderer: ItemRenderer<IEmail> = (email, { handleClick, mod
     );
 };
 
-const sendReactGAEvent = (email: IEmail | undefined, location: string | undefined) => () => {
-    ReactGA.event({ category: 'Email form', action: 'Clicked send', label: `Location ${location || 'N/A'} Sent ${email?.title || 'N/A'}` });
+const sendReactGAEvent = (email: IEmail | undefined, secondInput: string | undefined) => () => {
+    ReactGA.event({
+        category: 'Email form',
+        action: 'Clicked send',
+        label: `Second Input ${secondInput || 'N/A'} Sent ${email?.title || 'N/A'}`,
+    });
 };
 
 export default EmailSenderForm;
