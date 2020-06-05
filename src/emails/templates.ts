@@ -101,8 +101,9 @@ export const allEmails: IEmail[] = [
             ${NEW_LINE}2. Austin require APD officers to de-escalate situations    
             ${NEW_LINE}3. Austin require APD officers to actively exhaust all other means prior to using deadly force  
             ${NEW_LINE}4. Austin ban shooting at moving vehicles by the APD  
-            ${NEW_LINE}5. Require comprehensive reporting by the APD, including all incidents where officers point their firearms at civilians    ${NEW_LINE}${NEW_LINE}If the above changes are not implemented, the SJPD will continue to murder, assault, and terrorize the very residents they have sworn to protect and serve. Communities of color in New York are disproportionately affected by this abuse. 
-            ${NEW_LINE}${NEW_LINE} Now is the time to act, and commit to implementing clear and researched policies that will protect your citizens. I implore you to make these changes. 
+            ${NEW_LINE}5. Require comprehensive reporting by the APD, including all incidents where officers point their firearms at civilians    
+            ${NEW_LINE}${NEW_LINE}If the above changes are not implemented, the APD will continue to murder, assault, and terrorize the very residents they have sworn to protect and serve. Communities of color in Austin are disproportionately affected by this abuse. 
+            ${NEW_LINE}${NEW_LINE}Now is the time to act, and commit to implementing clear and researched policies that will protect your citizens. I implore you to make these changes. 
             ${NEW_LINE}${NEW_LINE}Black Lives Matter.
             ${NEW_LINE}Sincerely,
             ${NEW_LINE}${name}
@@ -120,8 +121,8 @@ export const allEmails: IEmail[] = [
             ${NEW_LINE}${NEW_LINE}I demand:
             ${NEW_LINE}1. Chicago ban shooting at moving vehicles by the CPD
             ${NEW_LINE}2. Require comprehensive reporting by the CPD, including all incidents where officers point their firearms at civilians 
-            ${NEW_LINE}${NEW_LINE}If the above changes are not implemented, the CPD will continue to murder, assault, and terrorize the very residents they have sworn to protect and serve. Communities of color in New York are disproportionately affected by this abuse. 
-            ${NEW_LINE}${NEW_LINE} Now is the time to act, and commit to implementing clear and researched policies that will protect your citizens. I implore you to make these changes. 
+            ${NEW_LINE}${NEW_LINE}If the above changes are not implemented, the CPD will continue to murder, assault, and terrorize the very residents they have sworn to protect and serve. Communities of color in Chicago are disproportionately affected by this abuse. 
+            ${NEW_LINE}${NEW_LINE}Now is the time to act, and commit to implementing clear and researched policies that will protect your citizens. I implore you to make these changes. 
             ${NEW_LINE}${NEW_LINE}Black Lives Matter.
             ${NEW_LINE}Sincerely,
             ${NEW_LINE}${name}
@@ -141,8 +142,8 @@ export const allEmails: IEmail[] = [
             ${NEW_LINE}2. Dallas require DPD officers to issue a warning prior to shooting 
             ${NEW_LINE}3. Dallas mandate the adoption of a duty to intervene by the DPD   
             ${NEW_LINE}4. Dallas ban shooting at moving vehicles by the DPD   
-            ${NEW_LINE}${NEW_LINE}If the above changes are not implemented, the DPD will continue to murder, assault, and terrorize the very residents they have sworn to protect and serve. Communities of color in New York are disproportionately affected by this abuse. 
-            ${NEW_LINE}${NEW_LINE} Now is the time to act, and commit to implementing clear and researched policies that will protect your citizens. I implore you to make these changes. 
+            ${NEW_LINE}${NEW_LINE}If the above changes are not implemented, the DPD will continue to murder, assault, and terrorize the very residents they have sworn to protect and serve. Communities of color in Dallas are disproportionately affected by this abuse. 
+            ${NEW_LINE}${NEW_LINE}Now is the time to act, and commit to implementing clear and researched policies that will protect your citizens. I implore you to make these changes. 
             ${NEW_LINE}${NEW_LINE}Black Lives Matter.
             ${NEW_LINE}Sincerely,
             ${NEW_LINE}${name}
@@ -163,7 +164,48 @@ export const allEmails: IEmail[] = [
             ${NEW_LINE}3. Houston require HPD officers to issue a warning prior to shooting  
             ${NEW_LINE}4. Houston require HPD officers to exhaust all other means prior to using deadly force
             ${NEW_LINE}5. Houston ban shooting at moving vehicles by the HPD
-            ${NEW_LINE}${NEW_LINE}If the above changes are not implemented, the HPD will continue to murder, assault, and terrorize the very residents they have sworn to protect and serve. Communities of color in New York are disproportionately affected by this abuse. 
+            ${NEW_LINE}${NEW_LINE}If the above changes are not implemented, the HPD will continue to murder, assault, and terrorize the very residents they have sworn to protect and serve. Communities of color in Houston are disproportionately affected by this abuse. 
+            ${NEW_LINE}${NEW_LINE}Now is the time to act, and commit to implementing clear and researched policies that will protect your citizens. I implore you to make these changes. 
+            ${NEW_LINE}${NEW_LINE}Black Lives Matter.
+            ${NEW_LINE}Sincerely,
+            ${NEW_LINE}${name}
+            `,
+    },
+    {
+        title: 'Fort Worth',
+        group: '8Can\'tWait',
+        subject: '8 Can\'t Wait',
+        sendTo: [
+            'betsy.price@fortworthtexas.gov',
+        ],
+        body: (name, location) => `Dear Mayor Betsy Price, 
+            ${NEW_LINE}${NEW_LINE}I am writing to you from ${location} demanding you pass the policies outlined in Campaign Zero's #8CANTWAIT. Implementing these life-saving policies can reduce police violence by 72% and you have the power to adopt them all right now. Learn more at https://8cantwait.org/.
+            ${NEW_LINE}${NEW_LINE}I demand:
+            ${NEW_LINE}1. Fort Worth require FWPD officers to exhaust all other means prior to using deadly force
+            ${NEW_LINE}2. Require comprehensive reporting by the FWPD, including all incidents where officers point their firearms at civilians
+            ${NEW_LINE}${NEW_LINE}If the above changes are not implemented, the FWPD will continue to murder, assault, and terrorize the very residents they have sworn to protect and serve. Communities of color in Fort Worth are disproportionately affected by this abuse. 
+            ${NEW_LINE}${NEW_LINE}Now is the time to act, and commit to implementing clear and researched policies that will protect your citizens. I implore you to make these changes. 
+            ${NEW_LINE}${NEW_LINE}Black Lives Matter.
+            ${NEW_LINE}Sincerely,
+            ${NEW_LINE}${name}
+            `,
+    },
+    {
+        title: 'Jacksonville',
+        group: '8Can\'tWait',
+        subject: '8 Can\'t Wait',
+        sendTo: [
+            'MayorLennyCurry@coj.net',
+        ],
+        body: (name, location) => `Dear Mayor Lenny Curry, 
+            ${NEW_LINE}${NEW_LINE}I am writing to you from ${location} demanding you pass the policies outlined in Campaign Zero's #8CANTWAIT. Implementing these life-saving policies can reduce police violence by 72% and you have the power to adopt them all right now. Learn more at https://8cantwait.org/.
+            ${NEW_LINE}${NEW_LINE}I demand:
+            ${NEW_LINE}1. Jacksonville require Jacksonville Police officers to de-escalate situations
+            ${NEW_LINE}2. Jacksonville require Jacksonville Police officers to exhaust all other means prior to using deadly force
+            ${NEW_LINE}3. Jacksonville mandate the adoption of a duty to intervene by the Jacksonville Police officers 
+            ${NEW_LINE}4. Jacksonville ban shooting at moving vehicles by Jacksonville Police officers
+            ${NEW_LINE}5. Require comprehensive reporting by the Jacksonville Police, including all incidents where officers point their firearms at civilians 
+            ${NEW_LINE}${NEW_LINE}If the above changes are not implemented, the Jacksonville Sheriff's Office will continue to murder, assault, and terrorize the very residents they have sworn to protect and serve. Communities of color in Jacksonville are disproportionately affected by this abuse. 
             ${NEW_LINE}${NEW_LINE} Now is the time to act, and commit to implementing clear and researched policies that will protect your citizens. I implore you to make these changes. 
             ${NEW_LINE}${NEW_LINE}Black Lives Matter.
             ${NEW_LINE}Sincerely,
@@ -183,7 +225,7 @@ export const allEmails: IEmail[] = [
             ${NEW_LINE}1. Los Angeles require LAPD officers to issue a warning prior to shooting
             ${NEW_LINE}2. Los Angeles require LAPD officers to exhaust all alternatives prior to using deadly force
             ${NEW_LINE}3. Require comprehensive reporting by the LAPD, including all incidents where officers point their firearms at civilians
-            ${NEW_LINE}${NEW_LINE}If the above changes are not implemented, the LAPD will continue to murder, assault, and terrorize the very residents they have sworn to protect and serve. Communities of color in New York are disproportionately affected by this abuse. 
+            ${NEW_LINE}${NEW_LINE}If the above changes are not implemented, the LAPD will continue to murder, assault, and terrorize the very residents they have sworn to protect and serve. Communities of color in Los Angeles are disproportionately affected by this abuse. 
             ${NEW_LINE}${NEW_LINE} Now is the time to act, and commit to implementing clear and researched policies that will protect your citizens. I implore you to make these changes. 
             ${NEW_LINE}${NEW_LINE}Black Lives Matter.
             ${NEW_LINE}Sincerely,
@@ -205,7 +247,7 @@ export const allEmails: IEmail[] = [
             ${NEW_LINE}3. Reinstate the language that was removed from the NYPD's use of force policy in 2016, and require officers to exhaust all alternatives prior to using deadly force
             ${NEW_LINE}4. Require comprehensive reporting by the NYPD, including all incidents where officers point their firearms at civilians
             ${NEW_LINE}${NEW_LINE}If the above changes are not implemented, the NYPD will continue to murder, assault, and terrorize the very residents they have sworn to protect and serve. Communities of color in New York are disproportionately affected by this abuse. 
-            ${NEW_LINE}${NEW_LINE} Now is the time to act, and commit to implementing clear and researched policies that will protect your citizens. I implore you to make these changes. 
+            ${NEW_LINE}${NEW_LINE}Now is the time to act, and commit to implementing clear and researched policies that will protect your citizens. I implore you to make these changes. 
             ${NEW_LINE}${NEW_LINE}Black Lives Matter.
             ${NEW_LINE}Sincerely,
             ${NEW_LINE}${name}
@@ -222,7 +264,7 @@ export const allEmails: IEmail[] = [
             ${NEW_LINE}${NEW_LINE}I am writing to you from ${location} demanding you pass the policies outlined in Campaign Zero's #8CANTWAIT. Implementing these life-saving policies can reduce police violence by 72% and you have the power to adopt them all right now. Learn more at https://8cantwait.org/.
             ${NEW_LINE}${NEW_LINE}I demand:
             ${NEW_LINE}1. Philadelphia ban shooting at moving vehicles by the PPD
-            ${NEW_LINE}${NEW_LINE}If the above changes are not implemented, the PPD will continue to murder, assault, and terrorize the very residents they have sworn to protect and serve. Communities of color in New York are disproportionately affected by this abuse. 
+            ${NEW_LINE}${NEW_LINE}If the above changes are not implemented, the PPD will continue to murder, assault, and terrorize the very residents they have sworn to protect and serve. Communities of color in Philadelphia are disproportionately affected by this abuse. 
             ${NEW_LINE}${NEW_LINE} Now is the time to act, and commit to implementing clear and researched policies that will protect your citizens. I implore you to make these changes. 
             ${NEW_LINE}${NEW_LINE}Black Lives Matter.
             ${NEW_LINE}Sincerely,
@@ -243,7 +285,7 @@ export const allEmails: IEmail[] = [
             ${NEW_LINE}2. Phoenix require PHXPD officers to de-escalate situations
             ${NEW_LINE}3. Phoenix require PHXPD officers to actively exhaust all other means prior to using deadly force
             ${NEW_LINE}4. Phoenix ban shooting at moving vehicles by the PHXPD
-            ${NEW_LINE}${NEW_LINE}If the above changes are not implemented, the PHXPD will continue to murder, assault, and terrorize the very residents they have sworn to protect and serve. Communities of color in New York are disproportionately affected by this abuse. 
+            ${NEW_LINE}${NEW_LINE}If the above changes are not implemented, the PHXPD will continue to murder, assault, and terrorize the very residents they have sworn to protect and serve. Communities of color in Phoenix are disproportionately affected by this abuse. 
             ${NEW_LINE}${NEW_LINE} Now is the time to act, and commit to implementing clear and researched policies that will protect your citizens. I implore you to make these changes. 
             ${NEW_LINE}${NEW_LINE}Black Lives Matter.
             ${NEW_LINE}Sincerely,
@@ -263,7 +305,7 @@ export const allEmails: IEmail[] = [
             ${NEW_LINE}1. Portland ban the use of chokeholds and strangleholds by the PPB
             ${NEW_LINE}2. Portland require PPB officers to exhaust all alternatives prior to using deadly force
             ${NEW_LINE}3. Portland ban shooting at moving vehicles by the PPB
-            ${NEW_LINE}${NEW_LINE}If the above changes are not implemented, the PPB will continue to murder, assault, and terrorize the very residents they have sworn to protect and serve. Communities of color in New York are disproportionately affected by this abuse. 
+            ${NEW_LINE}${NEW_LINE}If the above changes are not implemented, the PPB will continue to murder, assault, and terrorize the very residents they have sworn to protect and serve. Communities of color in Portland are disproportionately affected by this abuse. 
             ${NEW_LINE}${NEW_LINE} Now is the time to act, and commit to implementing clear and researched policies that will protect your citizens. I implore you to make these changes. 
             ${NEW_LINE}${NEW_LINE}Black Lives Matter.
             ${NEW_LINE}Sincerely,
@@ -284,7 +326,7 @@ export const allEmails: IEmail[] = [
             ${NEW_LINE}2. San Antonio require SAPD officers to actively exhaust all other means prior to using deadly force
             ${NEW_LINE}3. San Antonio ban shooting at moving vehicles by the SAPD
             ${NEW_LINE}4. Require comprehensive reporting by the SAPD, including all incidents where officers point their firearms at civilians  
-            ${NEW_LINE}${NEW_LINE}If the above changes are not implemented, the SAPD will continue to murder, assault, and terrorize the very residents they have sworn to protect and serve. Communities of color in New York are disproportionately affected by this abuse. 
+            ${NEW_LINE}${NEW_LINE}If the above changes are not implemented, the SAPD will continue to murder, assault, and terrorize the very residents they have sworn to protect and serve. Communities of color in San Antonio are disproportionately affected by this abuse. 
             ${NEW_LINE}${NEW_LINE} Now is the time to act, and commit to implementing clear and researched policies that will protect your citizens. I implore you to make these changes. 
             ${NEW_LINE}${NEW_LINE}Black Lives Matter.
             ${NEW_LINE}Sincerely,
@@ -306,9 +348,9 @@ export const allEmails: IEmail[] = [
             ${NEW_LINE}2. San Diego require SDPD officers to de-escalate situations  
             ${NEW_LINE}3. San Diego mandate the adoption of a duty to intervene by the SDPD
             ${NEW_LINE}4. San Diego ban shooting at moving vehicles by the SDPD
-            ${NEW_LINE}5. Require comprehensive reporting by the SDPD, including all incidents where officers point their firearms at civilians    ${NEW_LINE}${NEW_LINE}If the above changes are not implemented, the SAPD will continue to murder, assault, and terrorize the very residents they have sworn to protect and serve. Communities of color in New York are disproportionately affected by this abuse. 
+            ${NEW_LINE}5. Require comprehensive reporting by the SDPD, including all incidents where officers point their firearms at civilians
             ${NEW_LINE}${NEW_LINE}If the above changes are not implemented, the SDPD will continue to murder, assault, and terrorize the very residents they have sworn to protect and serve. Communities of color in New York are disproportionately affected by this abuse. 
-            ${NEW_LINE}${NEW_LINE} Now is the time to act, and commit to implementing clear and researched policies that will protect your citizens. I implore you to make these changes. 
+            ${NEW_LINE}${NEW_LINE}Now is the time to act, and commit to implementing clear and researched policies that will protect your citizens. I implore you to make these changes. 
             ${NEW_LINE}${NEW_LINE}Black Lives Matter.
             ${NEW_LINE}Sincerely,
             ${NEW_LINE}${name}
@@ -328,7 +370,7 @@ export const allEmails: IEmail[] = [
             ${NEW_LINE}2. San Jose require SJPD officers to actively exhaust all other means prior to using deadly force  
             ${NEW_LINE}3. San Jose mandate the adoption of a duty to intervene by the SJPD 
             ${NEW_LINE}4. Require comprehensive reporting by the SJPD, including all incidents where officers point their firearms at civilians   
-            ${NEW_LINE}${NEW_LINE}If the above changes are not implemented, the SJPD will continue to murder, assault, and terrorize the very residents they have sworn to protect and serve. Communities of color in New York are disproportionately affected by this abuse. 
+            ${NEW_LINE}${NEW_LINE}If the above changes are not implemented, the SJPD will continue to murder, assault, and terrorize the very residents they have sworn to protect and serve. Communities of color in San Jose are disproportionately affected by this abuse. 
             ${NEW_LINE}${NEW_LINE} Now is the time to act, and commit to implementing clear and researched policies that will protect your citizens. I implore you to make these changes. 
             ${NEW_LINE}${NEW_LINE}Black Lives Matter.
             ${NEW_LINE}Sincerely,
@@ -346,7 +388,7 @@ export const allEmails: IEmail[] = [
             ${NEW_LINE}${NEW_LINE}I am writing to you from ${location} demanding you pass the policies outlined in Campaign Zero's #8CANTWAIT. Implementing these life-saving policies can reduce police violence by 72% and you have the power to adopt them all right now. Learn more at https://8cantwait.org/.
             ${NEW_LINE}${NEW_LINE}I demand:
             ${NEW_LINE}1. Washington DC ban the use of chokeholds and strangleholds by the MPD
-            ${NEW_LINE}${NEW_LINE}If the above changes are not implemented, the MPD will continue to murder, assault, and terrorize the very residents they have sworn to protect and serve. Communities of color in New York are disproportionately affected by this abuse. 
+            ${NEW_LINE}${NEW_LINE}If the above changes are not implemented, the MPD will continue to murder, assault, and terrorize the very residents they have sworn to protect and serve. Communities of color in Washington D.C. are disproportionately affected by this abuse. 
             ${NEW_LINE}${NEW_LINE} Now is the time to act, and commit to implementing clear and researched policies that will protect your citizens. I implore you to make these changes. 
             ${NEW_LINE}${NEW_LINE}Black Lives Matter.
             ${NEW_LINE}Sincerely,
