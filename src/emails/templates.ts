@@ -75,7 +75,8 @@ export const allEmails: IEmail[] = [
             `,
     },
     {
-        title: 'DEFUND NYPD',
+        title: 'NYPD',
+        group: 'Defund The Police',
         subject: 'DEFUND NYPD',
         secondInputPlaceholder: 'BOROUGH (CITY)...',
         sendTo: [
