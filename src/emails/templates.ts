@@ -7,7 +7,7 @@ export const allEmails: IEmail[] = [
     {
         title: 'NY WWT REPEAL',
         subject: 'Passing S2253/A654 is Police Accountability',
-        secondInputPlaceholder: 'CITY...',
+        secondInputPlaceholder: 'BOROUGH (CITY)...',
         sendTo: [
             'speaker@nyassembly.gov',
             'scousins@nysenate.gov',
@@ -77,7 +77,7 @@ export const allEmails: IEmail[] = [
     {
         title: 'DEFUND NYPD',
         subject: 'DEFUND NYPD',
-        secondInputPlaceholder: 'CITY...',
+        secondInputPlaceholder: 'BOROUGH (CITY)...',
         sendTo: [
             'ddromm@council.nyc.gov',
             'drichards@council.nyc.gov',
