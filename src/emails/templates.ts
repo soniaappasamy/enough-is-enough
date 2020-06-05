@@ -72,6 +72,21 @@ export const allEmails: IEmail[] = [
             `,
     },
     {
+        title: 'NY S2253&frasl;A654',
+        subject: 'Passing S2253&frasl;A654 is Police Accountability',
+        sendTo: [
+            'speaker@nyassembly.gov',
+            'scousins@nysenate.gov',
+        ],
+        body: (name, location) => `Dear Senate Majority Leader Andrea Stewart-Cousins and Assembly Speaker Carl Heastie,
+            ${NEW_LINE}${NEW_LINE}I join over 90 organizations across New York State in urging that as part of the police accountability package the legislature will repeal the Walking While Trans Ban, S2253/A654. For four decades, law enforcement has used this statute to target, harass, coerce into sexual acts, and arrest cisgender and transgender women of color, and gender expansive people for how they dress, or for merely existing in public spaces. 
+            ${NEW_LINE}${NEW_LINE}Monday marked the beginning of Pride month. This statute has been used to terrorize TGNC community members for far too long. We need you to stand with TGNC community members and get this law repealed. 
+            ${NEW_LINE}${NEW_LINE}Black Trans Lives Matter.
+            ${NEW_LINE}Respectfully,
+            ${NEW_LINE}${name}
+            `,
+    },
+    {
         title: 'New York City',
         group: '8Can\'tWait',
         subject: '8 Can\'t Wait',
@@ -307,7 +322,7 @@ export const allEmails: IEmail[] = [
         body: (name, location) => `Dear Mayor Sam Liccardo, 
             ${NEW_LINE}${NEW_LINE}I am writing to you from ${location} demanding you pass the policies outlined in Campaign Zero's #8CANTWAIT. Implementing these life-saving policies can reduce police violence by 72% and you have the power to adopt them all right now. Learn more at https://8cantwait.org/.
             ${NEW_LINE}${NEW_LINE}I demand:
-            ${NEW_LINE} 1. San Jose require SJPD officers to issue a warning prior to shooting 
+            ${NEW_LINE}1. San Jose require SJPD officers to issue a warning prior to shooting 
             ${NEW_LINE}2. San Jose require SJPD officers to actively exhaust all other means prior to using deadly force  
             ${NEW_LINE}3. San Jose mandate the adoption of a duty to intervene by the SJPD 
             ${NEW_LINE}4. Require comprehensive reporting by the SJPD, including all incidents where officers point their firearms at civilians   
