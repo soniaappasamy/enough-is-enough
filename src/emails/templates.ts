@@ -75,6 +75,48 @@ export const allEmails: IEmail[] = [
             `,
     },
     {
+        title: 'Baltimore - City Council',
+        group: 'Defund The Police',
+        subject: 'VOTE AGAINST BPD BUDGET',
+        secondInputPlaceholder: 'Baltimore AREA (CITY)...',
+        sendTo: [
+            'mayor@baltimorecity.gov',
+            'Robert.Stokes@baltimorecity.gov',
+            'Ryan.Dorsey@baltimorecity.gov',
+            'Kristerfer.Burnett@baltimorecity.gov',
+            'Edward.Reisinger@baltimorecity.gov',
+            'Isaac.Schleifer@baltimorecity.gov',
+            'Zeke.Cohen@baltimorecity.gov',
+            'marguerite.currin@baltimorecity.gov',
+            'Shannon.Sneed@baltimorecity.gov',
+            'John.Bullock@baltimorecity.gov',
+            'CouncilPresident@baltimorecity.gov',
+            'Bill.Henry@baltimorecity.gov',
+            'MaryPat.Clarke@baltimorecity.gov',
+            'Eric.Costello@baltimorecity.gov',
+            'Danielle.McCray@baltimorecity.gov',
+            'Leon.Pinkett@baltimorecity.gov',
+        ],
+        body: (name, secondInput) => `Dear Baltimore City Council Members and Mayor,
+            ${NEW_LINE}${NEW_LINE}My name is ${name}, and I am a resident of ${secondInput}.I call on the Baltimore City Council to vote against the proposed FY 2020-21 Baltimore Police Department budget and instead work to implement significant and permanent reductions to this department. These funds should be routed toward the development of harm reduction systems that do not terrorize our neighbors and communities. The proposed BPD FY21 Budget is $549,959,519. This is an increase of $13,583,042 compared to FY20. The Budget also calls for cuts to several departments that better serve the public, including:
+            ${NEW_LINE}Affordable Housing (-$3,535,819)
+            ${NEW_LINE}Housing and Community Development (-$227,023)
+            ${NEW_LINE}Homeless Prevention and Support Services for the Homeless (-$641,270)
+            ${NEW_LINE}Outreach to the homeless (-$1,971,541)
+            ${NEW_LINE}Enoch Pratt Free Library (-$350,000)
+            ${NEW_LINE}Youth and Trauma Services (-$10,749)
+            ${NEW_LINE}Board of Elections (-$190,470)
+            ${NEW_LINE}Environmental Inspection Services (-$50,243)
+            ${NEW_LINE}Chronic Disease Prevention (-$252,906)
+            ${NEW_LINE}Park programs and events (-$122,912)
+            ${NEW_LINE}Public right of way cleaning (-$686,806)
+            ${NEW_LINE}Events Art Culture and Films (-$442,488)
+            ${NEW_LINE}${NEW_LINE}We’re counting on you to stand up for Black communities and marginalized communities. I call on the City Council to cancel the BPD budget increase of $13.5 million and allocate it to the above departments.
+            ${NEW_LINE}${NEW_LINE}Sincerely,
+            ${NEW_LINE}${name}
+            `,
+    },
+    {
         title: 'Boston - City Council',
         group: 'Defund The Police',
         subject: 'DEFUND BPD',
