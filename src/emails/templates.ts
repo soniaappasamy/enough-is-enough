@@ -74,7 +74,7 @@ export const allEmails: IEmail[] = [
             ${NEW_LINE}${name}
             `,
     },
-     {
+    {
         title: 'Boston - City Council',
         group: 'Defund The Police',
         subject: 'DEFUND BPD',
@@ -98,7 +98,72 @@ export const allEmails: IEmail[] = [
             ${NEW_LINE}${NEW_LINE}With the overall police budget, the City Council has the power to cut line items in the City budget, due on June 10. The police budget and overtime budget should be cut, with funds reinvested in Black and POC communities, including $15 million this year for youth jobs.
             ${NEW_LINE}${NEW_LINE}Racist police violence does not just happen in other cities - it happens here in Boston too.  The City Council must stop investing in targeted criminalization and surveillance, and fund what Black and Brown communities need to be safe and healthy: COVID19 relief, housing, healthcare, treatment, healing, cooperative businesses, community centers, community-led organizations and projects.
             ${NEW_LINE}${NEW_LINE}We’re counting on you to stand up for Black communities and marginalized communities and defund the BPD. Thank you.
-            ${NEW_LINE}Sincerely,
+            ${NEW_LINE}${NEW_LINE}Sincerely,
+            ${NEW_LINE}${name}
+            `,
+    },
+    {
+        title: 'Houston - City Council',
+        group: 'Defund The Police',
+        subject: 'DEFUND Houston PD',
+        secondInputPlaceholder: 'Houston Area (CITY)...',
+        sendTo: [
+            'districta@houstontx.gov',
+            'districtb@houstontx.gov',
+            'districtc@houstontx.gov',
+            'districtd@houstontx.gov',
+            'districte@houstontx.gov',
+            'districtf@houstontx.gov',
+            'districtg@houstontx.gov',
+            'districth@houstontx.gov',
+            'districti@houstontx.gov',
+            'districtj@houstontx.gov',
+            'districtk@houstontx.gov',
+            'atlarge1@houstontx.gov',
+            'atlarge2@houstontx.gov',
+            'atlarge3@houstontx.gov',
+            'atlarge4@houstontx.gov',
+            'atlarge5@houstontx.gov',
+        ],
+        body: (name, secondInput) => `Dear Houston City Council Members,
+            ${NEW_LINE}${NEW_LINE}My name is ${name}, and I am a resident of ${secondInput}. I’m emailing you to decrease funding for the 2021 HPD Budget. This money could be used for other vital resources for Houstonians.
+            ${NEW_LINE}${NEW_LINE}Before your vote on June 10th we ask that you consider all these factors before voting for the almost $1 billion budget for HPD. Above all: our communities deserve to feel safe and protected — that can be accomplished through funding for health and human services, public housing, COVID-19 relief, and mental healthcare, instead of police. This requires significant defunding of HPD and reinvestment in these programs, specifically in  Black and POC communities. Remember that many communities, especially Black and brown communities, do not feel safe calling the police in a time of emergency and that the police are perpetrators of racist violence in many of their communities. 
+            ${NEW_LINE}${NEW_LINE}We are counting on the you to stand up for Black communities and marginalized communities and defund the HPD. Thank you.
+            ${NEW_LINE}${NEW_LINE}Sincerely,
+            ${NEW_LINE}${name}
+            `,
+    },
+    {
+        title: 'Los Angeles - City Council',
+        group: 'Defund The Police',
+        subject: 'DEFUND LAPD',
+        secondInputPlaceholder: 'Los Angeles (CITY)...',
+        sendTo: [
+            'councilmember.cedillo@lacity.org',
+            'councilmember.Krekorian@lacity.org',
+            'councilmember.blumenfield@lacity.org',
+            'david.ryu@lacity.org',
+            'paul.koretz@lacity.org',
+            'councilmember.martinez@lacity.org',
+            'councilmember.rodriguez@lacity.org',
+            'councilmember.harris-dawson@lacity.org',
+            'councilmember.price@lacity.org',
+            'councilmember.wesson@lacity.org',
+            'councilmember.bonin@lacity.org',
+            'councilmember.Lee@lacity.org',
+            'councilmember.ofarrell@lacity.org',
+            'councilmember.huizar@lacity.org',
+            'councilmember.buscaino@lacity.org',
+        ],
+        body: (name, secondInput) => `Dear Los Angeles City Council Members,
+            ${NEW_LINE}${NEW_LINE}My name is ${name}, and I am a resident of ${secondInput}. I’m emailing you today to urge you to stand up to and block the Mayor’s horrific and white supremacist budget. 
+            ${NEW_LINE}${NEW_LINE}Black, Brown, poor, institutionalized and unhoused people are at the greatest risk of being exposed to and dying from COVID-19 and are disproportionately impacted by LAPD violence. 
+            ${NEW_LINE}${NEW_LINE}We are demanding [you/Councilmember] to stand up to Mayor Garcetti and stand up for Black folks by committing to:
+            ${NEW_LINE}1. Divest from traditional policing and defund the police.
+            ${NEW_LINE}2. Reject the proposal to give LAPD an additional $100,000 for the “Through Our Eyes” Program.
+            ${NEW_LINE}3. Invest in universal needs like quality housing for all, universal access to healthy food, financial and economic support, climate justice, free and quality public transit, public health, and mental health support.
+            ${NEW_LINE}${NEW_LINE}We are counting on the you to stand up for Black communities and marginalized communities and defund the LAPD. Thank you.
+            ${NEW_LINE}${NEW_LINE}Sincerely,
             ${NEW_LINE}${name}
             `,
     },
@@ -113,7 +178,7 @@ export const allEmails: IEmail[] = [
         body: (name, secondInput) => `Dear Comptroller Scott Stringer,
             ${NEW_LINE}${NEW_LINE}My name is ${name}, and I am a resident of ${secondInput}. Last April, NYC Mayor Bill De Blasio proposed major budget cuts for the Fiscal Year 2021, especially to education and youth programs, while refusing to slash the NYPD budget by any significant margin. I urge you to consider pressuring the office of the mayor towards an ethical and equal reallocation of the NYC expense budget, away from NYPD, and towards social services and education programs, effective at the beginning of FY 21, July 1st.
             ${NEW_LINE}${NEW_LINE}Black Lives Matter.
-            ${NEW_LINE}Sincerely,
+            ${NEW_LINE}${NEW_LINE}Sincerely,
             ${NEW_LINE}${name}
             `,
     },
@@ -178,21 +243,52 @@ export const allEmails: IEmail[] = [
             ${NEW_LINE}${NEW_LINE}We are asking for reallocation of funds from the NYPD to the Summer Youth Employment Program; funding for re-entry programs; Personal Protective Equipment for all essential workers; economic and housing support for Black and brown sex workers, street vendors and undocumented people; and immediate housing and economic support for homeless people, families in shelters and individuals who have been recently released from jail.
             ${NEW_LINE}${NEW_LINE}In light of the NYPDs recent violent attacks on protestors, it is particularly vital that next months budget defunds the NYPD. Jails, prisons, and police will not keep us safe. It is unconscionable that the City would prioritize the expansion of surveillance and violent policing over the health of NYC residents in the midst of a deadly pandemic. To survive this pandemic and its aftermath, our communities need resources that do not look like police.
             ${NEW_LINE}${NEW_LINE}We are counting on you to advocate for us! Stand up to Mayor De Blasio.
-            ${NEW_LINE}Sincerely,
+            ${NEW_LINE}${NEW_LINE}Sincerely,
+            ${NEW_LINE}${name}
+            `,
+    },
+    {
+        title: 'Washington DC - City Council',
+        group: 'Defund The Police',
+        subject: 'DEFUND METRO PD',
+        secondInputPlaceholder: 'DC AREA (CITY)...',
+        sendTo: [
+            'pmendelson@dccouncil.us',
+            'kmcduffie@dccouncil.us',
+            'abonds@dccouncil.us',
+            'dgrosso@dccouncil.us',
+            'esilverman@dccouncil.us',
+            'rwhite@dccouncil.us',
+            'bnadeau@dccouncil.us',
+            'mcheh@dccouncil.us',
+            'btodd@dccouncil.us',
+            'kmcduffie@dccouncil.us',
+            'callen@dccouncil.us',
+            'vgray@dccouncil.us',
+            'twhite@dccouncil.us',
+        ],
+        body: (name, secondInput) => `Dear Washington DC City Council Members,
+            ${NEW_LINE}${NEW_LINE}My name is ${name}, and I am a resident of ${secondInput}.  I am emailing today to ask that the City Council confront MPD's record of brutality towards Black communities in DC by defunding the department. The current proposed budget increases MPD funding, despite DC already having more officers per capita than almost anywhere else in the country. Homicides continue to increase despite the MPD budget growing every year.
+            ${NEW_LINE}${NEW_LINE}At the same time violence prevention programs in DC, which already made up a tiny percentage of the DC budget, have been cut significantly, including $800,000 taken from the Office of Neighborhood Safety and Engagement (ONSE), $1.4 million cut from the Roving Leaders program and what seems to be the elimination of the Cure the Streets program.
+            ${NEW_LINE}${NEW_LINE}This is not just about MPD getting increased funding while specific programs get cut, however. It’s about the need to radically shift our priorities. We don’t just want to halt increases to the MPD’s bloated budget, we want to defund it and shift that money toward non-police resources that actually make us safer. Repurposed funding could go towards the Office of Neighborhood and Safety Engagement and violence interrupter programs, medical and mental health professionals and social workers, mental health care and trauma-informed services in DC public schools, services for formerly incarcerated DC residents, public housing repairs, and COVID-19 relief funding to all DC residents, including undocumented residents.
+            ${NEW_LINE}${NEW_LINE}Racist police violence does not just happen in other cities - it happens here in Boston too.  The City Council must stop investing in targeted criminalization and surveillance, and fund what Black and Brown communities need to be safe and healthy: COVID19 relief, housing, healthcare, treatment, healing, cooperative businesses, community centers, community-led organizations and projects.
+            ${NEW_LINE}${NEW_LINE}We’re counting on you to stand up for Black communities and marginalized communities and defund the MPD. Thank you.
+            ${NEW_LINE}${NEW_LINE}Sincerely,
             ${NEW_LINE}${name}
             `,
     },
     {
 
         title: 'Austin',
-        group: '8Can\'tWait',
+        group: 'Campaign Zero 8Can\'tWait',
         subject: '8 Can\'t Wait',
-        secondInputPlaceholder: 'CITY...',
+        secondInputPlaceholder: 'YOUR CITY...',
         sendTo: [
             'steve.adler@austintexas.gov',
         ],
         body: (name, secondInput) => `Dear Mayor Steve Adler, 
             ${NEW_LINE}${NEW_LINE}I am writing to you from ${secondInput} demanding you pass the policies outlined in Campaign Zero's #8CANTWAIT. Implementing these life-saving policies can reduce police violence by 72% and you have the power to adopt them all right now. Learn more at https://8cantwait.org/.
+            ${NEW_LINE}${NEW_LINE}While Austin has already implemented 3 of the #8CANTWAIT policies, there is more we can and should do. 
             ${NEW_LINE}${NEW_LINE}I demand:
             ${NEW_LINE}1. Austin ban the use of chokeholds and strangleholds by the APD  
             ${NEW_LINE}2. Austin require APD officers to de-escalate situations    
@@ -208,14 +304,15 @@ export const allEmails: IEmail[] = [
     },
     {
         title: 'Chicago',
-        group: '8Can\'tWait',
+        group: 'Campaign Zero 8Can\'tWait',
         subject: '8 Can\'t Wait',
-        secondInputPlaceholder: 'CITY...',
+        secondInputPlaceholder: 'YOUR CITY...',
         sendTo: [
             'letterforthemayor@cityofchicago.org',
         ],
         body: (name, secondInput) => `Dear Mayor Lori Lightfoot, 
             ${NEW_LINE}${NEW_LINE}I am writing to you from ${secondInput} demanding you pass the policies outlined in Campaign Zero's #8CANTWAIT. Implementing these life-saving policies can reduce police violence by 72% and you have the power to adopt them all right now. Learn more at https://8cantwait.org/.
+            ${NEW_LINE}${NEW_LINE}While Chicago has already implemented 6 of the #8CANTWAIT policies, there is more we can and should do.
             ${NEW_LINE}${NEW_LINE}I demand:
             ${NEW_LINE}1. Chicago ban shooting at moving vehicles by the CPD
             ${NEW_LINE}2. Require comprehensive reporting by the CPD, including all incidents where officers point their firearms at civilians 
@@ -228,14 +325,15 @@ export const allEmails: IEmail[] = [
     },
     {
         title: 'Dallas',
-        group: '8Can\'tWait',
+        group: 'Campaign Zero 8Can\'tWait',
         subject: '8 Can\'t Wait',
-        secondInputPlaceholder: 'CITY...',
+        secondInputPlaceholder: 'YOUR CITY...',
         sendTo: [
             'eric.johnson@dallascityhall.com',
         ],
         body: (name, secondInput) => `Dear Mayor Eric Johnson, 
             ${NEW_LINE}${NEW_LINE}I am writing to you from ${secondInput} demanding you pass the policies outlined in Campaign Zero's #8CANTWAIT. Implementing these life-saving policies can reduce police violence by 72% and you have the power to adopt them all right now. Learn more at https://8cantwait.org/.
+            ${NEW_LINE}${NEW_LINE}While Dallas has already implemented 4 of the #8CANTWAIT policies, there is more we can and should do.
             ${NEW_LINE}${NEW_LINE}I demand:
             ${NEW_LINE}1. Dallas ban the use of chokeholds and strangleholds by the DPD
             ${NEW_LINE}2. Dallas require DPD officers to issue a warning prior to shooting 
@@ -250,14 +348,15 @@ export const allEmails: IEmail[] = [
     },
     {
         title: 'Houston',
-        group: '8Can\'tWait',
+        group: 'Campaign Zero 8Can\'tWait',
         subject: '8 Can\'t Wait',
-        secondInputPlaceholder: 'CITY...',
+        secondInputPlaceholder: 'YOUR CITY...',
         sendTo: [
             'mayor@houstontx.gov',
         ],
         body: (name, secondInput) => `Dear Mayor Sylvester Turner, 
             ${NEW_LINE}${NEW_LINE}I am writing to you from ${secondInput} demanding you pass the policies outlined in Campaign Zero's #8CANTWAIT. Implementing these life-saving policies can reduce police violence by 72% and you have the power to adopt them all right now. Learn more at https://8cantwait.org/.
+            ${NEW_LINE}${NEW_LINE}While Houston has already implemented 3 of the #8CANTWAIT policies, there is more we can and should do.
             ${NEW_LINE}${NEW_LINE}I demand:
             ${NEW_LINE}1. Houston ban the use of chokeholds and strangleholds by the HPD 
             ${NEW_LINE}2. Houston require HPD officers to de-escalate situations
@@ -273,14 +372,15 @@ export const allEmails: IEmail[] = [
     },
     {
         title: 'Fort Worth',
-        group: '8Can\'tWait',
+        group: 'Campaign Zero 8Can\'tWait',
         subject: '8 Can\'t Wait',
-        secondInputPlaceholder: 'CITY...',
+        secondInputPlaceholder: 'YOUR CITY...',
         sendTo: [
             'betsy.price@fortworthtexas.gov',
         ],
         body: (name, secondInput) => `Dear Mayor Betsy Price, 
             ${NEW_LINE}${NEW_LINE}I am writing to you from ${secondInput} demanding you pass the policies outlined in Campaign Zero's #8CANTWAIT. Implementing these life-saving policies can reduce police violence by 72% and you have the power to adopt them all right now. Learn more at https://8cantwait.org/.
+            ${NEW_LINE}${NEW_LINE}While Fort Worth has already implemented 6 of the #8CANTWAIT policies, there is more we can and should do.
             ${NEW_LINE}${NEW_LINE}I demand:
             ${NEW_LINE}1. Fort Worth require FWPD officers to exhaust all other means prior to using deadly force
             ${NEW_LINE}2. Require comprehensive reporting by the FWPD, including all incidents where officers point their firearms at civilians
@@ -293,14 +393,15 @@ export const allEmails: IEmail[] = [
     },
     {
         title: 'Jacksonville',
-        group: '8Can\'tWait',
+        group: 'Campaign Zero 8Can\'tWait',
         subject: '8 Can\'t Wait',
-        secondInputPlaceholder: 'CITY...',
+        secondInputPlaceholder: 'YOUR CITY...',
         sendTo: [
             'MayorLennyCurry@coj.net',
         ],
         body: (name, secondInput) => `Dear Mayor Lenny Curry, 
             ${NEW_LINE}${NEW_LINE}I am writing to you from ${secondInput} demanding you pass the policies outlined in Campaign Zero's #8CANTWAIT. Implementing these life-saving policies can reduce police violence by 72% and you have the power to adopt them all right now. Learn more at https://8cantwait.org/.
+            ${NEW_LINE}${NEW_LINE}While Jacksonville has already implemented 3 of the #8CANTWAIT policies, there is more we can and should do.
             ${NEW_LINE}${NEW_LINE}I demand:
             ${NEW_LINE}1. Jacksonville require Jacksonville Police officers to de-escalate situations
             ${NEW_LINE}2. Jacksonville require Jacksonville Police officers to exhaust all other means prior to using deadly force
@@ -316,14 +417,15 @@ export const allEmails: IEmail[] = [
     },
     {
         title: 'Los Angeles',
-        group: '8Can\'tWait',
+        group: 'Campaign Zero 8Can\'tWait',
         subject: '8 Can\'t Wait',
-        secondInputPlaceholder: 'CITY...',
+        secondInputPlaceholder: 'YOUR CITY...',
         sendTo: [
             'mayor.helpdesk@lacity.org',
         ],
         body: (name, secondInput) => `Dear Mayor Eric Garcetti, 
             ${NEW_LINE}${NEW_LINE}I am writing to you from ${secondInput} demanding you pass the policies outlined in Campaign Zero's #8CANTWAIT. Implementing these life-saving policies can reduce police violence by 72% and you have the power to adopt them all right now. Learn more at https://8cantwait.org/.
+            ${NEW_LINE}${NEW_LINE}While Los Angeles has already implemented 5 of the #8CANTWAIT policies, there is more we can and should do.
             ${NEW_LINE}${NEW_LINE}I demand:
             ${NEW_LINE}1. Los Angeles require LAPD officers to issue a warning prior to shooting
             ${NEW_LINE}2. Los Angeles require LAPD officers to exhaust all alternatives prior to using deadly force
@@ -337,14 +439,15 @@ export const allEmails: IEmail[] = [
     },
     {
         title: 'New York City',
-        group: '8Can\'tWait',
+        group: 'Campaign Zero 8Can\'tWait',
         subject: '8 Can\'t Wait',
-        secondInputPlaceholder: 'CITY...',
+        secondInputPlaceholder: 'YOUR CITY...',
         sendTo: [
             'bdeblasio@cityhall.nyc.gov',
         ],
         body: (name, secondInput) => `Dear Mayor Bill DeBlasio, 
             ${NEW_LINE}${NEW_LINE}I am writing to you from ${secondInput} demanding you pass the policies outlined in Campaign Zero's #8CANTWAIT. Implementing these life-saving policies can reduce police violence by 72% and you have the power to adopt them all right now. Learn more at https://8cantwait.org/.
+            ${NEW_LINE}${NEW_LINE}While New York has already implemented 4 of the #8CANTWAIT policies, there is more we can and should do.
             ${NEW_LINE}${NEW_LINE}I demand:
             ${NEW_LINE}1. New York City ban the use of chokeholds and strangleholds by the NYPD
             ${NEW_LINE}2. New York City require NYPD officers to issue a verbal warning prior to using deadly force
@@ -359,14 +462,15 @@ export const allEmails: IEmail[] = [
     },
     {
         title: 'Philadelphia',
-        group: '8Can\'tWait',
+        group: 'Campaign Zero 8Can\'tWait',
         subject: '8 Can\'t Wait',
-        secondInputPlaceholder: 'CITY...',
+        secondInputPlaceholder: 'YOUR CITY...',
         sendTo: [
             'james.kenney@phila.gov',
         ],
         body: (name, secondInput) => `Dear Mayor Jim Kenney, 
             ${NEW_LINE}${NEW_LINE}I am writing to you from ${secondInput} demanding you pass the policies outlined in Campaign Zero's #8CANTWAIT. Implementing these life-saving policies can reduce police violence by 72% and you have the power to adopt them all right now. Learn more at https://8cantwait.org/.
+            ${NEW_LINE}${NEW_LINE}While Philadelphia has already implemented 7 of the #8CANTWAIT policies, there is more we can and should do.
             ${NEW_LINE}${NEW_LINE}I demand:
             ${NEW_LINE}1. Philadelphia ban shooting at moving vehicles by the PPD
             ${NEW_LINE}${NEW_LINE}If the above changes are not implemented, the PPD will continue to murder, assault, and terrorize the very residents they have sworn to protect and serve. Communities of color in Philadelphia are disproportionately affected by this abuse. 
@@ -378,14 +482,15 @@ export const allEmails: IEmail[] = [
     },
     {
         title: 'Phoenix',
-        group: '8Can\'tWait',
+        group: 'Campaign Zero 8Can\'tWait',
         subject: '8 Can\'t Wait',
-        secondInputPlaceholder: 'CITY...',
+        secondInputPlaceholder: 'YOUR CITY...',
         sendTo: [
             'mayor.gallego@phoenix.gov',
         ],
         body: (name, secondInput) => `Dear Mayor Kate Gallego, 
             ${NEW_LINE}${NEW_LINE}I am writing to you from ${secondInput} demanding you pass the policies outlined in Campaign Zero's #8CANTWAIT. Implementing these life-saving policies can reduce police violence by 72% and you have the power to adopt them all right now. Learn more at https://8cantwait.org/.
+            ${NEW_LINE}${NEW_LINE}While Phoenix has already implemented 4 of the #8CANTWAIT policies, there is more we can and should do.
             ${NEW_LINE}${NEW_LINE}I demand:
             ${NEW_LINE}1. Phoenix ban the use of chokeholds and strangleholds by the PHXPD
             ${NEW_LINE}2. Phoenix require PHXPD officers to de-escalate situations
@@ -400,14 +505,15 @@ export const allEmails: IEmail[] = [
     },
     {
         title: 'Portland, OR',
-        group: '8Can\'tWait',
+        group: 'Campaign Zero 8Can\'tWait',
         subject: '8 Can\'t Wait',
-        secondInputPlaceholder: 'CITY...',
+        secondInputPlaceholder: 'YOUR CITY...',
         sendTo: [
             'mayorwheeler@portlandoregon.gov',
         ],
         body: (name, secondInput) => `Dear Mayor Ted Wheeler, 
             ${NEW_LINE}${NEW_LINE}I am writing to you from ${secondInput} demanding you pass the policies outlined in Campaign Zero's #8CANTWAIT. Implementing these life-saving policies can reduce police violence by 72% and you have the power to adopt them all right now. Learn more at https://8cantwait.org/.
+            ${NEW_LINE}${NEW_LINE}While Portland has already implemented 5 of the #8CANTWAIT policies, there is more we can and should do.
             ${NEW_LINE}${NEW_LINE}I demand:
             ${NEW_LINE}1. Portland ban the use of chokeholds and strangleholds by the PPB
             ${NEW_LINE}2. Portland require PPB officers to exhaust all alternatives prior to using deadly force
@@ -421,14 +527,15 @@ export const allEmails: IEmail[] = [
     },
     {
         title: 'San Antonio',
-        group: '8Can\'tWait',
+        group: 'Campaign Zero 8Can\'tWait',
         subject: '8 Can\'t Wait',
-        secondInputPlaceholder: 'CITY...',
+        secondInputPlaceholder: 'YOUR CITY...',
         sendTo: [
             'ron.nirenberg@sanantonio.gov',
         ],
         body: (name, secondInput) => `Dear Mayor Ron Nirenberg, 
             ${NEW_LINE}${NEW_LINE}I am writing to you from ${secondInput} demanding you pass the policies outlined in Campaign Zero's #8CANTWAIT. Implementing these life-saving policies can reduce police violence by 72% and you have the power to adopt them all right now. Learn more at https://8cantwait.org/.
+            ${NEW_LINE}${NEW_LINE}While San Antonio has already implemented 4 of the #8CANTWAIT policies, there is more we can and should do.
             ${NEW_LINE}${NEW_LINE}I demand:
             ${NEW_LINE}1. San Antonio require SAPD officers to issue a warning prior to shooting  
             ${NEW_LINE}2. San Antonio require SAPD officers to actively exhaust all other means prior to using deadly force
@@ -444,14 +551,15 @@ export const allEmails: IEmail[] = [
     {
 
         title: 'San Diego',
-        group: '8Can\'tWait',
+        group: 'Campaign Zero 8Can\'tWait',
         subject: '8 Can\'t Wait',
-        secondInputPlaceholder: 'CITY...',
+        secondInputPlaceholder: 'YOUR CITY...',
         sendTo: [
             'kevinfaulconer@sandiego.gov',
         ],
         body: (name, secondInput) => `Dear Mayor Kevin Faulconer, 
             ${NEW_LINE}${NEW_LINE}I am writing to you from ${secondInput} demanding you pass the policies outlined in Campaign Zero's #8CANTWAIT. Implementing these life-saving policies can reduce police violence by 72% and you have the power to adopt them all right now. Learn more at https://8cantwait.org/.
+            ${NEW_LINE}${NEW_LINE}While San Diego has already implemented 3 of the #8CANTWAIT policies, there is more we can and should do.
             ${NEW_LINE}${NEW_LINE}I demand:
             ${NEW_LINE}1. San Diego ban the use of chokeholds and strangleholds by the SDPD
             ${NEW_LINE}2. San Diego require SDPD officers to de-escalate situations  
@@ -467,14 +575,15 @@ export const allEmails: IEmail[] = [
     },
     {
         title: 'San Jose',
-        group: '8Can\'tWait',
+        group: 'Campaign Zero 8Can\'tWait',
         subject: '8 Can\'t Wait',
-        secondInputPlaceholder: 'CITY...',
+        secondInputPlaceholder: 'YOUR CITY...',
         sendTo: [
             'mayoremail@sanjoseca.gov',
         ],
         body: (name, secondInput) => `Dear Mayor Sam Liccardo, 
             ${NEW_LINE}${NEW_LINE}I am writing to you from ${secondInput} demanding you pass the policies outlined in Campaign Zero's #8CANTWAIT. Implementing these life-saving policies can reduce police violence by 72% and you have the power to adopt them all right now. Learn more at https://8cantwait.org/.
+            ${NEW_LINE}${NEW_LINE}While San Jose has already implemented 4 of the #8CANTWAIT policies, there is more we can and should do.
             ${NEW_LINE}${NEW_LINE}I demand:
             ${NEW_LINE}1. San Jose require SJPD officers to issue a warning prior to shooting 
             ${NEW_LINE}2. San Jose require SJPD officers to actively exhaust all other means prior to using deadly force  
@@ -489,14 +598,15 @@ export const allEmails: IEmail[] = [
     },
     {
         title: 'Washington D.C.',
-        group: '8Can\'tWait',
+        group: 'Campaign Zero 8Can\'tWait',
         subject: '8 Can\'t Wait',
-        secondInputPlaceholder: 'CITY...',
+        secondInputPlaceholder: 'YOUR CITY...',
         sendTo: [
             'eom@dc.gov',
         ],
         body: (name, secondInput) => `Dear Mayor Muriel Bowser, 
             ${NEW_LINE}${NEW_LINE}I am writing to you from ${secondInput} demanding you pass the policies outlined in Campaign Zero's #8CANTWAIT. Implementing these life-saving policies can reduce police violence by 72% and you have the power to adopt them all right now. Learn more at https://8cantwait.org/.
+            ${NEW_LINE}${NEW_LINE}While Washington DC has already implemented 7 of the #8CANTWAIT policies, there is more we can and should do.
             ${NEW_LINE}${NEW_LINE}I demand:
             ${NEW_LINE}1. Washington DC ban the use of chokeholds and strangleholds by the MPD
             ${NEW_LINE}${NEW_LINE}If the above changes are not implemented, the MPD will continue to murder, assault, and terrorize the very residents they have sworn to protect and serve. Communities of color in Washington D.C. are disproportionately affected by this abuse. 
