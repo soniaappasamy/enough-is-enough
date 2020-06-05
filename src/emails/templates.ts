@@ -74,20 +74,110 @@ export const allEmails: IEmail[] = [
             ${NEW_LINE}${name}
             `,
     },
+     {
+        title: 'Boston - City Council',
+        group: 'Defund The Police',
+        subject: 'DEFUND BPD',
+        secondInputPlaceholder: 'BOSTON AREA (CITY)...',
+        sendTo: [
+            'A.E.GEORGE@BOSTON.GOV',
+            'MICHAEL.F.FLAHERTY@BOSTON.GOV',
+            'MICHELLE.WU@BOSTON.GOV',
+            'LYDIA.EDWARDS@BOSTON.GOV',
+            'ED.FLYNN@BOSTON.GOV',
+            'FRANK.BAKER@BOSTON.GOV',
+            'ANDREA.CAMPBELL@BOSTON.GOV',
+            'RICARDO.ARROYO@BOSTON.GOV',
+            'MATTHEW.OMALLEY@BOSTON.GOV',
+            'KENZIE.BOK@BOSTON.GOV',
+            'LIZ.BREADON@BOSTON.GOV',
+        ],
+        body: (name, secondInput) => `Dear Boston City Council Members,
+            ${NEW_LINE}${NEW_LINE}My name is ${name}, and I am a resident of ${secondInput}.  I am asking that you work to reduce the Boston Police Department budget. The City Council needs to address a lack of investment in Black and Brown communities and an over-investment in their criminalization and surveillance including spending on the Boston Regional Intelligence Center (BRIC).
+            ${NEW_LINE}${NEW_LINE}The City Council is considering a grant of $850,000 from the Executive of Public Safety to spend on the BRIC, in addition to $4 million in the City Budget and other federal funding from the Department of Homeland Security. The City Council should not authorize the BRIC grant and should cut the BRIC line item from the city budget. 
+            ${NEW_LINE}${NEW_LINE}With the overall police budget, the City Council has the power to cut line items in the City budget, due on June 10. The police budget and overtime budget should be cut, with funds reinvested in Black and POC communities, including $15 million this year for youth jobs.
+            ${NEW_LINE}${NEW_LINE}Racist police violence does not just happen in other cities - it happens here in Boston too.  The City Council must stop investing in targeted criminalization and surveillance, and fund what Black and Brown communities need to be safe and healthy: COVID19 relief, housing, healthcare, treatment, healing, cooperative businesses, community centers, community-led organizations and projects.
+            ${NEW_LINE}${NEW_LINE}We’re counting on you to stand up for Black communities and marginalized communities and defund the BPD. Thank you.
+            ${NEW_LINE}Sincerely,
+            ${NEW_LINE}${name}
+            `,
+    },
     {
-        title: 'NYPD',
+        title: 'New York City - Comptroller',
         group: 'Defund The Police',
         subject: 'DEFUND NYPD',
         secondInputPlaceholder: 'BOROUGH (CITY)...',
         sendTo: [
-            'ddromm@council.nyc.gov',
-            'drichards@council.nyc.gov',
             'action@comptroller.nyc.gov',
         ],
-        body: (name, secondInput) => `To whom it may concern,
+        body: (name, secondInput) => `Dear Comptroller Scott Stringer,
             ${NEW_LINE}${NEW_LINE}My name is ${name}, and I am a resident of ${secondInput}. Last April, NYC Mayor Bill De Blasio proposed major budget cuts for the Fiscal Year 2021, especially to education and youth programs, while refusing to slash the NYPD budget by any significant margin. I urge you to consider pressuring the office of the mayor towards an ethical and equal reallocation of the NYC expense budget, away from NYPD, and towards social services and education programs, effective at the beginning of FY 21, July 1st.
-            ${NEW_LINE}${NEW_LINE}I am emailing to ask for an emergency council meeting among city officials regarding this matter. Governor Cuomo has doubled NYPD presence effective tonight. I am asking that city officials lobby the same amount of attention and effort towards finding sustainable, long term change.
             ${NEW_LINE}${NEW_LINE}Black Lives Matter.
+            ${NEW_LINE}Sincerely,
+            ${NEW_LINE}${name}
+            `,
+    },
+    {
+        title: 'New York City - City Council',
+        group: 'Defund The Police',
+        subject: 'DEFUND NYPD',
+        secondInputPlaceholder: 'BOROUGH (CITY)...',
+        sendTo: [
+            'mguerra@council.nyc.gov',
+            'District2@council.nyc.gov',
+            'SpeakerJohnson@council.nyc.gov',
+            'KPowers@council.nyc.gov',
+            'BKallos@benkallos.com',
+            'Helen@helenrosenthal.com',
+            'District7@council.nyc.gov',
+            'DAyala@council.nyc.gov',
+            'D09perkins@council.nyc.gov',
+            'yrodriguez@council.nyc.gov',
+            'District11@council.nyc.gov',
+            'Andy.King@council.nyc.gov',
+            'MGjonaj@council.nyc.gov',
+            'fcabrera@council.nyc.gov',
+            'Rtorres@council.nyc.gov',
+            'District16Bronx@council.nyc.gov',
+            'salamanca@council.nyc.gov',
+            'RDiaz@council.nyc.gov',
+            'district19@council.nyc.gov',
+            'pkoo@council.nyc.gov',
+            'FMoya@council.nyc.gov',
+            'BGrodenchik@council.nyc.gov',
+            'RLancman@council.nyc.gov',
+            'dromm@council.nyc.gov',
+            'JVanBramer@council.nyc.gov',
+            'Adams@council.nyc.gov',
+            'Koslowitz@council.nyc.gov',
+            'District30@council.nyc.gov',
+            'drichards@council.nyc.gov',
+            'eulrich@council.nyc.gov',
+            'slevin@council.nyc.gov',
+            'areynoso@council.nyc.gov',
+            'LCumbo@council.nyc.gov',
+            'district36@council.nyc.gov',
+            'district37@council.nyc.gov',
+            'info38@council.nyc.gov',
+            'lander@council.nyc.gov',
+            'meugene@council.nyc.gov',
+            'District41@council.nyc.gov',
+            'viverdree@council.nyc.gov',
+            'AskJB@council.nyc.gov',
+            'AskKalman@council.nyc.gov',
+            'District45@council.nyc.gov',
+            'AMaisel@council.nyc.gov',
+            'ascaife@council.nyc.gov',
+            'cdeutsch@council.nyc.gov',
+            'DROSE@Council.nyc.gov',
+            'SMatteo@council.nyc.gov',
+            'borelli@council.nyc.gov',
+        ],
+        body: (name, secondInput) => `Dear New York City Council Members,
+            ${NEW_LINE}${NEW_LINE}My name is ${name}, and I am a resident of ${secondInput}.  I am emailing today to urge you to stand up to Mayor Deblasio and his wartime budget. Deblasios proposed budget will completely devastate our communities. I expect you to vote NO on any budget that does not defund the NYPD and prioritize the wellbeing of our communities. 
+            ${NEW_LINE}${NEW_LINE}We are asking for reallocation of funds from the NYPD to the Summer Youth Employment Program; funding for re-entry programs; Personal Protective Equipment for all essential workers; economic and housing support for Black and brown sex workers, street vendors and undocumented people; and immediate housing and economic support for homeless people, families in shelters and individuals who have been recently released from jail.
+            ${NEW_LINE}${NEW_LINE}In light of the NYPDs recent violent attacks on protestors, it is particularly vital that next months budget defunds the NYPD. Jails, prisons, and police will not keep us safe. It is unconscionable that the City would prioritize the expansion of surveillance and violent policing over the health of NYC residents in the midst of a deadly pandemic. To survive this pandemic and its aftermath, our communities need resources that do not look like police.
+            ${NEW_LINE}${NEW_LINE}We are counting on you to advocate for us! Stand up to Mayor De Blasio.
             ${NEW_LINE}Sincerely,
             ${NEW_LINE}${name}
             `,
