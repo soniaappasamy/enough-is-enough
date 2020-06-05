@@ -147,7 +147,7 @@ export const allEmails: IEmail[] = [
             ${NEW_LINE}Sincerely,
             ${NEW_LINE}${name}
             `,
-    }, 
+    },
     {
         title: 'Houston',
         group: '8Can\'tWait',
@@ -335,7 +335,7 @@ export const allEmails: IEmail[] = [
             ${NEW_LINE}${name}
             `,
     },
-     {
+    {
         title: 'Washington D.C.',
         group: '8Can\'tWait',
         subject: '8 Can\'t Wait',

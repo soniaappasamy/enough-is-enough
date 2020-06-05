@@ -5,12 +5,13 @@ import {
     FormGroup, InputGroup, Button, MenuItem, Menu, Tag,
 } from '@blueprintjs/core';
 import {
-    Select, ItemRenderer, ItemListRenderer, ItemPredicate, IItemListRendererProps,
+    Select, ItemRenderer, ItemListRenderer, IItemListRendererProps,
 } from '@blueprintjs/select';
 import ReactGA from 'react-ga';
 import { IEmail } from '../emails/types';
 import { getEmailMailToLink } from '../utils/getEmailMailToLink';
 import './EmailSenderForm.scss';
+import { filterEmails } from '../utils/filterEmails';
 
 interface IEmailSenderFormProps {
     emails: IEmail[];
@@ -97,7 +98,7 @@ const emailSelectItemListRenderer: ItemListRenderer<IEmail> = ({
     const getRenderedEmails = (emails: IEmail[]) => (
         emails.map(renderItem).filter((email) => email != null));
 
-    const filteredEmails = allEmails.filter((email) => filterEmails(query, email));
+    const filteredEmails = filterEmails(query, allEmails);
     const groupedEmails = new Map<string | undefined, IEmail[]>();
     filteredEmails.forEach((email) => {
         const { group } = email;
@@ -120,12 +121,6 @@ const emailSelectItemListRenderer: ItemListRenderer<IEmail> = ({
         </Menu>
     );
 };
-
-const filterEmails: ItemPredicate<IEmail> = (query, email) => (
-    textContains(email.title, query)
-    || (email.group !== undefined && textContains(email.group, query)));
-const textContains = (text: string, query: string): boolean => (
-    text.toLowerCase().indexOf(query.toLowerCase()) >= 0);
 
 const emailSelectItemRenderer: ItemRenderer<IEmail> = (email, { handleClick, modifiers }) => {
     if (!modifiers.matchesPredicate) {

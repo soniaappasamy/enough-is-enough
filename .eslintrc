@@ -28,6 +28,7 @@
       "warn",
       4
     ],
-    "react/jsx-indent": "off"
+    "react/jsx-indent": "off",
+    "no-nested-ternary": "off"
   }
 }
