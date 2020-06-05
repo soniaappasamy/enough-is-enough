@@ -33,8 +33,12 @@ const EmailSenderForm: React.FC<IEmailSenderFormProps> = ({ emails }) => {
     );
 
     const onSelectEmail = (email: IEmail) => {
-        setSecondInput('');
-        setSelectedEmail(email);
+        setSelectedEmail((oldEmail) => {
+            if (oldEmail?.secondInputPlaceholder !== email.secondInputPlaceholder) {
+                setSecondInput('');
+            }
+            return email;
+        });
     };
 
     const mailToLink = getEmailMailToLink(selectedEmail, name, secondInput);
