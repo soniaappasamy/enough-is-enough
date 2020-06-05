@@ -39,43 +39,46 @@ const EmailSenderForm: React.FC<IEmailSenderFormProps> = ({ emails }) => {
 
     return (
         <div className="form-container">
-            <FormGroup>
-                <InputGroup
-                    style={textInputStyle}
-                    value={name}
-                    placeholder="NAME..."
-                    fill
-                    large
-                    onInput={onTypeName}
-                />
-            </FormGroup>
-            <FormGroup>
+            <div className="input-container">
+                <FormGroup>
+                    <InputGroup
+                        style={textInputStyle}
+                        value={name}
+                        placeholder="NAME..."
+                        fill
+                        large
+                        onInput={onTypeName}
+                    />
+                </FormGroup>
+                <FormGroup>
+                    <Select
+                        itemListRenderer={emailSelectItemListRenderer}
+                        items={emails}
+                        itemRenderer={emailSelectItemRenderer}
+                        onItemSelect={setSelectedEmail}
+                    >
+                        <Button
+                            style={{ width: '300px' }}
+                            text={selectedEmail ? selectedEmail.title : 'SELECT EMAIL...'}
+                            icon="envelope"
+                            rightIcon="caret-down"
+                            fill
+                            large
+                        />
+                    </Select>
+                </FormGroup>
+                {selectedEmail !== undefined
+            && <FormGroup>
                 <InputGroup
                     style={textInputStyle}
                     value={location}
-                    placeholder="CITY..."
+                    placeholder={selectedEmail.secondInputPlaceholder}
                     fill
                     large
                     onChange={onTypeLocation}
                 />
-            </FormGroup>
-            <FormGroup className="select-container">
-                <Select
-                    itemListRenderer={emailSelectItemListRenderer}
-                    items={emails}
-                    itemRenderer={emailSelectItemRenderer}
-                    onItemSelect={setSelectedEmail}
-                >
-                    <Button
-                        style={{ width: '300px' }}
-                        text={selectedEmail ? selectedEmail.title : 'SELECT EMAIL...'}
-                        icon="envelope"
-                        rightIcon="caret-down"
-                        fill
-                        large
-                    />
-                </Select>
-            </FormGroup>
+            </FormGroup>}
+            </div>
             <div>
                 <a className="mailto-link" href={mailToLink}>
                     <Button
