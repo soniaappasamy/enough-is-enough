@@ -5,7 +5,7 @@ import { NEW_LINE } from './consts';
 
 export const allEmails: IEmail[] = [
     {
-        title: 'NY S2253/A654',
+        title: 'NY WWT Repeal,
         subject: 'Passing S2253/A654 is Police Accountability',
         sendTo: [
             'speaker@nyassembly.gov',
