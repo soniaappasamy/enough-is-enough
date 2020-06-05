@@ -102,6 +102,70 @@ export const allEmails: IEmail[] = [
             ${NEW_LINE}${name}
             `,
     },
+     {
+        title: 'Chicago - City Council',
+        group: 'Defund The Police',
+        subject: 'DEFUND CPD',
+        secondInputPlaceholder: '(CITY)...',
+        sendTo: [
+            'info@the1stward.com',
+            'Ward02@cityofchicago.org',
+            'Ward03@cityofchicago.org',
+            'Ward04@cityofchicago.org',
+            'Ward05@cityofchicago.org',
+            'Ward06@cityofchicago.org',
+            'Alderman@gregmitchell7thward.org',
+            'Ward08@cityofchicago.org',
+            'Ward09@cityofchicago.org',
+            'Ward10@cityofchicago.org',
+            'Ward11@cityofchicago.org',
+            'Ward12@cityofchicago.org',
+            'Ward13@cityofchicago.org',
+            'Ward14@cityofchicago.org',
+            'Ward15@cityofchicago.org',
+            'Info@16thward.org',
+            'Alderman@17ward.com',
+            'Ward18@cityofchicago.org',
+            'Ward19@cityofchicago.org',
+            'Jeanette.Taylor@cityofchicago.org',
+            'Ward21@cityofchicago.org',
+            'Ward22@cityofchicago.org',
+            'Ward23@cityofchicago.org',
+            'Ward24@cityofchicago.org',
+            'Inquiries@25thward.org',
+            'Ward26@cityofchicago.org',
+            'Ward27@cityofchicago.org',
+            'Ward28@cityofchicago.org',
+            'Ward29@cityofchicago.org',
+            'Ward30@cityofchicago.org',
+            'Ward31@cityofchicago.org',
+            'Ward32@cityofchicago.org',
+            'info@33rdward.org',
+            'Ward34@cityofchicago.org',
+            'Ward35@cityofchicago.org',
+            'Ward36@cityofchicago.org',
+            'Ward37@cityofchicago.org',
+            'Ward38@cityofchicago.org',
+            'info@40thward.org',
+            'Ward41@cityofchicago.org',
+            'Ward43@cityofchicago.org',
+            'Ward44@cityofchicago.org',
+            'Ward45@cityofchicago.org',
+            'Ward46@cityofchicago.org',
+            'info@aldermanmartin.com',
+            'Ward48@cityofchicago.org',
+            'Office@49thward.org',
+            'Ward50@cityofchicago.org',
+        ],
+        body: (name, secondInput) => `Dear Chicago City Council Members,
+            ${NEW_LINE}${NEW_LINE}My name is ${name}, and I am a resident of ${secondInput}. I’m emailing you today to urge you to defund the Chicago Police Department and invest in the resources that actually keep us safe and healthy, especially in Black communities, Indigenous communities and communities of color.
+            ${NEW_LINE}${NEW_LINE}Where we spend money now will decide what kind of city we’ll live in for decades to come. Gun violence, homelessness, racial disparities, disappearing cultural spaces—these crises are not inevitable. They are the product of policy decisions. Chicago can be a city where all of us have high quality housing, livable wages, and where arts and cultural spaces thrive. The infrastructure we need to address our challenges requires significant investment—that’s where we should be spending. Investing in more cops is both reckless and unimaginative.
+            ${NEW_LINE}${NEW_LINE}No one in our communities should have to be afraid of violence, so we need to invest in the right tools to prevent and stop it. We expect cops to fill too many roles--social worker, investigator, traffic patrol, addiction counselor—let’s consider who else can fill some of them. If we send the right person or response for each issue, we will better meet community members’ needs. For many of the most marginalized people in our communities--people of color, queer and trans people, immigrants--police signal less safety, not more. It’s the Police Chief’s job to advocate for police solutions; it’s our job to advocate for each other. 
+            ${NEW_LINE}${NEW_LINE}When we fight over crumbs, we fail to see the whole pie. Chicago has enough. Chicago's Police Department continues to receive funding, even when they cost our community precious lives and millions of additional dollars in settlement fees. In the last fifteen years the city has paid out tens of millions of dollars in settlements - dollars that could have served and supported our communities. When we continuously allocate enormous amounts of money to police at the expense of other departments, programs, and proven safety initiatives, we prevent ourselves from forging a smarter path to safety. 
+            ${NEW_LINE}${NEW_LINE}Sincerely,
+            ${NEW_LINE}${name}
+            `,
+    },
     {
         title: 'Houston - City Council',
         group: 'Defund The Police',
@@ -137,7 +201,7 @@ export const allEmails: IEmail[] = [
         title: 'Los Angeles - City Council',
         group: 'Defund The Police',
         subject: 'DEFUND LAPD',
-        secondInputPlaceholder: 'Los Angeles (CITY)...',
+        secondInputPlaceholder: 'Los Angeles Area (CITY)...',
         sendTo: [
             'councilmember.cedillo@lacity.org',
             'councilmember.Krekorian@lacity.org',
@@ -163,6 +227,37 @@ export const allEmails: IEmail[] = [
             ${NEW_LINE}2. Reject the proposal to give LAPD an additional $100,000 for the “Through Our Eyes” Program.
             ${NEW_LINE}3. Invest in universal needs like quality housing for all, universal access to healthy food, financial and economic support, climate justice, free and quality public transit, public health, and mental health support.
             ${NEW_LINE}${NEW_LINE}We are counting on the you to stand up for Black communities and marginalized communities and defund the LAPD. Thank you.
+            ${NEW_LINE}${NEW_LINE}Sincerely,
+            ${NEW_LINE}${name}
+            `,
+    },
+    {
+        title: 'Minneapolis - City Council',
+        group: 'Defund The Police',
+        subject: 'DEFUND MPD',
+        secondInputPlaceholder: '(CITY)...',
+        sendTo: [
+            'kevin.reich@minneapolismn.gov',
+            'cam.gordon@minneapolismn.gov',
+            'steve.fletcher@minneapolismn.gov',
+            'phillipe.cunningham@minneapolismn.gov',
+            'jeremiah.ellison@minneapolismn.gov',
+            'abdi.warsame@minneapolismn.gov',
+            'lisa.goodman@minneapolismn.gov',
+            'andrea.jenkins@minneapolismn.gov',
+            'lisa.bender@minneapolismn.gov',
+            'jeremy.schroeder@minneapolismn.gov',
+            'andrew.johnson@minneapolismn.gov',
+            'linea.palmisano@minneapolismn.gov',
+        ],
+        body: (name, secondInput) => `Dear Minneapolis City Council Members,
+            ${NEW_LINE}${NEW_LINE}My name is ${name}, and I am a resident of ${secondInput}. I’m emailing you today to urge you to defund the Minneapolis Police Department and invest in the resources that actually keep us safe and healthy, especially in Black communities, Indigenous communities and communities of color.
+            ${NEW_LINE}${NEW_LINE}In the wake of George Floyd's murder by MPD officer Derek Chauvin, and the MPD's escalated violence against the city's grieving Black community, I am calling on the Councilmember to pledge to defund the Minneapolis Police Department and to commit to the following:
+            ${NEW_LINE}1. Never again vote to increase the police department's budget. 
+            ${NEW_LINE}2. Propose and vote for a $45 million cut from MPD's budget as the City responds to projected COVID-19 shortfalls.
+            ${NEW_LINE}3. Protect and expand current investment in community-led health and safety strategies, instead of investing in police.
+            ${NEW_LINE}4. Do everything in your power to compel all law enforcement agencies to immediately cease enacting violence on community members.
+            ${NEW_LINE}${NEW_LINE}We are counting on the you to stand up for Black communities and marginalized communities and defund the MPD. Thank you.
             ${NEW_LINE}${NEW_LINE}Sincerely,
             ${NEW_LINE}${name}
             `,
