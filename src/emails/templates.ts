@@ -44,6 +44,7 @@ export const allEmails: IEmail[] = [
         secondInputPlaceholder: 'CITY...',
         sendTo: [
             'mayorcharvey@gmail.com',
+            'kbottoms@atlantaga.gov',
         ],
         body: (name, secondInput) => `To whom it may concern,
             ${NEW_LINE}${NEW_LINE}I am writing to you from ${secondInput} to demand justice for the murder of Ahmaud Arbery. On February 23, 2020, 25 year-old Ahmaud Arbery was chased and gunned down by Travis McMichael, son of retired Brunswick investigator Greg McMichael, under the father’s and son’s pretenses of witnessing a burglary in Satilla Shores of Glynn County.
@@ -69,7 +70,14 @@ export const allEmails: IEmail[] = [
             ${NEW_LINE}${NEW_LINE}I am writing to you from ${secondInput} to demand justice for the murder of Breonna Taylor. 
             ${NEW_LINE}${NEW_LINE}I demand that Jonathan Mattingly, Brett Hankison and Myles Cosgrove each be arrested and charged for the wrongful death of Breonna Taylor.
             ${NEW_LINE}${NEW_LINE}June 5th would have been Breonna’s 27th birthday but she is unable to celebrate  because on March 13th your police recklessly executed a raid using a “no knock” warrant on the wrong home.
-            ${NEW_LINE}${NEW_LINE}Despite your almost 3 months of inaction, Breonna’s life matters and I want justice for her.  
+            ${NEW_LINE}${NEW_LINE}Despite your almost 3 months of inaction, Breonna’s life matters and I want justice for her. I demand the following:
+            ${NEW_LINE}1. Address the use of force by Louisville Metro Police Department. Police shootings are gun violence.
+            ${NEW_LINE}2. Immediately fire and revoke the pensions of the officers that murdered Breonna. Arrest, charge, and convict them for this crime. Ensure that the newly requested special prosecutor, State AG Daniel Cameron, seek full transparency and accountability.
+            ${NEW_LINE}3. All necessary information be provided to a local, independent civillian community police accountability council #CPAC.
+            ${NEW_LINE}4. The creation of policy to ensure transparent investigation processes.
+            ${NEW_LINE}5. Immediately drop all charges for Kenneth Walker, Breonna's boyfriend, who attempted to defend them and their home.
+            ${NEW_LINE}6. The release of the 911 call to the public for accountability.
+            ${NEW_LINE}7. Eliminate no-knock warrants.
             ${NEW_LINE}${NEW_LINE}Black Lives Matter.
             ${NEW_LINE}Sincerely,
             ${NEW_LINE}${name}
