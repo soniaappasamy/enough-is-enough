@@ -38,6 +38,44 @@ export const allEmails: IEmail[] = [
             `,
     },
     {
+        title: 'JUSTICE FOR AHMAUD ARBERY',
+        group: 'Demand Justice',
+        subject: 'JUSTICE FOR AHMAUD ARBERY',
+        secondInputPlaceholder: 'CITY...',
+        sendTo: [
+            'mayorcharvey@gmail.com',
+        ],
+        body: (name, secondInput) => `To whom it may concern,
+            ${NEW_LINE}${NEW_LINE}I am writing to you from ${secondInput} to demand justice for the murder of Ahmaud Arbery. On February 23, 2020, 25 year-old Ahmaud Arbery was chased and gunned down by Travis McMichael, son of retired Brunswick investigator Greg McMichael, under the father’s and son’s pretenses of witnessing a burglary in Satilla Shores of Glynn County.
+            ${NEW_LINE}${NEW_LINE}McMichael’s account of the deadly encounter with Arbery was not released until nearly 6 weeks following the shooting. 
+            ${NEW_LINE}${NEW_LINE}In addition; McMichael’s questionable account of events and the police department’s poor communication efforts following Arbery’s death leads us to believe that Arbery was a victim of racial profiling. 
+            ${NEW_LINE}${NEW_LINE}No one has the right to pursue, attack and kill an unarmed, non-threatening individual. Ahmaud’s voice will be heard. I demand that you investigate his murder.
+            ${NEW_LINE}${NEW_LINE}Black Lives Matter.
+            ${NEW_LINE}Sincerely,
+            ${NEW_LINE}${name}
+            `,
+    },
+    {
+        title: 'JUSTICE FOR BREONNA TAYLOR',
+        group: 'Demand Justice',
+        subject: 'JUSTICE FOR BREONNA TAYLOR',
+        secondInputPlaceholder: 'CITY...',
+        sendTo: [
+            'attorney.general@ag.ky.gov',
+            'greg.fischer@louisvilleky.gov',
+            'robert.schroeder@louisvilleky.gov',
+        ],
+        body: (name, secondInput) => `To whom it may concern,
+            ${NEW_LINE}${NEW_LINE}I am writing to you from ${secondInput} to demand justice for the murder of Breonna Taylor. 
+            ${NEW_LINE}${NEW_LINE}I demand that Jonathan Mattingly, Brett Hankison and Myles Cosgrove each be arrested and charged for the wrongful death of Breonna Taylor.
+            ${NEW_LINE}${NEW_LINE}June 5th would have been Breonna’s 27th birthday but she is unable to celebrate  because on March 13th your police recklessly executed a raid using a “no knock” warrant on the wrong home.
+            ${NEW_LINE}${NEW_LINE}Despite your almost 3 months of inaction, Breonna’s life matters and I want justice for her.  
+            ${NEW_LINE}${NEW_LINE}Black Lives Matter.
+            ${NEW_LINE}Sincerely,
+            ${NEW_LINE}${name}
+            `,
+    },
+    {
         title: 'JUSTICE FOR REGIS KORCHINSKI-PAQUET',
         group: 'Demand Justice',
         subject: 'JUSTICE FOR REGIS KORCHINSKI-PAQUET',
