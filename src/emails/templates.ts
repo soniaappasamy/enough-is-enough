@@ -186,7 +186,7 @@ export const allEmails: IEmail[] = [
             ${NEW_LINE}${name}
             `,
     },
-     {
+    {
         title: 'Chicago - City Council',
         group: 'Defund The Police',
         subject: 'DEFUND CPD',

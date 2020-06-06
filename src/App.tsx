@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import {
-    Classes, H1, H4, Drawer, Button, H3,
+    Classes, Drawer, Button, H3,
 } from '@blueprintjs/core';
 import ReactGA from 'react-ga';
 import EmailSenderForm from './components/EmailSenderForm';
 import { allEmails } from './emails/templates';
 import {
-    GOOGLE_ANALYTICS_TRACKING_ID, BASE_URL, CONTACT_EMAIL, BASE_DEV_URL,
+    GOOGLE_ANALYTICS_TRACKING_ID, BASE_URL, CONTACT_EMAIL, BASE_DEV_URL, HEADER_LOGO,
 } from './consts';
 import { getUrlFilter } from './utils/getUrlFilter';
 import './App.scss';
@@ -26,8 +26,7 @@ const App: React.FC = () => {
 
     return <div className={`app ${Classes.DARK}`}>
         <div className="header">
-            <H1>ENOUGH IS ENOUGH</H1>
-            <H4 className={Classes.TEXT_MUTED}>autofill emails to demand justice</H4>
+            <img src={HEADER_LOGO} alt="" width={300} />
         </div>
         <EmailSenderForm emails={filteredEmails} />
         <div>
