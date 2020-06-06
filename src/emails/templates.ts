@@ -38,6 +38,32 @@ export const allEmails: IEmail[] = [
             `,
     },
     {
+        title: 'CORNELL PROFESSOR DAVID COLLUM',
+        group: 'Demand Justice',
+        subject: 'Concern Regarding Professor David Collum',
+        secondInputPlaceholder: 'Class Year / University...',
+        sendTo: [
+            'president@cornell.edu',
+            'ryan.lombardi@cornell.edu',
+        ],
+        body: (name, secondInput) => `To President Martha Pollack and Vice President Ryan Lombardi,
+            ${NEW_LINE}${NEW_LINE}As you’re aware, there has been a large and appropriate response to the murder of Black Americans by police officers taking place over the last several days. As we mourn and seek justice for the murders of Mr. George Floyd, Ahmaud Arbery, Breonna Taylor, and countless others, our society is being traumatized by the systemic, institutional racism that pervades the structures that govern and rule our citizenry.
+            ${NEW_LINE}${NEW_LINE}Yesterday, many people were deeply disturbed to see a video from protests in Buffalo, New York, in which an older man approached police and was violently shoved, then falling backward and hitting his head, leaving him bleeding and unconscious. The video was hard to watch, it was an indefensible use of force that’s characteristic to the overarching issue of police brutality, which a most salient weapon of hatred and racism, which this institution continuously vows its commitment against.
+            ${NEW_LINE}${NEW_LINE}Dave Collum, one of your faculty members and one of our professors, publicly commented on the events in that video in a most despicable manner. Saying, in two separate tweets:
+            ${NEW_LINE}“That guy needed to give that cop space. Wasn’t brutality: the guy was feeble. The cracked skull (which I agree was the likely event) was self inflicted [sic].”
+            ${NEW_LINE}“Can you imagine how fried these cops are at this point? The guy got a nudge. The old guy had something in his hand. Looked like maybe a taser. If [sic] were a cop, my nerves would be raw. I am tired of these riots.”
+            ${NEW_LINE}${NEW_LINE}David Collum is a professor of Organic Chemistry, he teaches pre-med students and influences future doctors. That position of power and impact is in no way fit for someone who so clearly expresses complete apathy about brutality and an aversion to the cause of nation-wide protests in general. It is shameful behavior, to say the least, and the university should be ashamed to have any attachment to it.
+            ${NEW_LINE}${NEW_LINE}This is far from the first time David Collum has gone public with such casually contemptible comments, as it is also far from the first time that students of this university have drawn attention to it. As detailed in this Letter to the Editor published in the Cornell Daily Sun, he commonly vocalizes opinions that are misogynistic, transphobic, insensitive of rape and violence against women, and overall dangerous, especially of a university professor.
+            ${NEW_LINE}${NEW_LINE}I, as a concerned student from ${secondInput}, am disappointed. I am appalled by David Collum and I am disappointed to attend and institution that is tolerant of such bigotry and apathy. I am disappointed because many of you have failed to take on the role of a faculty member in its entirety. As faculty members, our students expect you to be leaders, mentors, and role models. Yet, you have limited yourself to only an academic influence. Black students need and deserve more from the institution that benefits so greatly from having their dynamic community at Cornell University.
+            ${NEW_LINE}${NEW_LINE}As faculty that represent programs with a commitment to social justice, you have a responsibility to Black students to openly and loudly affirm that they are safe in academic settings from racism and discrimination. That you vehemently oppose and condemn the actions of the police officers in Minneapolis who murdered George Floyd in cold blood, along with the hundreds who went before him. As well as the recent atrocious actions of the Philadelphia Police Department on June 1, 2020, against protesters.
+            ${NEW_LINE}${NEW_LINE}Black lives have been traumatized repeatedly and yet are expected to show up in meetings, research, and academic spaces as though things are 'business as usual' while the Black community is quite literally fighting for its life. Although you are familiar with the Black community here in primarily academic settings, many of our Black students are protesting in the streets, constantly providing resources and support to others, and grieving. Black students in our department are risking their lives, safety, and careers daily to bravely stand against White supremacy in the midst of a global pandemic.
+            ${NEW_LINE}${NEW_LINE}How are you supporting your Black students? What resources have you offered to them? Have you contacted every single one of them, asking what they need from faculty, how you can support them? How are you working with your non-Black colleagues and students to remind them that inherent bias runs deep and that you are each responsible for unlearning racism? How are you addressing systemic racism? Cornell University constantly pledges support to its marginalized communities, but claiming solidarity is meaningless while employing a professor who openly condones sexual assault and police brutality. Black students are constantly let down by this institution. Ignoring it is not an option and you have done a deep disservice to yourselves by turning a blind eye and pretending that these events aren’t impacting all of us, particularly Black students and their families. I urge you to address it. Your students will not stand for this disregard of faculty misconduct, and in turn, disregard for our lives.
+            ${NEW_LINE}${NEW_LINE}Black Lives Matter.
+            ${NEW_LINE}Sincerely,
+            ${NEW_LINE}${name}
+            `,
+    },
+    {
         title: 'JUSTICE FOR AHMAUD ARBERY',
         group: 'Demand Justice',
         subject: 'JUSTICE FOR AHMAUD ARBERY',
