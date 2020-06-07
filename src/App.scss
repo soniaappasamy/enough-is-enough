@@ -24,11 +24,12 @@
       margin: 50px 5px 0 5px;
   }
 
-  .help-drawer {
+  .drawer {
       display: flex;
       align-items: center;
       justify-content: center;
       text-align: center;
       padding: 40px;
+      background-color: black !important;
   }
 }

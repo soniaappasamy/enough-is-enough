@@ -28,6 +28,7 @@
     "react-ga": "^2.7.0",
     "react-https-redirect": "^1.1.0",
     "react-scripts": "3.4.1",
+    "react-share": "^4.2.0",
     "typescript": "^3.9.3",
     "typescript-eslint": "^0.0.1-alpha.0"
   },

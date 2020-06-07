@@ -44,6 +44,32 @@ export const allEmails: IEmail[] = [
             `,
     },
     {
+        title: 'CORNELL PROFESSOR DAVID COLLUM',
+        group: 'Demand Justice',
+        subject: 'Concern Regarding Professor David Collum',
+        secondInputPlaceholder: 'Class Year / University...',
+        sendTo: [
+            'president@cornell.edu',
+            'ryan.lombardi@cornell.edu',
+        ],
+        body: (name, secondInput) => `To President Martha Pollack and Vice President Ryan Lombardi,
+            ${NEW_LINE}${NEW_LINE}As you’re aware, there has been a large and appropriate response to the murder of Black Americans by police officers taking place over the last several days. As we mourn and seek justice for the murders of Mr. George Floyd, Ahmaud Arbery, Breonna Taylor, and countless others, our society is being traumatized by the systemic, institutional racism that pervades the structures that govern and rule our citizenry.
+            ${NEW_LINE}${NEW_LINE}Yesterday, many people were deeply disturbed to see a video from protests in Buffalo, New York, in which an older man approached police and was violently shoved, then falling backward and hitting his head, leaving him bleeding and unconscious. The video was hard to watch, it was an indefensible use of force that’s characteristic to the overarching issue of police brutality, which a most salient weapon of hatred and racism, which this institution continuously vows its commitment against.
+            ${NEW_LINE}${NEW_LINE}Dave Collum, one of your faculty members and one of our professors, publicly commented on the events in that video in a most despicable manner. Saying, in two separate tweets:
+            ${NEW_LINE}“That guy needed to give that cop space. Wasn’t brutality: the guy was feeble. The cracked skull (which I agree was the likely event) was self inflicted [sic].”
+            ${NEW_LINE}“Can you imagine how fried these cops are at this point? The guy got a nudge. The old guy had something in his hand. Looked like maybe a taser. If [sic] were a cop, my nerves would be raw. I am tired of these riots.”
+            ${NEW_LINE}${NEW_LINE}David Collum is a professor of Organic Chemistry, he teaches pre-med students and influences future doctors. That position of power and impact is in no way fit for someone who so clearly expresses complete apathy about brutality and an aversion to the cause of nation-wide protests in general. It is shameful behavior, to say the least, and the university should be ashamed to have any attachment to it.
+            ${NEW_LINE}${NEW_LINE}This is far from the first time David Collum has gone public with such casually contemptible comments, as it is also far from the first time that students of this university have drawn attention to it. As detailed in this Letter to the Editor published in the Cornell Daily Sun, he commonly vocalizes opinions that are misogynistic, transphobic, insensitive of rape and violence against women, and overall dangerous, especially of a university professor.
+            ${NEW_LINE}${NEW_LINE}I, as a concerned student from ${secondInput}, am disappointed. I am appalled by David Collum and I am disappointed to attend an institution that is tolerant of such bigotry and apathy. I am disappointed because many of you have failed to take on the role of a faculty member in its entirety. As faculty members, our students expect you to be leaders, mentors, and role models. Yet, you have limited yourself to only an academic influence. Black students need and deserve more from the institution that benefits so greatly from having their dynamic community at Cornell University.
+            ${NEW_LINE}${NEW_LINE}As faculty that represent programs with a commitment to social justice, you have a responsibility to Black students to openly and loudly affirm that they are safe in academic settings from racism and discrimination. That you vehemently oppose and condemn the actions of the police officers in Minneapolis who murdered George Floyd in cold blood, along with the hundreds who went before him. As well as the recent atrocious actions of the Philadelphia Police Department on June 1, 2020, against protesters.
+            ${NEW_LINE}${NEW_LINE}Black lives have been traumatized repeatedly and yet are expected to show up in meetings, research, and academic spaces as though things are 'business as usual' while the Black community is quite literally fighting for its life. Although you are familiar with the Black community here in primarily academic settings, many of our Black students are protesting in the streets, constantly providing resources and support to others, and grieving. Black students in our department are risking their lives, safety, and careers daily to bravely stand against White supremacy in the midst of a global pandemic.
+            ${NEW_LINE}${NEW_LINE}How are you supporting your Black students? What resources have you offered to them? Have you contacted every single one of them, asking what they need from faculty, how you can support them? How are you working with your non-Black colleagues and students to remind them that inherent bias runs deep and that you are each responsible for unlearning racism? How are you addressing systemic racism? Cornell University constantly pledges support to its marginalized communities, but claiming solidarity is meaningless while employing a professor who openly condones sexual assault and police brutality. Black students are constantly let down by this institution. Ignoring it is not an option and you have done a deep disservice to yourselves by turning a blind eye and pretending that these events aren’t impacting all of us, particularly Black students and their families. I urge you to address it. Your students will not stand for this disregard of faculty misconduct, and in turn, disregard for our lives.
+            ${NEW_LINE}${NEW_LINE}Black Lives Matter.
+            ${NEW_LINE}Sincerely,
+            ${NEW_LINE}${name}
+            `,
+    },
+    {
         title: 'JUSTICE FOR AHMAUD ARBERY',
         group: 'Demand Justice',
         subject: 'JUSTICE FOR AHMAUD ARBERY',
@@ -131,7 +157,91 @@ export const allEmails: IEmail[] = [
             `,
     },
     {
-        title: 'Baltimore - City Council',
+        title: 'Arlington',
+        group: 'Defund The Police',
+        subject: 'Arlington Resident for Defunding of Arlington PD',
+        secondInputPlaceholder: 'ARLINGTON AREA (CITY)...',
+        sendTo: [
+            'lgarvey@arlingtonva.us',
+            'mdeferranti@arlingtonva.us',
+            'kcristol@arlingtonva.us',
+            'cdorsey@arlingtonva.us',
+        ],
+        body: (name, secondInput) => `Dear Arlington City Council Members,
+            ${NEW_LINE}${NEW_LINE}My name is ${name}, and I am a resident of ${secondInput}.  This past week, our nation has been gripped by protests calling for rapid and meaningful reevaluation of the role of policing in our communities and an end to racism and anti-Blackness. Our county recently withdrew police presence from DC, and is re-evaluating our mutual aid obligations to the city, but that is not enough.
+            ${NEW_LINE}${NEW_LINE}Arlington's public would be better served by dedicating resources to addressing homelessness, strengthening mental health resources, increasing affordable housing, and other community services. I call on you to meaningfully restrict the Arlington PD budget and instead use those extraordinary resources for programs that are much more effective at promoting safety and social equity than policing and incarceration.
+            ${NEW_LINE}${NEW_LINE}We can be a beacon for other counties to follow if only we have the courage to change. Can I count on you to consider an alternative budget that puts a focus on social service programs?
+            ${NEW_LINE}${NEW_LINE}Sincerely,
+            ${NEW_LINE}${name}
+            `,
+    },
+    {
+        title: 'Akron',
+        group: 'Defund The Police',
+        subject: 'Defund the Akron Police Department',
+        secondInputPlaceholder: 'Akron Ward...',
+        sendTo: [
+            'Mayor@akronohio.gov',
+            'AtLarge1@akronohio.gov',
+            'AtLarge2@akronohio.gov',
+            'AtLarge3@akronohio.gov',
+            'Ward1@akronohio.gov',
+            'Ward2@akronohio.gov',
+            'Ward3@akronohio.gov',
+            'Ward4@akronohio.gov',
+            'Ward5@akronohio.gov',
+            'Ward6@akronohio.gov',
+            'Ward7@akronohio.gov',
+            'Ward8@akronohio.gov',
+            'Ward9@akronohio.gov',
+            'Ward10@akronohio.gov',
+        ],
+        body: (name, secondInput) => `Dear Akron City Council Members,
+        ${NEW_LINE}${NEW_LINE}My name is ${name}, and I am a resident of ${secondInput}.
+        ${NEW_LINE}${NEW_LINE}The City of Akron must do better by its residents. I am urging you to divest from the criminalization of our communities and reduce police spending in the budget for the 2021 fiscal year. In May, Mayor Horrigan warned of deep spending cuts due to the pandemic. It is time to cut funding for the Akron Police Department.
+        ${NEW_LINE}${NEW_LINE}In the 2020 budget, police receive $59,147,850 out of a total $173,128,930. This is 34% – over a third – of the overall budget.
+        ${NEW_LINE}${NEW_LINE}I know many of you feel strongly about racial justice and equity. On June 4, Mayor Horrigan said the City is working on a “culture of outreach, compliance, transparency, and inclusion.” It is time to take action.
+        ${NEW_LINE}${NEW_LINE}Individual solutions will not fix systemic problems. It is time for Akron, its leaders, and residents to create a more equitable city for all of us. Have the moral clarity to create a budget focused on communities instead of investing in a racist and destructive institution. Defund the Akron Police Department.
+        ${NEW_LINE}${NEW_LINE}Sincerely,
+        ${NEW_LINE}${name}
+            `,
+    },
+    {
+        title: 'Austin',
+        group: 'Defund The Police',
+        subject: 'We Demand Divestment from Police and an Investment in Black Communities',
+        secondInputPlaceholder: 'Austin Area (CITY)...',
+        sendTo: [
+            'steve.adler@austintexas.gov',
+            'Natasha.Madison@austintexas.gov',
+            'Delia.Garza@austintexas.gov',
+            'Sabino.Renteria@austintexas.gov',
+            'Greg.Casar@austintexas.gov',
+            'Ann.Kitchen@austintexas.gov',
+            'jimmy.flannigan@austintexas.gov',
+            'Leslie.Pool@austintexas.gov',
+            'Paige.Ellis@austintexas.gov',
+            'Kathie.Tovo@austintexas.gov',
+            'Alison.Alter@austintexas.gov',
+        ],
+        body: (name, secondInput) => `Dear Austin City Council Members,
+        ${NEW_LINE}${NEW_LINE}My name is ${name}, and I am a resident of ${secondInput}. WE ARE JOINING TOGETHER TO DEMAND THAT YOU, MY LOCAL OFFICIALS, WILL: 
+        ${NEW_LINE}1. Vote no on all increases to police budgets 
+        ${NEW_LINE}2. Vote yes to decrease police spending and budgets 
+        ${NEW_LINE}3. Vote yes to increase spending on Health care, education and community programs that keep us safe.
+        ${NEW_LINE}${NEW_LINE}Black communities across the nation are mourning the deaths of George Floyd, tortured to death by Minneapolis police, Ahmaud Arbery, a jogger who was killed while running in a residential neighborhood in Brunswick, Georgia, Breonna Taylor an EMT killed while asleep in her bed in Louisville,KY, Dreasjon Reed in Indianapolis and Tony McDade in Tallahassee. Their names are added to a devastatingly long list of Black people who have been killed at the hands of vigilantes or law enforcement. Not to mention the others whose names we don’t yet know, and may never know since they were killed without a camera recording it.
+        ${NEW_LINE}${NEW_LINE}At the same time, the United States leads the world in COVID-19 cases. So far, more than 100,000 people — enough to fill a football stadium– have perished from the virus,with over one million cases confirmed, and those numbers don’t reflect all the people dying from virus-related illnesses. Black people are suffering disproportionately from COVID-19, four times more likely to die than their white neighbors. 
+        ${NEW_LINE}${NEW_LINE} It is important to state this within the context of the scourge of anti-Black police terror and the resulting uprisings taking place across the U.S. 
+        ${NEW_LINE}${NEW_LINE}The COVID-19 deaths and the deaths caused by police terror are connected and consequential to each other. The United States does not have a national healthcare system. Instead, we have the largest military budget in the world, and some of the most well-funded and militarized police departments in the world, too. Policing and militarization overwhelmingly dominate the bulk of national and local budgets. In fact, police and military funding has increased every single year since 1973, and  at the same time, funding for public health decreased every year, crystallized  most recently when the Trump administration eliminated the US Pandemic Response Team in 2018, citing “costs”. 
+        ${NEW_LINE}${NEW_LINE}Black communities are living in persistent fear of being killed by state authorities like police, immigration agents or even white vigilantes who are emboldened by state actors. According to the Urban Institute, in 1977, state and local governments spent $60 billion on police and corrections . In 2017, they spent $194 billion. A 220 percent increase. Despite continued profiling, harassment, terror and killing of Black communities, local and federal decision-makers continue to invest in the police, which leaves Black people vulnerable and our communities no safer.
+        ${NEW_LINE}${NEW_LINE}Where could that money go? It could go towards building healthy communities, to the health of our elders and children,to neighborhood infrastructure, to education, to childcare, to support a vibrant Black future. The possibilities are endless. 
+        ${NEW_LINE}${NEW_LINE}We join in solidarity with the freedom fighters in Minneapolis, Louisville, and across the United States. And we call for the end to police terror. 
+        ${NEW_LINE}${NEW_LINE}Sincerely,
+        ${NEW_LINE}${name}
+            `,
+    },
+    {
+        title: 'Baltimore',
         group: 'Defund The Police',
         subject: 'VOTE AGAINST BPD BUDGET',
         secondInputPlaceholder: 'Baltimore AREA (CITY)...',
@@ -154,7 +264,7 @@ export const allEmails: IEmail[] = [
             'Leon.Pinkett@baltimorecity.gov',
         ],
         body: (name, secondInput) => `Dear Baltimore City Council Members and Mayor,
-            ${NEW_LINE}${NEW_LINE}My name is ${name}, and I am a resident of ${secondInput}.I call on the Baltimore City Council to vote against the proposed FY 2020-21 Baltimore Police Department budget and instead work to implement significant and permanent reductions to this department. These funds should be routed toward the development of harm reduction systems that do not terrorize our neighbors and communities. The proposed BPD FY21 Budget is $549,959,519. This is an increase of $13,583,042 compared to FY20. The Budget also calls for cuts to several departments that better serve the public, including:
+            ${NEW_LINE}${NEW_LINE}My name is ${name}, and I am a resident of ${secondInput}. I call on the Baltimore City Council to vote against the proposed FY 2020-21 Baltimore Police Department budget and instead work to implement significant and permanent reductions to this department. These funds should be routed toward the development of harm reduction systems that do not terrorize our neighbors and communities. The proposed BPD FY21 Budget is $549,959,519. This is an increase of $13,583,042 compared to FY20. The Budget also calls for cuts to several departments that better serve the public, including:
             ${NEW_LINE}Affordable Housing (-$3,535,819)
             ${NEW_LINE}Housing and Community Development (-$227,023)
             ${NEW_LINE}Homeless Prevention and Support Services for the Homeless (-$641,270)
@@ -173,7 +283,7 @@ export const allEmails: IEmail[] = [
             `,
     },
     {
-        title: 'Boston - City Council',
+        title: 'Boston',
         group: 'Defund The Police',
         subject: 'DEFUND BPD',
         secondInputPlaceholder: 'BOSTON AREA (CITY)...',
@@ -201,10 +311,33 @@ export const allEmails: IEmail[] = [
             `,
     },
     {
-        title: 'Chicago - City Council',
+        title: 'Charlottesville',
+        group: 'Defund The Police',
+        subject: 'Charlottesville City Resident for Defunding CPD',
+        secondInputPlaceholder: 'Charlottesville Area (CITY)...',
+        sendTo: [
+            'council@charlottesville.org',
+            'nwalker@charlottesville.org',
+            'smagill@charlottesville.gov',
+            'hhill@charlottesville.gov',
+            'mpayne@charlottesville.gov',
+            'lsnook@charlottesville.gov',
+            'budget@charlottesville.gov',
+        ],
+        body: (name, secondInput) => `Dear Members of the City Council and Budget Department,
+            ${NEW_LINE}${NEW_LINE}My name is ${name}, and I am a resident of ${secondInput}.  This past week, our nation has been gripped by protests calling for rapid and meaningful change with regard to police brutality, an end to racism and anti-Blackness, and immediate improvements in how Black people are treated in America.
+            ${NEW_LINE}${NEW_LINE}Accordingly, it has come to my attention that the budget for FY 2021 was recently revised, and that city officials will soon begin the FY 2022 budget process. The Charlottesville Police Department has been a waste of our resources. For FY 2021, $18M has been allocated to CPD. While we’ve been spending extraordinary amounts on policing, we have not seen sufficient improvements to safety, homelessness, mental health, or affordability in our city. Instead, we see wasteful and harmful actions of our police.
+            ${NEW_LINE}${NEW_LINE}While the new Community Review Board might be a step in the direction, this effort doesn’t go nearly far enough in protecting Black community members from CPD. I call on you to slash the CPD budget and instead use those extraordinary resources to fund what Black and other marginalized communities need to be safe and healthy: COVID-19 relief, affordable housing, education, healthcare (including mental healthcare), jobs with livable wages, community centers, treatment, and community-led organizations.
+            ${NEW_LINE}${NEW_LINE}The nation looked to Charlottesville in 2017, as our activists stood up to white supremacists. Our community can again be a beacon for other cities to follow if only we have the courage to change.
+            ${NEW_LINE}${NEW_LINE}Sincerely,
+            ${NEW_LINE}${name}
+            `,
+    },
+    {
+        title: 'Chicago',
         group: 'Defund The Police',
         subject: 'DEFUND CPD',
-        secondInputPlaceholder: '(CITY)...',
+        secondInputPlaceholder: 'Chicago Area...',
         sendTo: [
             'info@the1stward.com',
             'Ward02@cityofchicago.org',
@@ -265,7 +398,90 @@ export const allEmails: IEmail[] = [
             `,
     },
     {
-        title: 'Houston - City Council',
+        title: 'Columbus',
+        group: 'Defund The Police',
+        subject: 'We Demand Divestment from Police and an Investment in Black Communities',
+        secondInputPlaceholder: 'Columbus AREA (CITY)...',
+        sendTo: [
+            'zgdavidson@columbus.gov',
+            'LMCapobianco@columbus.gov',
+            'kaellingsen@columbus.gov',
+            'jwcarmean@columbus.gov',
+            'DFriendFoster@columbus.gov',
+            'GMAmes@columbus.gov',
+            'KBMccain@columbus.gov',
+            'HNMiller@columbus.gov',
+            'tyharden@columbus.gov',
+            'cenewman@columbus.gov',
+            'jdcarter@columbus.gov',
+            'LJFrank@columbus.gov',
+            'NNHarper@columbus.gov',
+            'cgwilliams@columbus.gov',
+            '311@columbus.gov',
+            'evremy@columbus.gov',
+            'ecbrown@columbus.gov',
+            'prtyson@columbus.gov',
+            'sdfavor@columbus.gov',
+            'mjbrown@columbus.gov',
+            'sghardin@columbus.gov',
+            'radorans@columbus.gov',
+            'zmklein@columbus.gov',
+        ],
+        body: (name, secondInput) => `Dear Columbus City Officials,
+            ${NEW_LINE}${NEW_LINE}My name is ${name}, and I am a resident of ${secondInput}. WE ARE JOINING TOGETHER TO DEMAND THAT YOU, MY LOCAL OFFICIALS, WILL: 
+            ${NEW_LINE}1. Vote no on all increases to police budgets 
+            ${NEW_LINE}2. Vote yes to decrease police spending and budgets 
+            ${NEW_LINE}3. Vote yes to increase spending on Health care, education and community programs that keep us safe.
+            ${NEW_LINE}${NEW_LINE}Black communities across the nation are mourning the deaths of George Floyd, tortured to death by Minneapolis police, Ahmaud Arbery, a jogger who was killed while running in a residential neighborhood in Brunswick, Georgia, Breonna Taylor an EMT killed while asleep in her bed in Louisville,KY, Dreasjon Reed in Indianapolis and Tony McDade in Tallahassee. Their names are added to a devastatingly long list of Black people who have been killed at the hands of vigilantes or law enforcement. Not to mention the others whose names we don’t yet know, and may never know since they were killed without a camera recording it. We’re counting on you to stand up for Black communities and marginalized communities. I call on the City Council to cancel the BPD budget increase of $13.5 million and allocate it to the above departments.
+            ${NEW_LINE}${NEW_LINE}At the same time, the United States leads the world in COVID-19 cases. So far, more than 100,000 people — enough to fill a football stadium– have perished from the virus,with over one million cases confirmed, and those numbers don’t reflect all the people dying from virus-related illnesses. Black people are suffering disproportionately from COVID-19, four times more likely to die than their white neighbors. 
+            ${NEW_LINE}${NEW_LINE}It is important to state this within the context of the scourge of anti-Black police terror and the resulting uprisings taking place across the U.S. 
+            ${NEW_LINE}${NEW_LINE}The COVID-19 deaths and the deaths caused by police terror are connected and consequential to each other. The United States does not have a national healthcare system. Instead, we have the largest military budget in the world, and some of the most well-funded and militarized police departments in the world, too. Policing and militarization overwhelmingly dominate the bulk of national and local budgets. In fact, police and military funding has increased every single year since 1973, and  at the same time, funding for public health decreased every year, crystallized  most recently when the Trump administration eliminated the US Pandemic Response Team in 2018, citing “costs”. 
+            ${NEW_LINE}${NEW_LINE}Black communities are living in persistent fear of being killed by state authorities like police, immigration agents or even white vigilantes who are emboldened by state actors. According to the Urban Institute, in 1977, state and local governments spent $60 billion on police and corrections . In 2017, they spent $194 billion. A 220 percent increase. Despite continued profiling, harassment, terror and killing of Black communities, local and federal decision-makers continue to invest in the police, which leaves Black people vulnerable and our communities no safer. Where could that money go? It could go towards building healthy communities, to the health of our elders and children,to neighborhood infrastructure, to education, to childcare, to support a vibrant Black future. The possibilities are endless. 
+            ${NEW_LINE}${NEW_LINE}We join in solidarity with the freedom fighters in Minneapolis, Louisville, and across the United States. And we call for the end to police terror. 
+            ${NEW_LINE}${NEW_LINE}Sincerely,
+            ${NEW_LINE}${name}
+            `,
+    },
+    {
+        title: 'Dallas',
+        group: 'Defund The Police',
+        subject: 'We Demand Divestment from Police and an Investment in Black Communities',
+        secondInputPlaceholder: 'Dallas Area (CITY)...',
+        sendTo: [
+            'eric.johnson@dallascityhall.com',
+            'Chad.West@dallascityhall.com',
+            'adam.medrano@dallascityhall.com',
+            'casey.thomas@dallascityhall.com',
+            'carolyn.kingarnold@dallascityhall.com',
+            'jaime.resendez@dallascityhall.com',
+            'omar.Narvaez@dallascityhall.com',
+            'Adam.Bazaldua@dallascityhall.com',
+            'Tennell.Atkins@dallascityhall.com',
+            'Paula.Blackmon@dallascityhall.com',
+            'adam.mcgough@dallascityhall.com',
+            'lee.kleinman@dallascityhall.com',
+            'cara.mendelsohn@dallascityhall.com',
+            'david.blewett@dallascityhall.com',
+            'jennifer.gates@dallascityhall.com',
+
+        ],
+        body: (name, secondInput) => `Dear Dallas City Council Members,
+            ${NEW_LINE}${NEW_LINE}My name is ${name}, and I am a resident of ${secondInput}. I am emailing today to demand a complete overhaul on our Dallas Police Department in light of the Black Lives Matter protests being demonstrated across the US, but specifically our city.
+            ${NEW_LINE}${NEW_LINE}WE ARE JOINING TOGETHER TO DEMAND THAT YOU, MY LOCAL OFFICIALS, WILL: 
+            ${NEW_LINE}1. Vote no on all increases to police budgets 
+            ${NEW_LINE}2. Vote yes to decrease police spending and budgets 
+            ${NEW_LINE}3. Vote yes to increase spending on Health care, education and community programs that keep us safe.
+            ${NEW_LINE}${NEW_LINE}The militarized tactics that our Police Department have used against its citizens in response to peaceful protesting is unacceptable and unwarranted. To ensure your dedication to our city and citizens, I demand that you defund the Dallas Police Department and start providing more support and funding towards our community efforts and organizations that serve our predominantly Latinx and Black communities, as these are the communities that are being targeted the most. By doing so, I believe this will prevent further police brutality and violence in the future.
+            ${NEW_LINE}${NEW_LINE}The Dallas Police Department said that “(they) are dedicated to serving the people of Dallas and strives to reduce crime and provide a safe city.” If this true, we demand you listen to our concerns and implement change immediately.
+            ${NEW_LINE}${NEW_LINE}Black communities are living in persistent fear of being killed by state authorities like police, immigration agents or even white vigilantes who are emboldened by state actors. According to the Urban Institute, in 1977, state and local governments spent $60 billion on police and corrections . In 2017, they spent $194 billion. A 220 percent increase. Despite continued profiling, harassment, terror and killing of Black communities, local and federal decision-makers continue to invest in the police, which leaves Black people vulnerable and our communities no safer.
+            ${NEW_LINE}${NEW_LINE}Where could that money go? It could go towards building healthy communities, to the health of our elders and children,to neighborhood infrastructure, to education, to childcare, to support a vibrant Black future. The possibilities are endless. 
+            ${NEW_LINE}${NEW_LINE} We join in solidarity with the freedom fighters in Minneapolis, Louisville, and across the United States. And we call for the end to police terror.
+            ${NEW_LINE}${NEW_LINE}Sincerely,
+            ${NEW_LINE}${name}
+            `,
+    },
+    {
+        title: 'Houston',
         group: 'Defund The Police',
         subject: 'DEFUND Houston PD',
         secondInputPlaceholder: 'Houston Area (CITY)...',
@@ -296,7 +512,7 @@ export const allEmails: IEmail[] = [
             `,
     },
     {
-        title: 'Los Angeles - City Council',
+        title: 'Los Angeles',
         group: 'Defund The Police',
         subject: 'DEFUND LAPD',
         secondInputPlaceholder: 'Los Angeles Area (CITY)...',
@@ -330,10 +546,80 @@ export const allEmails: IEmail[] = [
             `,
     },
     {
-        title: 'Minneapolis - City Council',
+        title: 'Madison',
+        group: 'Defund The Police',
+        subject: 'Reallocation of Funds from MPD to Social Service Programs',
+        secondInputPlaceholder: 'Madison Area...',
+        sendTo: [
+            'district1@cityofmadison.com',
+            'district2@cityofmadison.com',
+            'district3@cityofmadison.com',
+            'district4@cityofmadison.com',
+            'district5@cityofmadison.com',
+            'district6@cityofmadison.com',
+            'district7@cityofmadison.com',
+            'district8@cityofmadison.com',
+            'district9@cityofmadison.com',
+            'district10@cityofmadison.com',
+            'district11@cityofmadison.com',
+            'district12@cityofmadison.com',
+            'district13@cityofmadison.com',
+            'district14@cityofmadison.com',
+            'district15@cityofmadison.com',
+            'district16@cityofmadison.com',
+            'district17@cityofmadison.com',
+            'district18@cityofmadison.com',
+            'district19@cityofmadison.com',
+            'district20@cityofmadison.com',
+        ],
+        body: (name, secondInput) => `Dear Madison Council Members and Alderpersons,
+            ${NEW_LINE}${NEW_LINE}My name is ${name}, and I am a resident of ${secondInput}. I am extremely concerned with the City of Madison's inordinate investment in the Madison Police Department (MPD) at the expense of critical youth, education, and health services.
+            ${NEW_LINE}${NEW_LINE}I am asking that the Madison Common Council make a more overt and visible commitment to racial justice. I demand that the budget vote be delayed so that Council may find ways to redirect money away from Madison Police Department’s overinflated budget. I urge you to pressure the City Manager’s Office towards an ethical and equal reallocation of the city’s expenditures, away from MPD, and towards sectors that facilitate the dismantling of racial and class inequality.
+            ${NEW_LINE}${NEW_LINE}Research shows that a living wage, access to holistic health services and treatment, educational opportunity, and stable housing are far more successful at reducing crime than police or prisons. As such, I demand more aggressive financial support be directed to those areas.
+            ${NEW_LINE}${NEW_LINE}I also urge the Madison Common Council to enact legislation that holds police accountable and to overturn policies that allow police to engage in unlawful behavior with impunity. Justice will only be served when the police are reformed, and this will not be possible until we defund them.
+            ${NEW_LINE}${NEW_LINE}People are marching in the streets because they know that these actions will result in a healthier, more just society. I implore you to please listen to the needs of your constituents and take immediate action to address their concerns.
+            ${NEW_LINE}${NEW_LINE}Can I count on you to consider an alternative budget that puts a focus on social service programs?
+            ${NEW_LINE}${NEW_LINE}Sincerely,
+            ${NEW_LINE}${name}
+            `,
+    },
+    {
+        title: 'Milwaukee',
+        group: 'Defund The Police',
+        subject: 'Defund MPD, Reallocate for Social Equity',
+        secondInputPlaceholder: 'Milwaukee Area...',
+        sendTo: [
+            'Cavalier.Johnson2@milwaukee.gov',
+            'ahamil@milwaukee.gov',
+            'nkovac@milwaukee.gov',
+            'rjbauma@milwaukee.gov',
+            'ald05@milwaukee.gov',
+            'mcoggs@milwaukee.gov',
+            'Khalif.Rainey@milwaukee.gov',
+            'Chantia.Lewis@milwaukee.gov',
+            'mmurph@milwaukee.gov',
+            'mark.borkowski@milwaukee.gov',
+            'JoseG.Perez@milwaukee.gov',
+            'scott.spiker@milwaukee.gov',
+            'Marina@milwaukee.gov',
+            'russell.stamper@milwaukee.gov',
+        ],
+        body: (name, secondInput) => `Dear Milwaukee Council Members,
+            ${NEW_LINE}${NEW_LINE}My name is ${name}, and I am a resident of ${secondInput}. I am extremely concerned with the City of Milwaukee’s inordinate investment in the Milwaukee Police Department (MPD) at the expense of critical youth, education, and health services.
+            ${NEW_LINE}${NEW_LINE}I am asking that the Milwaukee Common Council make a more overt and visible commitment to racial justice. I demand that the budget vote be delayed so that Council may find ways to redirect money away from Milwaukee Police Department’s overinflated budget. I urge you to pressure the City Manager’s Office towards an ethical and equal reallocation of the city’s expenditures, away from MPD, and towards sectors that facilitate the dismantling of racial and class inequality.
+            ${NEW_LINE}${NEW_LINE}Research shows that a living wage, access to holistic health services and treatment, educational opportunity, and stable housing are far more successful at reducing crime than police or prisons. As such, I demand more aggressive financial support be directed to those areas.
+            ${NEW_LINE}${NEW_LINE}The events of the last weeks have shown time and again that it is also critical that you implement enforceable controls on police tactics, and explicitly ban pervasive violent tactics--dangerous physical restraints, chemical weapons, and rubber bullets are all seriously dangerous and often lethal. 
+            ${NEW_LINE}${NEW_LINE}People are marching in the streets because they know that these actions will result in a healthier, more just society. I implore you to please listen to the needs of your constituents and take immediate action to address their concerns.
+            ${NEW_LINE}${NEW_LINE}Can I count on you to consider an alternative budget that puts a focus on social service programs?
+            ${NEW_LINE}${NEW_LINE}Sincerely,
+            ${NEW_LINE}${name}
+            `,
+    },
+    {
+        title: 'Minneapolis',
         group: 'Defund The Police',
         subject: 'DEFUND MPD',
-        secondInputPlaceholder: '(CITY)...',
+        secondInputPlaceholder: 'Minneapolis Area...',
         sendTo: [
             'kevin.reich@minneapolismn.gov',
             'cam.gordon@minneapolismn.gov',
@@ -361,22 +647,7 @@ export const allEmails: IEmail[] = [
             `,
     },
     {
-        title: 'New York City - Comptroller',
-        group: 'Defund The Police',
-        subject: 'DEFUND NYPD',
-        secondInputPlaceholder: 'BOROUGH (CITY)...',
-        sendTo: [
-            'action@comptroller.nyc.gov',
-        ],
-        body: (name, secondInput) => `Dear Comptroller Scott Stringer,
-            ${NEW_LINE}${NEW_LINE}My name is ${name}, and I am a resident of ${secondInput}. Last April, NYC Mayor Bill De Blasio proposed major budget cuts for the Fiscal Year 2021, especially to education and youth programs, while refusing to slash the NYPD budget by any significant margin. I urge you to consider pressuring the office of the mayor towards an ethical and equal reallocation of the NYC expense budget, away from NYPD, and towards social services and education programs, effective at the beginning of FY 21, July 1st.
-            ${NEW_LINE}${NEW_LINE}Black Lives Matter.
-            ${NEW_LINE}${NEW_LINE}Sincerely,
-            ${NEW_LINE}${name}
-            `,
-    },
-    {
-        title: 'New York City - City Council',
+        title: 'New York City',
         group: 'Defund The Police',
         subject: 'DEFUND NYPD',
         secondInputPlaceholder: 'BOROUGH (CITY)...',
@@ -441,7 +712,230 @@ export const allEmails: IEmail[] = [
             `,
     },
     {
-        title: 'Washington DC - City Council',
+        title: 'Oklahoma City',
+        group: 'Defund The Police',
+        subject: 'Defund the Oklahoma City Police Department',
+        secondInputPlaceholder: 'OKC WARD...',
+        sendTo: [
+            'mayor@okc.gov',
+            'citymanager@okc.gov',
+            'ward1@okc.gov',
+            'ward2@okc.gov',
+            'ward3@okc.gov',
+            'ward4@okc.gov',
+            'ward5@okc.gov',
+            'ward6@okc.gov',
+            'ward7@okc.gov',
+            'ward8@okc.gov',
+        ],
+        body: (name, secondInput) => `Dear Oklahoma City Mayor, City Council, and Manager,
+            ${NEW_LINE}${NEW_LINE}My name is ${name}, and I am a resident of ${secondInput}.  The City of Oklahoma City must do better by its residents. I am urging you to divest from the criminalization of our communities and reduce police spending in the budget for the 2021 fiscal year. In May, City Manager Freeman formally proposed deep spending cuts due to the pandemic. I am asking that you make a more overt and visible commitment to racial justice by delaying the budget approval so that the City Council may find ways to divest from OKCPD.
+            ${NEW_LINE}${NEW_LINE}I urge you to pressure the City Manager’s Office towards an ethical reallocation of the city’s expenditures towards sectors that facilitate the dismantling of racial and class inequality. This includes, but is not limited to improving access to health services and treatment, educational opportunity, and stable housing, which have proven far more successful at promoting community safety and social equity than policing. As such, I demand more aggressive financial support be directed to those areas.
+            ${NEW_LINE}${NEW_LINE}In the FY2021 budget proposal, police receive $226,051,993 out of a total $1,658,405,738. The police budget is an 11% increase year over FY2020, despite having fewer positions. I know many of you feel strongly about racial justice and equity. On May 30th, Mayor Holt said the City must “continue to seek equity in all things, including opportunities for engagement, leadership and investment.” It is time to take action.
+            ${NEW_LINE}${NEW_LINE}Individual solutions will not fix systemic problems. It is time for OKC, its leaders, and residents to create a more equitable city for all of us. Have the moral clarity to create a budget focused on communities instead of investing in a racist and destructive institution. Defund the Oklahoma City Police Department.
+            ${NEW_LINE}${NEW_LINE}Sincerely,
+            ${NEW_LINE}${name}
+            `,
+    },
+    {
+        title: 'Philadelphia',
+        group: 'Defund The Police',
+        subject: 'Philadelphia demands a Peoples Budget',
+        secondInputPlaceholder: 'Philly District...',
+        sendTo: [
+            'Cindy.Bass@Phila.gov',
+            'Kendra.Brooks@phila.gov',
+            'Kenyatta.Johnson@Phila.gov',
+            'Helen.Gym@phila.gov',
+            'Jamie.Gauthier@phila.gov',
+            'Maria.Q.Sanchez@phila.gov',
+            'Derek.Green@phila.gov',
+            'Katherine.Gilmore.Richardson@phila.gov',
+            'Allan.Domb@Phila.gov',
+            'Cherelle.Parker@Phila.gov',
+            'Isaiah.Thomas@phila.gov',
+            'Darrell.Clarke@phila.gov',
+            'David.Oh@Phila.gov',
+            'Brian.Oneill@phila.gov',
+            'Mark.squilla@phila.gov',
+            'Brian.Abernathy@phila.gov',
+            'James.Kenney@phila.gov',
+            'Bobby.Henon@phila.gov',
+            'Curtis.Jones@phila.gov',
+        ],
+        body: (name, secondInput) => `Philadelphia Officials,
+            ${NEW_LINE}${NEW_LINE}My name is ${name}, and I am a resident of ${secondInput}.  I am emailing to demand the restructuring of the Philadelphia city budget in a way that prioritizes social services for communities and drastically minimizes spending on police. 
+            ${NEW_LINE}${NEW_LINE}We are in the midst of widespread upheaval over the systemic violence of policing, embodied by the PPD's well documented history of disproportionately enacting violence against Black communities. We will no longer accept empty gestures and suggestions of “reform.” We are demanding that our voices be heard now, and that real change be made to the way this city allocates its resources.
+            ${NEW_LINE}${NEW_LINE}The proposed $14 million budget increase for PPD is unacceptable and comes at the cost of affordable housing, support for essential city workers, and other transformative initiatives. These programs are needed now more than ever to alleviate the harms of the COVID-19 pandemic, especially for Black and Brown communities. I ask that the mayor, city managing director, and city council members prove their love and dedication to the people of this city and reallocate funds to directly benefit those in need.
+            ${NEW_LINE}${NEW_LINE}Sincerely,
+            ${NEW_LINE}${name}
+            `,
+    },
+    {
+        title: 'Pittsburgh',
+        group: 'Defund The Police',
+        subject: 'DEFUND Pittsburgh Bureau of Police',
+        secondInputPlaceholder: 'PITTSBURGH NEIGHBORHOOD',
+        sendTo: [
+            'theresa.kail-smith@pittsburghpa.gov',
+            'brosha.tkacheva@pittsburghpa.gov',
+            'district5@pittsburghpa.gov',
+            'district7@pittsburghpa.gov',
+            'erika.strassburger@pittsburghpa.gov',
+            'emilie.yonan@pittsburghpa.gov',
+            'reverend.burgess@pittsburghpa.gov',
+            'daniel.wood@pittsburghpa.gov',
+            'curt.conrad@pittsburghpa.gov',
+            'blake.plavchak@pittsburghpa.gov',
+            'Kim.Salinetro@pittsburghpa.gov',
+            'sally.stadelman@pittsburghpa.gov',
+        ],
+        body: (name, secondInput) => `Dear Pittsburgh City Council Members,
+            ${NEW_LINE}${NEW_LINE}My name is ${name}, and I am a resident of ${secondInput}.
+            ${NEW_LINE}${NEW_LINE}I am writing to demand the city stops increasing the Pittsburgh Police Budget and redirects funding into supporting community operations.
+            ${NEW_LINE}${NEW_LINE}The Pittsburgh Operating Budget's total designated expenditures allocate 40.0% to Public Safety and only 10.5% to Public Works. This is unacceptable.
+            ${NEW_LINE}${NEW_LINE}The 2020 budget for the Bureau of Police is $114,787,000. This is ~18.9% - nearly one fifth - of the overall City Operations Budget.
+            ${NEW_LINE}${NEW_LINE}There is only $1,758,022 allocated to the Office of Equity. The Ethics Hearing Board budget went down by $6,974 from 2019-2020 while the Police Bureau budget increased by $10,241,674. What is the need for this increase?
+            ${NEW_LINE}${NEW_LINE}The first 2020 goal listed in the Bureau overview is “Continue to increase the ‘boots on the ground’ officers in the field”. Is this what the increase will go toward? What is the reasoning for needing more police on the ground? Due to the overwhelming evidence that the police are targeting Black people in this city (and across the world), it is the correct move to divest from funding boots on the ground operations and invest in upholding policies that support the people.
+            ${NEW_LINE}${NEW_LINE}The Neighborhood and Community Development fund was only allocated $7,502,080 for 2020. That is ~6.8% of the 2020 Capital Budget. This is not enough. I demand you take action to re-allocate money away from the Pittsburgh Police and back into community development that includes affordable housing and reparations for Black citizens. Both the state and the Pittsburgh Police owe the Black community a great debt.
+            ${NEW_LINE}${NEW_LINE}It is clear that Pittsburgh Police funds are not being appropriately used to maintain safety and freedom on the streets of Pittsburgh. This is not only obvious by the City Budget, it is obvious by how Pittsburghers are treated by the police. Black Pittsburghers are disproportionately subject to this violence. Antwon Rose was shot dead in our city by a police officer and we will always remember. Elijah Brewer was shot dead in our city by a police officer and we will always remember.
+            ${NEW_LINE}${NEW_LINE}Sincerely,
+            ${NEW_LINE}${name}
+            `,
+    },
+    {
+        title: 'Salt Lake City',
+        group: 'Defund The Police',
+        subject: 'Defund the SLCPD',
+        secondInputPlaceholder: 'SF AREA (CITY)...',
+        sendTo: [
+            'mayor@slc.gov',
+            'james.rogers@slcgov.com',
+            'andrew.johnston@slcgov.com',
+            'chris.wharton@slcgov.com',
+            'ana.valdemoros@slcgov.com',
+            'darin.mano@slcgov.com',
+            'dan.dugan@slcgov.com',
+            'amy.fowler@slcgov.com',
+        ],
+        body: (name, secondInput) => `To The Members of the SLC City Council,
+            ${NEW_LINE}${NEW_LINE}My name is ${name}, and I am a resident of ${secondInput}.  I am writing to demand that the City Council adopt a People’s Budget that prioritizes community wellbeing and redirects funding away from the police.
+            ${NEW_LINE}${NEW_LINE} We are in the midst of widespread upheaval over the systemic violence of policing, embodied by the SLCPD’s well documented history of murdering Black people. We will no longer accept empty gestures and suggestions of “reform.” We are demanding that our voices be heard now, and that real change be made to the way this city allocates its resources.
+            ${NEW_LINE}${NEW_LINE}Support for communities in need is necessary now, more than ever. But instead, the Mayor has proposed an increase in funding to the SLCPD, despite the fact that crime has fallen considerably during the past few months. The SLCPD has seen a rise in overtime pay which, more often than not, is paid out to officers responsible for harassing the unhoused, and Black, Indigenous, people of color.
+            ${NEW_LINE}${NEW_LINE}We demand that the City Council defund the SLCPD. We join the calls of those across the country to #DefundThePolice. We demand a budget that adequately and effectively meets the needs of at-risk Utahans during this trying and uncertain time, when livelihoods are on the line. We demand a budget that supports community wellbeing, rather than empowers the police forces that tear them apart.
+            ${NEW_LINE}${NEW_LINE}Although City Council has avoided voting or revising Mayor Mendenhall’s draconian budget proposal, the document is back in your hands. It is your duty to represent your constituents. I am urging you to completely revise the SLC budget for 2020-2021 fiscal year, and to fund #CareNotCops. You need to adopt a People’s Budget. Public opinion is with me.
+            ${NEW_LINE}${NEW_LINE}Sincerely,
+            ${NEW_LINE}${name}
+            `,
+    },
+    {
+        title: 'San Francisco',
+        group: 'Defund The Police',
+        subject: 'Defund the SFPD',
+        secondInputPlaceholder: 'SF AREA (CITY)...',
+        sendTo: [
+            'MayorLondonBreed@sfgov.org',
+            'Board.of.Supervisors@sfgov.org',
+            'sandra.fewer@sfgov.org',
+            'Catherine.Stefani@sfgov.org',
+            'Aaron.Peskin@sfgov.org',
+            'marstaff@sfgov.org',
+            'waltonstaff@sfgov.org',
+            'Ahsha.Safai@sfgov.org',
+            'Carmen.Chu@sfgov.org',
+            'cityattorney@sfcityatty.org',
+            'districtattorney@sfgov.org',
+            'sfso.complaints@sfgov.org',
+            'jose.cisneros@sfgov.org',
+            'manohar.raju@sfgov.org',
+        ],
+        body: (name, secondInput) => `To Mayor Breed, the San Francisco Board of Supervisors, and San Francisco Elected Officers,
+            ${NEW_LINE}${NEW_LINE}My name is ${name}, and I am a resident of ${secondInput}.  This past week, our nation has been gripped by protests calling for rapid and meaningful change with regard to police behavior, an end to racism and anti-blackness, and immediate reform in how black people are treated in America. Our city has been at the forefront of much of this action. Accordingly, it has come to my attention that the budget for 2021 is being decided as these protests continue.
+            ${NEW_LINE}${NEW_LINE}SFPD has been a waste of our resources. Last year, the SFPD budget was $611,701,869, the majority of which comes from the San Francisco general fund. While we've been spending extraordinary amounts on policing, we have not seen improvements to safety, homelessness, mental health, or affordability in our city. Instead, we see wasteful and harmful actions of our police.
+            ${NEW_LINE}${NEW_LINE}I call on you to slash the SFPD budget and instead use those extraordinary resources towards solving homelessness, which is felt most by our black neighbors and veterans. We implore you to give every member of our community experiencing homelessness a place to call home and the treatment they need.
+            ${NEW_LINE}${NEW_LINE}We can be a beacon for other cities to follow if only we have the courage to change.
+            ${NEW_LINE}${NEW_LINE}We’re counting on you to stand up for Black communities and marginalized communities and defund the SFPD. Thank you.
+            ${NEW_LINE}${NEW_LINE}Sincerely,
+            ${NEW_LINE}${name}
+            `,
+    },
+    {
+        title: 'Seattle',
+        group: 'Defund The Police',
+        subject: 'Commit to Reallocation for Social Equity',
+        secondInputPlaceholder: 'Seattle District...',
+        sendTo: [
+            'jenny.durkan@seattle.gov',
+            'COUNCIL@SEATTLE.GOV',
+            'lisa.herbold@seattle.gov',
+            'tammy.morales@seattle.gov',
+            'kshama.sawant@seattle.gov',
+            'alex.pedersen@seattle.gov',
+            'debora.juarez@seattle.gov',
+            'dan.strauss@seattle.gov',
+            'andrew.lewis@seattle.gov',
+            'teresa.mosqueda@seattle.gov',
+            'lorena.gonzalez@seattle.gov',
+        ],
+        body: (name, secondInput) => `Dear Seattle City Leadership,
+            ${NEW_LINE}${NEW_LINE}My name is ${name}, and I am a resident of ${secondInput}.  I am writing to demand that the City Council adopt a People’s Budget that prioritizes community wellbeing and redirects funding away from the police.
+            ${NEW_LINE}${NEW_LINE}We are in the midst of widespread upheaval over the systemic violence of policing, embodied by the SPD’s well documented history of murdering Black people. I will no longer accept empty gestures and suggestions of “reform.” I am  demanding that my voice be heard now, and that real change be made to the way this city allocates its resources.
+            ${NEW_LINE}${NEW_LINE}Rather than prioritize the quality of life for all of Seattle with a proportional housing and development budget, Mayor Durkan chooses to prioritize the SPD. In the 2019-2020 proposed budget, the funding for the Office of Housing, which provides grants for affordable housing, remained unchanged at only $69.1 million. In comparison, the SPD was allocated a budget of $363 million, representing a 9.7% increase in funds.
+            ${NEW_LINE}${NEW_LINE}This pandemic has had severe economic consequences including high unemployment causing many people to be unable to pay rent. Prior to the pandemic, 60k people were unhoused; the evictions and economic insecurity caused by COVID-19 will bring that number even higher. Support for communities in need is necessary now, more than ever. But instead, out of all departments, the Mayor has proposed an increase in funding to the SPD. The SPD has seen a rise in overtime pay which, more often than not, is paid out to officers responsible for harassing people who are unhoused, Black, Indigenous, and people of color. This money can be spent in other ways that are proven to be more effective in improving community safety and wellness.
+            ${NEW_LINE}${NEW_LINE}I demand that the City Council defund the SPD. I join the calls of those across the country to defund the police. I demand a budget that adequately and effectively meets the needs of at-risk Seattleites. I demand a budget that supports community wellbeing, rather than empowers the police forces that tear them apart.
+            ${NEW_LINE}${NEW_LINE}Although City Council has avoided voting or revising Mayor Durkan's draconian budget proposal, the document is back in your hands. It is your duty to represent your constituents. I am urging you to completely revise the Seattle budget for 2020-2021 fiscal year. You need to adopt a People’s Budget. Public opinion is with me.
+            ${NEW_LINE}${NEW_LINE}Sincerely,
+            ${NEW_LINE}${name}
+            `,
+    },
+    {
+        title: 'Spokane',
+        group: 'Defund The Police',
+        subject: 'Spokane Resident for Defunding of SPD',
+        secondInputPlaceholder: 'Spokane Neighborhood...',
+        sendTo: [
+            'mayor@spokanecity.org',
+            'bbeggs@spokanecity.org',
+            'kateburke@spokanecity.org',
+            'mcathcart@spokanecity.org',
+            'bwilkerson@spokanecity.org',
+            'lkinnear@spokanecity.org',
+            'cmumm@spokanecity.org',
+            'kstratton@spokanecity.org',
+        ],
+        body: (name, secondInput) => `Dear Mayor Nadine Woodward and Spokane City Council Members,
+            ${NEW_LINE}${NEW_LINE}My name is ${name}, and I am a resident of ${secondInput}.  Given the history of policing and the most recent murders of Black people, I am asking you to redirect money away from the Spokane PD in the 2021 budget and instead to prioritize services that help strengthen our communities.
+            ${NEW_LINE}${NEW_LINE}I want a budget that reflects our community's priorities and needs. I urge you to advocate for a meaningful reallocation of the city's expenditures: away from policing, and towards social programs and resources that support housing, jobs, education, health care, child care, and other critical community needs. Beyond policing our community, these services are proven to be more effective in improving community safety and wellness. I demand a budget that supports community wellbeing, rather than gives power to police forces that tear them apart.
+            ${NEW_LINE}${NEW_LINE}Please consider your role in enriching and empowering our communities, especially during a time of racial injustice, wide-spread illness, and economic vulnerability.
+            ${NEW_LINE}${NEW_LINE}Sincerely,
+            ${NEW_LINE}${name}
+            `,
+    },
+    {
+        title: 'Tacoma',
+        group: 'Defund The Police',
+        subject: 'We Demand Justice for Manuel Ellis and Reallocation of TPD Funds',
+        secondInputPlaceholder: '(CITY)...',
+        sendTo: [
+            'victoria.woodards@cityoftacoma.org',
+            'john.hines@cityoftacoma.org',
+            'robert.thoms@cityoftacoma.org',
+            'catherine.ushka@cityoftacoma.org',
+            'chris.beale@cityoftacoma.org',
+            'lillian.hunter@cityoftacoma.org',
+            'conor.mccarthy@cityoftacoma.org',
+            'kristina.walker@cityoftacoma.org',
+        ],
+        body: (name, secondInput) => `Dear Mayor Woodards and Tacoma City Council,
+            ${NEW_LINE}${NEW_LINE}My name is ${name}, and I am a resident of ${secondInput}.  I am writing to demand justice for Manuel Ellis, an innocent Black man who was murdered by Tacoma police officers on March 3, and so many murdered Black people before him.
+            ${NEW_LINE}${NEW_LINE}Despite autopsy evidence ruling Ellis’ death a homicide, the officers involved in this murder have not been charged and are still employed at the Tacoma Police Department. This is unacceptable. Administrative leave is not enough. I demand that these officers be fired and arrested for their crimes.
+            ${NEW_LINE}${NEW_LINE}I am also asking the City of Tacoma to show your commitment to racial justice moving forward by opposing any increase in the Tacoma Police Department’s budget, and re-allocating city resources from policing to services that keep Black people safe, such as healthcare, education, and community programs.
+            ${NEW_LINE}${NEW_LINE}Sincerely,
+            ${NEW_LINE}${name}
+            `,
+    },
+    {
+        title: 'Washington DC',
         group: 'Defund The Police',
         subject: 'DEFUND METRO PD',
         secondInputPlaceholder: 'DC AREA (CITY)...',

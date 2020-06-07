@@ -17,9 +17,12 @@ import { groupDescriptions } from '../emails/templates';
 
 interface IEmailSenderFormProps {
     emails: IEmail[];
+    onSendEmail: () => void;
 }
 
-const EmailSenderForm: React.FC<IEmailSenderFormProps> = ({ emails }) => {
+const EmailSenderForm: React.FC<IEmailSenderFormProps> = (props) => {
+    const { emails, onSendEmail } = props;
+
     // Only want event to trigger once
     useMemo(() => ReactGA.pageview('Email form'), []);
 
@@ -55,6 +58,10 @@ const EmailSenderForm: React.FC<IEmailSenderFormProps> = ({ emails }) => {
             });
         }, [],
     );
+    const onClickSend = useCallback(() => {
+        onSendEmail();
+        sendReactGAEvent(selectedEmail, secondInput);
+    }, [selectedEmail, secondInput, onSendEmail]);
 
     const areEmailsSelectable = useMemo(() => {
         if (selectedGroup !== undefined) {
@@ -171,7 +178,7 @@ const EmailSenderForm: React.FC<IEmailSenderFormProps> = ({ emails }) => {
                         large
                         outlined={mailToLink !== undefined}
                         disabled={mailToLink === undefined}
-                        onClick={sendReactGAEvent(selectedEmail, secondInput)}
+                        onClick={onClickSend}
                     />
                 </a>
             </div>
@@ -206,7 +213,7 @@ const emailSelectItemRenderer: ItemRenderer<IEmail> = (email, { handleClick, mod
             className={modifiers.active ? 'menu-item-selected' : undefined}
             key={email.title}
             style={{
-                marginTop: 5,
+                marginTop: 3,
                 height: 40,
                 fontSize: 17,
                 alignItems: 'center',
@@ -217,7 +224,7 @@ const emailSelectItemRenderer: ItemRenderer<IEmail> = (email, { handleClick, mod
     );
 };
 
-const sendReactGAEvent = (email: IEmail | undefined, secondInput: string | undefined) => () => {
+const sendReactGAEvent = (email: IEmail | undefined, secondInput: string | undefined) => {
     ReactGA.event({
         category: 'Email form',
         action: 'Clicked send',
