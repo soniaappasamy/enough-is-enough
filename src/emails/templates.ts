@@ -392,48 +392,6 @@ export const allEmails: IEmail[] = [
             `,
     },
 	{
-        title: 'Cleveland',
-        group: 'Defund The Police',
-        subject: 'Redirect Money from Cleveland Police Department Budget',
-        secondInputPlaceholder: 'Cleveland Area...',
-        sendTo: [
-            	'mayorsactioncenter@city.cleveland.oh.us', 
-		'jjones@clevelandcitycouncil.org', 
-		'kbishop@clevelandcitycouncil.org', 
-		'kmccormack@clevelandcitycouncil.org', 
-		'kjohnson@clevelandcitycouncil.org', 
-		'pcleveland@clevelandcitycouncil.org', 
-		'bgriffin@clevelandcitycouncil.org', 
-		'bjones@clevelandcitycouncil.org', 
-		'mpolensek@clevelandcitycouncil.org', 
-		'kconwell@clevelandcitycouncil.org', 
-		'ahairston@clevelandcitycouncil.org', 
-		'bmooney@clevelandcitycouncil.org', 
-		'abrancatelli@clevelandcitycouncil.org', 
-		'kkelley@clevelandcitycouncil.org', 
-		'cflanagan@clevelandcitycouncil.org', 
-		'jsantana@clevelandcitycouncil.org', 
-		'mzone@clevelandcitycouncil.org', 
-		'bkazy@clevelandcitycouncil.org', 
-		'cslife@clevelandcitycouncil.org',
-        ],
-        body: (name, secondInput) => `Dear Cleveland City Officials,
-	${NEW_LINE}${NEW_LINE}My name is ${name}, and I am a resident of ${secondInput}. 
-        ${NEW_LINE}${NEW_LINE}The City of Cleveland needs to address the lack of investment in predominantly Black communities and the over-investment in their criminalization. Although the 2020 city budget was already approved in March, the City of Cleveland must reduce its Division of Police budget.
-        ${NEW_LINE}${NEW_LINE}Of Cleveland's budget, $217,908,375 of the $1.8 billion budget is allocated to the Division of Police, an increase of $10 million from 2019. That increase is greater than the entire 2020 Department of Housing budget. 
-        ${NEW_LINE}${NEW_LINE}After a two year investigation ending in 2014, the Justice Department cited CPD for abuse due to a pattern and practice of excessive force. Ohioans understand this resulted in a consent decree that mandates certain budget allocations. Ohioans also expect and deserve compliance and progress with the consent decree. In April 2020, Desmond Franklin was shot and killed by an off-duty police officer. In December 2019, 13-year-old Tamia Chappman was killed in a high-speed police chase while walking to the library. We cannot rely on the Division of Police to “self-evaluate in order to improve in areas of training, efficient and effective delivery of services, officer safety, and community engagement” in the best interest of the public, like the staffing report claims.
-        ${NEW_LINE}${NEW_LINE}Mayor Frank Jackson is complicit in the crisis of police brutality. Tragic killings of Black Cleveland citizens by police violence — including Timothy Russell, Malissa Williams, and Tamir Rice — happened under Mayor Jackson’s tenure. 
-        ${NEW_LINE}${NEW_LINE}In an interview with The Appeal on June 3 2020, Mayor Jackson said:
-	${NEW_LINE}1. He would not revisit reallocating police budget now 
-	${NEW_LINE}2. Cleveland cannot rely on the government to help end structural racism and police violence and we should instead look to philanthropy and the private sector.
-	${NEW_LINE}If not now, when? If government can’t help fix itself, who can? The burden does not lie on citizens. I demand you reconsider these stances to help end, not mitigate, police brutality.
-        ${NEW_LINE}${NEW_LINE}Cleveland City Council cares about these issues. The recent unanimous vote to declare racism a public health crisis proves that. I ask that you continue to find sustainable, long-term change for the entire community. 
-        ${NEW_LINE}${NEW_LINE}Research shows that a living wage, access to holistic health services and treatment, educational opportunity, and stable housing are far more successful at reducing crime than police or prisons. Redirect money from the Division of Police and instead invest in social services. The policing budget can be better spent on quality of life for all, particularly in predominantly Black and brown communities. Programs like education, housing, healthcare, cooperative businesses, and community centers deserve that funding. 
-        ${NEW_LINE}${NEW_LINE}Sincerely,
-        ${NEW_LINE}${name}
-            `,
-    },
-	{
         title: 'Columbus',
         group: 'Defund The Police',
         subject: 'We Demand Divestment from Police and an Investment in Black Communities',
@@ -615,36 +573,6 @@ export const allEmails: IEmail[] = [
             ${NEW_LINE}${NEW_LINE}I also urge the Madison Common Council to enact legislation that holds police accountable and to overturn policies that allow police to engage in unlawful behavior with impunity. Justice will only be served when the police are reformed, and this will not be possible until we defund them.
             ${NEW_LINE}${NEW_LINE}People are marching in the streets because they know that these actions will result in a healthier, more just society. I implore you to please listen to the needs of your constituents and take immediate action to address their concerns.
             ${NEW_LINE}${NEW_LINE}Can I count on you to consider an alternative budget that puts a focus on social service programs?
-            ${NEW_LINE}${NEW_LINE}Sincerely,
-            ${NEW_LINE}${name}
-            `,
-    },
-	{
-        title: 'Memphis',
-        group: 'Defund The Police',
-        subject: 'We Demand Divestment from Police',
-        secondInputPlaceholder: 'Memphis Neighborhood...',
-        sendTo: [
-		'JFord.Canale@memphistn.gov', 
-		'Jeff.Warren@memphistn.gov', 
-		'Chase.Carlisle@memphistn.gov', 
-		'Martavius.Jones@memphistn.gov', 
-		'Cheyenne.Johnson@memphistn.gov', 
-		'JB.Smileyjr@memphistn.gov', 
-		'Michalyn.Easter-Thomas@memphistn.gov', 
-		'Edmund.FordSr@memphistn.gov', 
-		'Worth.Morgan@memphistn.gov',
-		'Jamita.Swearengen@memphistn.gov', 
-		'frank.colvettjr@memphistn.gov', 
-		'Rhonda.Logan@memphistn.gov', 
-		'Patrice.Robinson@memphistn.gov',
-        ],
-        body: (name, secondInput) => `Dear Memphis City Representatives,
-            ${NEW_LINE}${NEW_LINE}My name is ${name}, and I am a resident of ${secondInput}.  I am asking to redirect money away from the Memphis PD and into the following social services: 
-            ${NEW_LINE}1. Community Development
-            ${NEW_LINE}2. COVID Relief
-            ${NEW_LINE}3. Education, Parks & Recreation
-            ${NEW_LINE}${NEW_LINE}I request that an emergency meeting be called before the fiscal year goes into effect in order to deny the mayor’s proposed budget and reallocate these funds to resources the citizens can benefit from.
             ${NEW_LINE}${NEW_LINE}Sincerely,
             ${NEW_LINE}${name}
             `,
