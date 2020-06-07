@@ -169,6 +169,37 @@ export const allEmails: IEmail[] = [
             ${NEW_LINE}${name}
             `,
     },
+	{
+        title: 'Akron',
+        group: 'Defund The Police',
+        subject: 'Defund the Akron Police Department',
+        secondInputPlaceholder: 'Akron Ward...',
+        sendTo: [
+        	'Mayor@akronohio.gov', 
+		'AtLarge1@akronohio.gov', 
+		'AtLarge2@akronohio.gov', 
+		'AtLarge3@akronohio.gov', 
+		'Ward1@akronohio.gov', 
+		'Ward2@akronohio.gov', 
+		'Ward3@akronohio.gov', 
+		'Ward4@akronohio.gov', 
+		'Ward5@akronohio.gov', 
+		'Ward6@akronohio.gov', 
+		'Ward7@akronohio.gov', 
+		'Ward8@akronohio.gov', 
+		'Ward9@akronohio.gov', 
+		'Ward10@akronohio.gov',
+        ],
+        body: (name, secondInput) => `Dear Akron City Council Members,
+	${NEW_LINE}${NEW_LINE}My name is ${name}, and I am a resident of ${secondInput}.
+        ${NEW_LINE}${NEW_LINE}The City of Akron must do better by its residents. I am urging you to divest from the criminalization of our communities and reduce police spending in the budget for the 2021 fiscal year. In May, Mayor Horrigan warned of deep spending cuts due to the pandemic. It is time to cut funding for the Akron Police Department.
+        ${NEW_LINE}${NEW_LINE}In the 2020 budget, police receive $59,147,850 out of a total $173,128,930. This is 34% – over a third – of the overall budget.
+        ${NEW_LINE}${NEW_LINE}I know many of you feel strongly about racial justice and equity. On June 4, Mayor Horrigan said the City is working on a “culture of outreach, compliance, transparency, and inclusion.” It is time to take action.
+        ${NEW_LINE}${NEW_LINE}Individual solutions will not fix systemic problems. It is time for Akron, its leaders, and residents to create a more equitable city for all of us. Have the moral clarity to create a budget focused on communities instead of investing in a racist and destructive institution. Defund the Akron Police Department.
+        ${NEW_LINE}${NEW_LINE}Sincerely,
+        ${NEW_LINE}${name}
+            `,
+    },
     {
         title: 'Austin',
         group: 'Defund The Police',
@@ -358,6 +389,48 @@ export const allEmails: IEmail[] = [
             ${NEW_LINE}${NEW_LINE}When we fight over crumbs, we fail to see the whole pie. Chicago has enough. Chicago's Police Department continues to receive funding, even when they cost our community precious lives and millions of additional dollars in settlement fees. In the last fifteen years the city has paid out tens of millions of dollars in settlements - dollars that could have served and supported our communities. When we continuously allocate enormous amounts of money to police at the expense of other departments, programs, and proven safety initiatives, we prevent ourselves from forging a smarter path to safety. 
             ${NEW_LINE}${NEW_LINE}Sincerely,
             ${NEW_LINE}${name}
+            `,
+    },
+	{
+        title: 'Cleveland',
+        group: 'Defund The Police',
+        subject: 'Redirect Money from Cleveland Police Department Budget',
+        secondInputPlaceholder: 'Cleveland Neighborhood...',
+        sendTo: [
+            	'mayorsactioncenter@city.cleveland.oh.us', 
+		'jjones@clevelandcitycouncil.org', 
+		'kbishop@clevelandcitycouncil.org', 
+		'kmccormack@clevelandcitycouncil.org', 
+		'kjohnson@clevelandcitycouncil.org', 
+		'pcleveland@clevelandcitycouncil.org', 
+		'bgriffin@clevelandcitycouncil.org', 
+		'bjones@clevelandcitycouncil.org', 
+		'mpolensek@clevelandcitycouncil.org', 
+		'kconwell@clevelandcitycouncil.org', 
+		'ahairston@clevelandcitycouncil.org', 
+		'bmooney@clevelandcitycouncil.org', 
+		'abrancatelli@clevelandcitycouncil.org', 
+		'kkelley@clevelandcitycouncil.org', 
+		'cflanagan@clevelandcitycouncil.org', 
+		'jsantana@clevelandcitycouncil.org', 
+		'mzone@clevelandcitycouncil.org', 
+		'bkazy@clevelandcitycouncil.org', 
+		'cslife@clevelandcitycouncil.org',
+        ],
+        body: (name, secondInput) => `Dear Cleveland City Officials,
+	${NEW_LINE}${NEW_LINE}My name is ${name}, and I am a resident of ${secondInput}. 
+        ${NEW_LINE}${NEW_LINE}The City of Cleveland needs to address the lack of investment in predominantly Black communities and the over-investment in their criminalization. Although the 2020 city budget was already approved in March, the City of Cleveland must reduce its Division of Police budget.
+        ${NEW_LINE}${NEW_LINE}$217,908,375 of the $1.8 billion budget is allocated to the Division of Police, an increase of $10 million from 2019. That increase is greater than the entire 2020 Department of Housing budget. 
+        ${NEW_LINE}${NEW_LINE}After a two year investigation ending in 2014, the Justice Department cited CPD for abuse due to a pattern and practice of excessive force. Ohioans understand this resulted in a consent decree that mandates certain budget allocations. Ohioans also expect and deserve compliance and progress with the consent decree. In April 2020, Desmond Franklin was shot and killed by an off-duty police officer. In December 2019, 13-year-old Tamia Chappman was killed in a high-speed police chase while walking to the library. We cannot rely on the Division of Police to “self-evaluate in order to improve in areas of training, efficient and effective delivery of services, officer safety, and community engagement” in the best interest of the public, like the staffing report claims.
+        ${NEW_LINE}${NEW_LINE}Mayor Frank Jackson is complicit in the crisis of police brutality. Tragic killings of Black Cleveland citizens by police violence — including Timothy Russell, Malissa Williams, and Tamir Rice — happened under Mayor Jackson’s tenure. 
+        ${NEW_LINE}${NEW_LINE}In an interview with The Appeal on June 3 2020, Mayor Jackson said:
+	${NEW_LINE}1. He would not revisit reallocating police budget now 
+	${NEW_LINE}2. Cleveland cannot rely on the government to help end structural racism and police violence and we should instead look to philanthropy and the private sector.
+	${NEW_LINE}If not now, when? If government can’t help fix itself, who can? The burden does not lie on citizens. I demand you reconsider these stances to help end, not mitigate, police brutality.
+        ${NEW_LINE}${NEW_LINE}Cleveland City Council cares about these issues. The recent unanimous vote to declare racism a public health crisis proves that. I ask that you continue to find sustainable, long-term change for the entire community. 
+        ${NEW_LINE}${NEW_LINE}Research shows that a living wage, access to holistic health services and treatment, educational opportunity, and stable housing are far more successful at reducing crime than police or prisons. Redirect money from the Division of Police and instead invest in social services. The policing budget can be better spent on quality of life for all, particularly in predominantly Black and brown communities. Programs like education, housing, healthcare, cooperative businesses, and community centers deserve that funding. 
+        ${NEW_LINE}${NEW_LINE}Sincerely,
+        ${NEW_LINE}${name}
             `,
     },
     {
