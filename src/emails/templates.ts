@@ -221,7 +221,7 @@ export const allEmails: IEmail[] = [
         body: (name, secondInput) => `Dear Austin City Council Members,
 	${NEW_LINE}${NEW_LINE}My name is ${name}, and I am a resident of ${secondInput}. WE ARE JOINING TOGETHER TO DEMAND THAT YOU, MY LOCAL OFFICIALS, WILL: 
         ${NEW_LINE}1. Vote no on all increases to police budgets 
-        ${NEW_LINE} 2. Vote yes to decrease police spending and budgets 
+        ${NEW_LINE}2. Vote yes to decrease police spending and budgets 
         ${NEW_LINE}3. Vote yes to increase spending on Health care, education and community programs that keep us safe.
         ${NEW_LINE}${NEW_LINE}Black communities across the nation are mourning the deaths of George Floyd, tortured to death by Minneapolis police, Ahmaud Arbery, a jogger who was killed while running in a residential neighborhood in Brunswick, Georgia, Breonna Taylor an EMT killed while asleep in her bed in Louisville,KY, Dreasjon Reed in Indianapolis and Tony McDade in Tallahassee. Their names are added to a devastatingly long list of Black people who have been killed at the hands of vigilantes or law enforcement. Not to mention the others whose names we don’t yet know, and may never know since they were killed without a camera recording it.
         ${NEW_LINE}${NEW_LINE}At the same time, the United States leads the world in COVID-19 cases. So far, more than 100,000 people — enough to fill a football stadium– have perished from the virus,with over one million cases confirmed, and those numbers don’t reflect all the people dying from virus-related illnesses. Black people are suffering disproportionately from COVID-19, four times more likely to die than their white neighbors. 
@@ -643,9 +643,9 @@ export const allEmails: IEmail[] = [
         ],
         body: (name, secondInput) => `Dear Memphis City Representatives,
 	    ${NEW_LINE}${NEW_LINE}My name is ${name}, and I am a resident of ${secondInput}. I am asking to redirect money away from the Memphis PD and into the following social services: 
-	    ${NEW_LINE}* Community Development
-	    ${NEW_LINE}* COVID Relief
-	    ${NEW_LINE}* Education, Parks & Recreation
+	    ${NEW_LINE}1. Community Development
+	    ${NEW_LINE}2. COVID Relief
+	    ${NEW_LINE}3. Education, Parks & Recreation
 	    ${NEW_LINE}${NEW_LINE}I request that an emergency meeting be called before the fiscal year goes into effect in order to deny the mayor’s proposed budget and reallocate these funds to resources the citizens can benefit from.
             ${NEW_LINE}${NEW_LINE}Sincerely,
             ${NEW_LINE}${name}
@@ -869,7 +869,25 @@ export const allEmails: IEmail[] = [
         subject: 'Philadelphia demands a Peoples Budget',
         secondInputPlaceholder: 'Phildelphia District(CITY)...',
         sendTo: [
-        
+       		'Cindy.Bass@Phila.gov', 
+		'Kendra.Brooks@phila.gov', 
+		'Kenyatta.Johnson@Phila.gov', 
+		'Helen.Gym@phila.gov', 
+		'Jamie.Gauthier@phila.gov', 
+		'Maria.Q.Sanchez@phila.gov', 
+		'Derek.Green@phila.gov', 
+		'Katherine.Gilmore.Richardson@phila.gov', 
+		'Allan.Domb@Phila.gov', 
+		'Cherelle.Parker@Phila.gov', 
+		'Isaiah.Thomas@phila.gov', 
+		'Darrell.Clarke@phila.gov', 
+		'David.Oh@Phila.gov', 
+		'Brian.Oneill@phila.gov', 
+		'Mark.squilla@phila.gov', 
+		'Brian.Abernathy@phila.gov', 
+		'James.Kenney@phila.gov', 
+		'Bobby.Henon@phila.gov', 
+		'Curtis.Jones@phila.gov',
         ],
         body: (name, secondInput) => `Philadelphia Officials,
 	    ${NEW_LINE}${NEW_LINE}My name is ${name}, and I am a resident of ${secondInput}. I am emailing to demand the restructuring of the Philadelphia city budget in a way that prioritizes social services for communities and drastically minimizes spending on police. 
@@ -885,7 +903,7 @@ export const allEmails: IEmail[] = [
         subject: 'DEFUND Pittsburgh Bureau of Police',
         secondInputPlaceholder: 'Pittsburgh Neighborhood (CITY)...',
         sendTo: [
-        	'theresa.kail-smith@pittsburghpa.gov', 
+       		'theresa.kail-smith@pittsburghpa.gov', 
 		'brosha.tkacheva@pittsburghpa.gov', 
 		'district5@pittsburghpa.gov', 
 		'district7@pittsburghpa.gov', 
