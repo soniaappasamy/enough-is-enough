@@ -630,6 +630,66 @@ export const allEmails: IEmail[] = [
             `,
     },
 	{
+        title: 'Oklahoma City',
+        group: 'Defund The Police',
+        subject: 'Defund the Oklahoma City Police Department',
+        secondInputPlaceholder: 'OKC WARD...',
+        sendTo: [
+              	'mayor@okc.gov', 
+		'citymanager@okc.gov', 
+		'ward1@okc.gov', 
+		'ward2@okc.gov', 
+		'ward3@okc.gov', 
+		'ward4@okc.gov', 
+		'ward5@okc.gov', 
+		'ward6@okc.gov', 
+		'ward7@okc.gov', 
+		'ward8@okc.gov',
+        ],
+        body: (name, secondInput) => `Dear Oklahoma City Mayor, City Council, and Manager,
+            ${NEW_LINE}${NEW_LINE}My name is ${name}, and I am a resident of ${secondInput}.  The City of Oklahoma City must do better by its residents. I am urging you to divest from the criminalization of our communities and reduce police spending in the budget for the 2021 fiscal year. In May, City Manager Freeman formally proposed deep spending cuts due to the pandemic. I am asking that you make a more overt and visible commitment to racial justice by delaying the budget approval so that the City Council may find ways to divest from OKCPD.
+            ${NEW_LINE}${NEW_LINE}I urge you to pressure the City Manager’s Office towards an ethical reallocation of the city’s expenditures towards sectors that facilitate the dismantling of racial and class inequality. This includes, but is not limited to improving access to health services and treatment, educational opportunity, and stable housing, which have proven far more successful at promoting community safety and social equity than policing. As such, I demand more aggressive financial support be directed to those areas.
+            ${NEW_LINE}${NEW_LINE}In the FY2021 budget proposal, police receive $226,051,993 out of a total $1,658,405,738. The police budget is an 11% increase year over FY2020, despite having fewer positions. I know many of you feel strongly about racial justice and equity. On May 30th, Mayor Holt said the City must “continue to seek equity in all things, including opportunities for engagement, leadership and investment.” It is time to take action.
+            ${NEW_LINE}${NEW_LINE}Individual solutions will not fix systemic problems. It is time for OKC, its leaders, and residents to create a more equitable city for all of us. Have the moral clarity to create a budget focused on communities instead of investing in a racist and destructive institution. Defund the Oklahoma City Police Department.
+            ${NEW_LINE}${NEW_LINE}Sincerely,
+            ${NEW_LINE}${name}
+            `,
+    	},
+	{
+        title: 'Philadelphia',
+        group: 'Defund The Police',
+        subject: 'Philadelphia demands a Peoples Budget',
+        secondInputPlaceholder: 'Philly District...',
+        sendTo: [
+		'Cindy.Bass@Phila.gov', 
+		'Kendra.Brooks@phila.gov', 
+		'Kenyatta.Johnson@Phila.gov', 
+		'Helen.Gym@phila.gov', 
+		'Jamie.Gauthier@phila.gov', 
+		'Maria.Q.Sanchez@phila.gov', 
+		'Derek.Green@phila.gov', 
+		'Katherine.Gilmore.Richardson@phila.gov', 
+		'Allan.Domb@Phila.gov', 
+		'Cherelle.Parker@Phila.gov', 
+		'Isaiah.Thomas@phila.gov', 
+		'Darrell.Clarke@phila.gov', 
+		'David.Oh@Phila.gov', 
+		'Brian.Oneill@phila.gov', 
+		'Mark.squilla@phila.gov', 
+		'Brian.Abernathy@phila.gov', 
+		'James.Kenney@phila.gov', 
+		'Bobby.Henon@phila.gov', 
+		'Curtis.Jones@phila.gov',
+        ],
+        body: (name, secondInput) => `Philadelphia Officials,
+            ${NEW_LINE}${NEW_LINE}My name is ${name}, and I am a resident of ${secondInput}.  I am emailing to demand the restructuring of the Philadelphia city budget in a way that prioritizes social services for communities and drastically minimizes spending on police. 
+            ${NEW_LINE}${NEW_LINE}We are in the midst of widespread upheaval over the systemic violence of policing, embodied by the PPD's well documented history of disproportionately enacting violence against Black communities. We will no longer accept empty gestures and suggestions of “reform.” We are demanding that our voices be heard now, and that real change be made to the way this city allocates its resources.
+            ${NEW_LINE}${NEW_LINE}The proposed $14 million budget increase for PPD is unacceptable and comes at the cost of affordable housing, support for essential city workers, and other transformative initiatives. These programs are needed now more than ever to alleviate the harms of the COVID-19 pandemic, especially for Black and Brown communities. I ask that the mayor, city managing director, and city council members prove their love and dedication to the people of this city and reallocate funds to directly benefit those in need.
+            ${NEW_LINE}${NEW_LINE}Sincerely,
+            ${NEW_LINE}${name}
+            `,
+    },
+	{
         title: 'Pittsburgh',
         group: 'Defund The Police',
         subject: 'DEFUND Pittsburgh Bureau of Police',
