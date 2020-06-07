@@ -433,6 +433,51 @@ export const allEmails: IEmail[] = [
         ${NEW_LINE}${name}
             `,
     },
+	{
+        title: 'Columbus',
+        group: 'Defund The Police',
+        subject: 'We Demand Divestment from Police and an Investment in Black Communities',
+        secondInputPlaceholder: 'Columbus AREA (CITY)...',
+        sendTo: [
+		'zgdavidson@columbus.gov', 
+		'LMCapobianco@columbus.gov', 
+		'kaellingsen@columbus.gov', 
+		'jwcarmean@columbus.gov', 
+		'DFriendFoster@columbus.gov', 
+		'GMAmes@columbus.gov', 
+		'KBMccain@columbus.gov', 
+		'HNMiller@columbus.gov', 
+		'tyharden@columbus.gov', 
+		'cenewman@columbus.gov', 
+		'jdcarter@columbus.gov', 
+		'LJFrank@columbus.gov', 
+		'NNHarper@columbus.gov', 
+		'cgwilliams@columbus.gov', 
+		'311@columbus.gov', 
+		'evremy@columbus.gov, 
+		'ecbrown@columbus.gov', 
+		'prtyson@columbus.gov', 
+		'sdfavor@columbus.gov', 
+		'mjbrown@columbus.gov', 
+		'sghardin@columbus.gov', 
+		'radorans@columbus.gov', 
+		'zmklein@columbus.gov',
+        ],
+        body: (name, secondInput) => `Dear Columbus City Officials,
+            ${NEW_LINE}${NEW_LINE}My name is ${name}, and I am a resident of ${secondInput}. WE ARE JOINING TOGETHER TO DEMAND THAT YOU, MY LOCAL OFFICIALS, WILL: 
+            ${NEW_LINE}1. Vote no on all increases to police budgets 
+            ${NEW_LINE}2. Vote yes to decrease police spending and budgets 
+            ${NEW_LINE}3. Vote yes to increase spending on Health care, education and community programs that keep us safe.
+            ${NEW_LINE}${NEW_LINE}Black communities across the nation are mourning the deaths of George Floyd, tortured to death by Minneapolis police, Ahmaud Arbery, a jogger who was killed while running in a residential neighborhood in Brunswick, Georgia, Breonna Taylor an EMT killed while asleep in her bed in Louisville,KY, Dreasjon Reed in Indianapolis and Tony McDade in Tallahassee. Their names are added to a devastatingly long list of Black people who have been killed at the hands of vigilantes or law enforcement. Not to mention the others whose names we don’t yet know, and may never know since they were killed without a camera recording it. We’re counting on you to stand up for Black communities and marginalized communities. I call on the City Council to cancel the BPD budget increase of $13.5 million and allocate it to the above departments.
+            ${NEW_LINE}${NEW_LINE}At the same time, the United States leads the world in COVID-19 cases. So far, more than 100,000 people — enough to fill a football stadium– have perished from the virus,with over one million cases confirmed, and those numbers don’t reflect all the people dying from virus-related illnesses. Black people are suffering disproportionately from COVID-19, four times more likely to die than their white neighbors. 
+            ${NEW_LINE}${NEW_LINE}It is important to state this within the context of the scourge of anti-Black police terror and the resulting uprisings taking place across the U.S. 
+            ${NEW_LINE}${NEW_LINE}The COVID-19 deaths and the deaths caused by police terror are connected and consequential to each other. The United States does not have a national healthcare system. Instead, we have the largest military budget in the world, and some of the most well-funded and militarized police departments in the world, too. Policing and militarization overwhelmingly dominate the bulk of national and local budgets. In fact, police and military funding has increased every single year since 1973, and  at the same time, funding for public health decreased every year, crystallized  most recently when the Trump administration eliminated the US Pandemic Response Team in 2018, citing “costs”. 
+            ${NEW_LINE}${NEW_LINE}Black communities are living in persistent fear of being killed by state authorities like police, immigration agents or even white vigilantes who are emboldened by state actors. According to the Urban Institute, in 1977, state and local governments spent $60 billion on police and corrections . In 2017, they spent $194 billion. A 220 percent increase. Despite continued profiling, harassment, terror and killing of Black communities, local and federal decision-makers continue to invest in the police, which leaves Black people vulnerable and our communities no safer. Where could that money go? It could go towards building healthy communities, to the health of our elders and children,to neighborhood infrastructure, to education, to childcare, to support a vibrant Black future. The possibilities are endless. 
+            ${NEW_LINE}${NEW_LINE}We join in solidarity with the freedom fighters in Minneapolis, Louisville, and across the United States. And we call for the end to police terror. 
+	    ${NEW_LINE}${NEW_LINE}Sincerely,
+            ${NEW_LINE}${name}
+            `,
+    },
     {
         title: 'Dallas',
         group: 'Defund The Police',
@@ -574,6 +619,36 @@ export const allEmails: IEmail[] = [
             ${NEW_LINE}${name}
             `,
     },
+	{
+        title: 'Memphis',
+        group: 'Defund The Police',
+        subject: 'We Demand Divestment from Police and an Investment in Black Communities',
+        secondInputPlaceholder: 'Memphis Neighborhood...',
+        sendTo: [
+		'JFord.Canale@memphistn.gov', 
+		'Jeff.Warren@memphistn.gov', 
+		'Chase.Carlisle@memphistn.gov', 
+		'Martavius.Jones@memphistn.gov', 
+		'Cheyenne.Johnson@memphistn.gov', 
+		'JB.Smileyjr@memphistn.gov', 
+		'Michalyn.Easter-Thomas@memphistn.gov', 
+		'Edmund.FordSr@memphistn.gov', 
+		'Worth.Morgan@memphistn.gov',
+		'Jamita.Swearengen@memphistn.gov', 
+		'frank.colvettjr@memphistn.gov', 
+		'Rhonda.Logan@memphistn.gov', 
+		'Patrice.Robinson@memphistn.gov',
+        ],
+        body: (name, secondInput) => `Dear Memphis City Representatives,
+            ${NEW_LINE}${NEW_LINE}My name is ${name}, and I am a resident of ${secondInput}.  I am asking to redirect money away from the Memphis PD and into the following social services: 
+            ${NEW_LINE}1. Community Development
+            ${NEW_LINE}2. COVID Relief
+            ${NEW_LINE}3. Education, Parks & Recreation
+            ${NEW_LINE}${NEW_LINE}I request that an emergency meeting be called before the fiscal year goes into effect in order to deny the mayor’s proposed budget and reallocate these funds to resources the citizens can benefit from.
+            ${NEW_LINE}${NEW_LINE}Sincerely,
+            ${NEW_LINE}${name}
+            `,
+    },
      {
         title: 'Milwaukee',
         group: 'Defund The Police',
@@ -633,6 +708,64 @@ export const allEmails: IEmail[] = [
             ${NEW_LINE}3. Protect and expand current investment in community-led health and safety strategies, instead of investing in police.
             ${NEW_LINE}4. Do everything in your power to compel all law enforcement agencies to immediately cease enacting violence on community members.
             ${NEW_LINE}${NEW_LINE}We are counting on the you to stand up for Black communities and marginalized communities and defund the MPD. Thank you.
+            ${NEW_LINE}${NEW_LINE}Sincerely,
+            ${NEW_LINE}${name}
+            `,
+    },
+ 	{
+        title: 'Nashville',
+        group: 'Defund The Police',
+        subject: 'Defund Nashville PD, Reallocate for Social Equity',
+        secondInputPlaceholder: 'Nashville Area...',
+        sendTo: [
+           	'john.cooper@nashville.gov', 
+		'jim.shulman@nashville.gov', 
+		'bob.mendes@nashville.gov', 
+		'sharon.hurt@nashville.gov', 
+		'burkley.allen@nashville.gov', 
+		'steve.glover@nashville.gov', 
+		'zulfat.suara@nashville.gov', 
+		'jonathan.hall@nashville.gov', 
+		'kyonzte.toombs@nashville.gov', 
+		'Jennifer.Gamble@nashville.gov', 
+		'robert.swope@nashville.gov', 
+		'Sean.Parker@nashville.gov', 
+		'brett.withers@nashville.gov', 
+		'Emily.Benedict@nashville.gov', 
+		'nancy.vanreece@nashville.gov', 
+		'Tonya.Hancock@nashville.gov', 
+		'Zach.Young@nashville.gov', 
+		'Larry.hagar@nashville.gov', 
+		'erin.evans@nashville.gov', 
+		'Russ.Bradford@nashville.gov', 
+		'kevin.rhoten@nashville.gov', 
+		'jeff.syracuse@nashville.gov', 
+		'Ginny.Welsch@nashville.gov', 
+		'colby.sledge@nashville.gov', 
+		'Thomas.Cash@Nashville.gov', 
+		'freddie.oconnell@nashville.gov', 
+		'marycarolyn.roberts@nashville.gov', 
+		'Brandon.Taylor@nashville.gov', 
+		'Gloria.Hausser@nashville.gov', 
+		'Thom.Druffel@nashville.gov', 
+		'kathleen.murphy@nashville.gov', 
+		'russ.pulley@nashville.gov', 
+		'Courtney.Johnston@nashville.gov', 
+		'Bob.Nash@nashville.gov', 
+		'tanaka.vercher@nashville.gov', 
+		'Delishia.Porterfield@nashville.gov', 
+		'Sandra.Sepulveda@nashville.gov', 
+		'John.Rutherford@nashville.gov', 
+		'Joy.Styles@nashville.gov', 
+		'Antoinette.Lee@nashville.gov', 
+		'angie.henderson@nashville.gov', 
+		'dave.rosenberg@nashville.gov',
+        ],
+        body: (name, secondInput) => `Dear Nashville Officials,
+            ${NEW_LINE}${NEW_LINE}My name is ${name}, and I am a resident of ${secondInput}. I am writing to say that I am strongly against BL2020-286.
+            ${NEW_LINE}${NEW_LINE}The mayor's budget would spend $496 million on a "public safety" system that does not keep us safe. The vast majority of that money would be spent on police, jails, and courts. That means the mayor wants to spend more on cops and cages than on almost all public goods combined. This isn't how we create public safety. True public safety requires fully-funded and community-controlled resources, not more police and jails.
+            ${NEW_LINE}${NEW_LINE}In the midst of a budget crisis, the mayor is proposing we increase spending on police and jails, and decrease spending on affordable housing, social services, transit, and other critical public goods. This is unacceptable and will not keep us safe.
+            ${NEW_LINE}${NEW_LINE}Overpoliced communities are not safe communities. Thriving communities are safe communities, and communities thrive when they are well-resourced. We deserve a budget that divests from policing and jails and uses that money to invest in our communities.
             ${NEW_LINE}${NEW_LINE}Sincerely,
             ${NEW_LINE}${name}
             `,
