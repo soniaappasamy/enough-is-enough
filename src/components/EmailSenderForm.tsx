@@ -1,8 +1,8 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useCallback } from 'react';
 import {
-    FormGroup, InputGroup, Button, MenuItem, Menu, Tag,
+    FormGroup, InputGroup, Button, MenuItem, Menu, Classes, Intent,
 } from '@blueprintjs/core';
 import {
     Select, ItemRenderer, ItemListRenderer, IItemListRendererProps,
@@ -12,6 +12,8 @@ import { IEmail } from '../emails/types';
 import { getEmailMailToLink } from '../utils/getEmailMailToLink';
 import './EmailSenderForm.scss';
 import { filterEmails } from '../utils/filterEmails';
+import { emailsToGroupsMap } from '../utils/emailsToGroupsMap';
+import { groupDescriptions } from '../emails/templates';
 
 interface IEmailSenderFormProps {
     emails: IEmail[];
@@ -21,80 +23,153 @@ const EmailSenderForm: React.FC<IEmailSenderFormProps> = ({ emails }) => {
     // Only want event to trigger once
     useMemo(() => ReactGA.pageview('Email form'), []);
 
-    const [name, setName] = useState<string | undefined>(undefined);
-    const [secondInput, setSecondInput] = useState<string | undefined>(undefined);
-    const [selectedEmail, setSelectedEmail] = useState<IEmail | undefined>(undefined);
+    const [emailGroups, groupKeys] = useMemo(() => emailsToGroupsMap(emails), [emails]);
 
-    const cleanText = (rawText: string) => (rawText === '' ? undefined : rawText);
-    // Todo: remove as any casts
-    const onTypeName = ({ target }: React.FormEvent) => setName(cleanText((target as any).value));
-    const onTypeSecondInput = ({ target }: React.FormEvent) => (
-        setSecondInput(cleanText((target as any).value))
+    const [name, setName] = useState<string | undefined>(undefined);
+    const [selectedGroup, setSelectedGroup] = useState<string | undefined>(
+        groupKeys.length > 0 ? groupKeys[0] : undefined,
+    );
+    const [selectedEmail, setSelectedEmail] = useState<IEmail | undefined>(undefined);
+    const [secondInput, setSecondInput] = useState<string | undefined>(undefined);
+
+    const cleanText = useCallback((rawText: string) => (rawText === '' ? undefined : rawText), []);
+    const onTypeName = useCallback(
+        // Todo: remove as any casts
+        ({ target }: React.FormEvent) => setName(cleanText((target as any).value)), [cleanText],
+    );
+    const onTypeSecondInput = useCallback(
+        ({ target }: React.FormEvent) => setSecondInput(cleanText((target as any).value)),
+        [cleanText],
+    );
+    const onSelectGroup = useCallback((group: string) => () => {
+        setSelectedGroup(group);
+        setSelectedEmail(undefined);
+    }, []);
+    const onSelectEmail = useCallback(
+        (email: IEmail) => {
+            setSelectedEmail((oldEmail) => {
+                if (oldEmail?.secondInputPlaceholder !== email.secondInputPlaceholder) {
+                    setSecondInput('');
+                }
+                return email;
+            });
+        }, [],
     );
 
-    const onSelectEmail = (email: IEmail) => {
-        setSelectedEmail((oldEmail) => {
-            if (oldEmail?.secondInputPlaceholder !== email.secondInputPlaceholder) {
-                setSecondInput('');
+    const areEmailsSelectable = useMemo(() => {
+        if (selectedGroup !== undefined) {
+            const groupEmails = emailGroups.get(selectedGroup);
+            if (groupEmails !== undefined && groupEmails.length === 1) {
+                setSelectedEmail(groupEmails[0]);
+                return false;
             }
-            return email;
-        });
-    };
+        }
+        return true;
+    }, [selectedGroup, emailGroups]);
 
     const mailToLink = getEmailMailToLink(selectedEmail, name, secondInput);
 
     // Todo: figure out why disapearing when move to styles
-    const textInputStyle: React.CSSProperties = { backgroundColor: '#10161A', textAlign: 'center' };
+    const inputStyle: React.CSSProperties = {
+        width: 280,
+        backgroundColor: '#10161A',
+        textAlign: 'center',
+        borderStyle: 'solid',
+        borderWidth: '0.5px',
+        borderColor: '#D1D1D1',
+        borderRadius: 4,
+    };
 
     return (
-        <div className="form-container">
+        <div>
             <div className="input-container">
+                <FormGroup style={{ marginBottom: 30, width: 325 }}>
+                    <div
+                        className={Classes.TEXT_MUTED}
+                        style={{ textAlign: 'center', paddingBottom: 5 }}
+                    >
+                      Select one topic:
+                    </div>
+                    <div className="group-button-area">
+                        {groupKeys.map((groupKey) => (
+                            <Button
+                                className="group-button"
+                                style={{
+                                    borderColor: groupKey === selectedGroup ? '#FBE845' : '#D1D1D1',
+                                    backgroundColor: groupKey === selectedGroup ? '#3E3E3E' : '#10161A',
+                                    borderRadius: 4,
+                                }}
+                                key={groupKey}
+                                active={groupKey === selectedGroup}
+                                minimal
+                                outlined
+                                onClick={onSelectGroup(groupKey)}
+                            >
+                                <div style={{ textAlign: 'center', paddingBottom: 5 }}>{groupKey}</div>
+                                {groupDescriptions[groupKey] !== undefined
+                                  && <div className={`${Classes.TEXT_MUTED} ${Classes.TEXT_SMALL}`} style={{ bottom: 0 }}>
+                                      {groupDescriptions[groupKey]}
+                                  </div>}
+                            </Button>))}
+                    </div>
+                </FormGroup>
                 <FormGroup>
                     <InputGroup
-                        style={textInputStyle}
+                        style={inputStyle}
                         value={name}
-                        placeholder="NAME..."
+                        placeholder="Enter your name..."
                         fill
                         large
                         onInput={onTypeName}
                     />
                 </FormGroup>
-                <FormGroup>
-                    <Select
-                        itemListRenderer={emailSelectItemListRenderer}
-                        items={emails}
-                        itemRenderer={emailSelectItemRenderer}
-                        onItemSelect={onSelectEmail}
-                    >
-                        <Button
-                            style={{ width: '300px' }}
-                            text={selectedEmail ? selectedEmail.title : 'SELECT EMAIL...'}
-                            icon="envelope"
-                            rightIcon="caret-down"
-                            fill
-                            large
-                        />
-                    </Select>
-                </FormGroup>
+                {selectedGroup !== undefined && areEmailsSelectable
+                  && <FormGroup>
+                      <Select
+                          itemListRenderer={emailSelectItemListRenderer}
+                          items={emailGroups.get(selectedGroup) || []}
+                          itemRenderer={emailSelectItemRenderer}
+                          onItemSelect={onSelectEmail}
+                          popoverProps={{ minimal: true }}
+                      >
+                          <Button
+                              style={inputStyle}
+                              text={selectedEmail ? selectedEmail.title : 'Select an email...'}
+                              rightIcon="caret-down"
+                              fill
+                              large
+                              minimal
+                          />
+                      </Select>
+                  </FormGroup>}
                 {selectedEmail !== undefined
-            && <FormGroup>
-                <InputGroup
-                    style={textInputStyle}
-                    value={secondInput}
-                    placeholder={selectedEmail.secondInputPlaceholder}
-                    fill
-                    large
-                    onChange={onTypeSecondInput}
-                />
-            </FormGroup>}
+                  && <FormGroup>
+                      <InputGroup
+                          style={inputStyle}
+                          value={secondInput}
+                          placeholder={selectedEmail.secondInputPlaceholder}
+                          fill
+                          large
+                          onChange={onTypeSecondInput}
+                      />
+                  </FormGroup>}
             </div>
             <div>
                 <a className="mailto-link" href={mailToLink}>
                     <Button
                         text="SEND"
-                        intent="none"
-                        fill
+                        style={mailToLink !== undefined
+                            ? {
+                                borderColor: '#5C5C5C',
+                                backgroundColor: '#FBE845',
+                                color: 'black',
+                                fontWeight: 'bold',
+                                borderRadius: 4,
+                            }
+                            : { borderRadius: 4 }}
+                        intent={mailToLink === undefined ? Intent.NONE : Intent.PRIMARY}
                         large
+                        outlined={mailToLink !== undefined}
                         disabled={mailToLink === undefined}
                         onClick={sendReactGAEvent(selectedEmail, secondInput)}
                     />
@@ -107,29 +182,17 @@ const EmailSenderForm: React.FC<IEmailSenderFormProps> = ({ emails }) => {
 const emailSelectItemListRenderer: ItemListRenderer<IEmail> = ({
     items: allEmails, itemsParentRef, query, renderItem,
 }: IItemListRendererProps<IEmail>) => {
-    const getRenderedEmails = (emails: IEmail[]) => (
-        emails.map(renderItem).filter((email) => email != null));
-
     const filteredEmails = filterEmails(query, allEmails);
-    const groupedEmails = new Map<string | undefined, IEmail[]>();
-    filteredEmails.forEach((email) => {
-        const { group } = email;
-        groupedEmails.set(group, [...(groupedEmails.get(group) || []), email]);
-    });
+    const renderedEmails = filteredEmails.map(renderItem).filter((email) => email != null);
 
     return (
-        <Menu ulRef={itemsParentRef} style={{ minWidth: '290px', maxWidth: '290px' }}>
-            <MenuItem
-                disabled
-                text={`Found ${filteredEmails.length} items matching "${query}"`}
-            />
-            {Array.from(groupedEmails.keys()).map((groupName) => (
-                <div key={groupName || ''}>
-                    {groupName !== undefined
-                    && <Tag style={{ margin: '10px 0 5px 0' }} minimal fill large>{groupName}</Tag>}
-                    {getRenderedEmails(groupedEmails.get(groupName) || [])}
-                </div>
-            ))}
+        <Menu ulRef={itemsParentRef} style={{ minWidth: '270px', maxWidth: '270px' }}>
+            {query !== ''
+             && <MenuItem
+                 disabled
+                 text={`Found ${filteredEmails.length} emails matching "${query}"`}
+             />}
+            {renderedEmails}
         </Menu>
     );
 };
@@ -140,11 +203,14 @@ const emailSelectItemRenderer: ItemRenderer<IEmail> = (email, { handleClick, mod
     }
     return (
         <MenuItem
+            className={modifiers.active ? 'menu-item-selected' : undefined}
             key={email.title}
             style={{
-                marginLeft: 10, height: 35, fontSize: 15, alignItems: 'center',
+                marginTop: 5,
+                height: 40,
+                fontSize: 17,
+                alignItems: 'center',
             }}
-            active={modifiers.active}
             onClick={handleClick}
             text={email.title}
         />

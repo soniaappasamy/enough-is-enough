@@ -1,17 +1,35 @@
-@import "@blueprintjs/core/lib/scss/variables";
+/* @import "@blueprintjs/core/lib/scss/variables"; */
 
-.form-container {
-  width: 300px;
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
 
-  .input-container {
-      margin-bottom: 30px;
-  }
+    .group-button-area {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
 
-  .mailto-link {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      text-decoration: none;
-  }
+        .group-button {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 152px;
+            margin: 5px;
+        }
+    }
+}
+
+.mailto-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.menu-item-selected {
+    background-color: #202B33;
 }

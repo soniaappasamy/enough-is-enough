@@ -6,12 +6,9 @@ import ReactGA from 'react-ga';
 import EmailSenderForm from './components/EmailSenderForm';
 import { allEmails } from './emails/templates';
 import {
-    GOOGLE_ANALYTICS_TRACKING_ID, BASE_URL, CONTACT_EMAIL, BASE_DEV_URL, HEADER_LOGO,
+    GOOGLE_ANALYTICS_TRACKING_ID, CONTACT_EMAIL, HEADER_LOGO,
 } from './consts';
-import { getUrlFilter } from './utils/getUrlFilter';
 import './App.scss';
-import { filterEmails } from './utils/filterEmails';
-import { isLocalhost } from './serviceWorker';
 
 ReactGA.initialize(GOOGLE_ANALYTICS_TRACKING_ID);
 
@@ -20,24 +17,12 @@ const App: React.FC = () => {
     const openHelpDrawer = () => setHelpDrawerOpen(true);
     const closeHelpDrawer = () => setHelpDrawerOpen(false);
 
-    const urlFilter = getUrlFilter();
-    const filteredEmails = urlFilter !== undefined ? filterEmails(urlFilter, allEmails) : allEmails;
-    const returnToHomePage = () => window.location.assign(isLocalhost ? BASE_DEV_URL : BASE_URL);
-
     return <div className={`app ${Classes.DARK}`}>
         <div className="header">
-            <img src={HEADER_LOGO} alt="" width={300} />
+            <img src={HEADER_LOGO} alt="" height={140}/>
         </div>
-        <EmailSenderForm emails={filteredEmails} />
+        <EmailSenderForm emails={allEmails} />
         <div>
-            {urlFilter !== undefined
-            && <Button
-                className="bottom-button"
-                icon="home"
-                minimal
-                small
-                onClick={returnToHomePage}
-            />}
             <Button
                 className="bottom-button"
                 icon="help"

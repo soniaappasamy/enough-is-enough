@@ -3,6 +3,12 @@
 import { IEmail } from './types';
 import { NEW_LINE } from './consts';
 
+export const groupDescriptions: { [key: string]: string } = {
+    Repeal: 'Let\'s reinvest in our communities and reimagine public safety. Let\'s reinvest in our communities and reimagine public safety.',
+    'Demand Justice': 'Let\'s reinvest in our communities and reimagine public safety.',
+    'Defund The Police': 'Let\'s reinvest in our communities and reimagine public safety.',
+};
+
 export const allEmails: IEmail[] = [
     {
         title: 'NY WWT REPEAL',
