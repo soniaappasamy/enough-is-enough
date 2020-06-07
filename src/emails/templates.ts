@@ -395,7 +395,7 @@ export const allEmails: IEmail[] = [
         title: 'Cleveland',
         group: 'Defund The Police',
         subject: 'Redirect Money from Cleveland Police Department Budget',
-        secondInputPlaceholder: 'Cleveland Neighborhood...',
+        secondInputPlaceholder: 'Cleveland Area...',
         sendTo: [
             	'mayorsactioncenter@city.cleveland.oh.us', 
 		'jjones@clevelandcitycouncil.org', 
@@ -420,7 +420,7 @@ export const allEmails: IEmail[] = [
         body: (name, secondInput) => `Dear Cleveland City Officials,
 	${NEW_LINE}${NEW_LINE}My name is ${name}, and I am a resident of ${secondInput}. 
         ${NEW_LINE}${NEW_LINE}The City of Cleveland needs to address the lack of investment in predominantly Black communities and the over-investment in their criminalization. Although the 2020 city budget was already approved in March, the City of Cleveland must reduce its Division of Police budget.
-        ${NEW_LINE}${NEW_LINE}$217,908,375 of the $1.8 billion budget is allocated to the Division of Police, an increase of $10 million from 2019. That increase is greater than the entire 2020 Department of Housing budget. 
+        ${NEW_LINE}${NEW_LINE}Of Cleveland's budget, $217,908,375 of the $1.8 billion budget is allocated to the Division of Police, an increase of $10 million from 2019. That increase is greater than the entire 2020 Department of Housing budget. 
         ${NEW_LINE}${NEW_LINE}After a two year investigation ending in 2014, the Justice Department cited CPD for abuse due to a pattern and practice of excessive force. Ohioans understand this resulted in a consent decree that mandates certain budget allocations. Ohioans also expect and deserve compliance and progress with the consent decree. In April 2020, Desmond Franklin was shot and killed by an off-duty police officer. In December 2019, 13-year-old Tamia Chappman was killed in a high-speed police chase while walking to the library. We cannot rely on the Division of Police to “self-evaluate in order to improve in areas of training, efficient and effective delivery of services, officer safety, and community engagement” in the best interest of the public, like the staffing report claims.
         ${NEW_LINE}${NEW_LINE}Mayor Frank Jackson is complicit in the crisis of police brutality. Tragic killings of Black Cleveland citizens by police violence — including Timothy Russell, Malissa Williams, and Tamir Rice — happened under Mayor Jackson’s tenure. 
         ${NEW_LINE}${NEW_LINE}In an interview with The Appeal on June 3 2020, Mayor Jackson said:
@@ -622,7 +622,7 @@ export const allEmails: IEmail[] = [
 	{
         title: 'Memphis',
         group: 'Defund The Police',
-        subject: 'We Demand Divestment from Police and an Investment in Black Communities',
+        subject: 'We Demand Divestment from Police',
         secondInputPlaceholder: 'Memphis Neighborhood...',
         sendTo: [
 		'JFord.Canale@memphistn.gov', 
@@ -715,7 +715,7 @@ export const allEmails: IEmail[] = [
  	{
         title: 'Nashville',
         group: 'Defund The Police',
-        subject: 'Defund Nashville PD, Reallocate for Social Equity',
+        subject: 'Defund Nashville PD Reallocate for Social Equity',
         secondInputPlaceholder: 'Nashville Area...',
         sendTo: [
            	'john.cooper@nashville.gov', 
