@@ -171,7 +171,7 @@ export const allEmails: IEmail[] = [
 		'Ward9@akronohio.gov', 
 		'Ward10@akronohio.gov',
         ],
-        body: (name, secondInput) => `Dear Houston City Council Members,
+        body: (name, secondInput) => `Dear Akron City Council Members,
 	    	${NEW_LINE}${NEW_LINE}My name is ${name}, and I am a resident of ${secondInput}.
 		${NEW_LINE}${NEW_LINE}The City of Akron must do better by its residents. I am urging you to divest from the criminalization of our communities and reduce police spending in the budget for the 2021 fiscal year. In May, Mayor Horrigan warned of deep spending cuts due to the pandemic. It is time to cut funding for the Akron Police Department.
 		${NEW_LINE}${NEW_LINE}In the 2020 budget, police receive $59,147,850 out of a total $173,128,930. This is 34% – over a third – of the overall budget.
@@ -219,7 +219,7 @@ export const allEmails: IEmail[] = [
             'Alison.Alter@austintexas.gov',
         ],
         body: (name, secondInput) => `Dear Austin City Council Members,
-	    ${NEW_LINE}${NEW_LINE}My name is ${name}, and I am a resident of ${secondInput}. WE ARE JOINING TOGETHER TO DEMAND THAT YOU, MY LOCAL OFFICIALS, WILL: 
+	${NEW_LINE}${NEW_LINE}My name is ${name}, and I am a resident of ${secondInput}. WE ARE JOINING TOGETHER TO DEMAND THAT YOU, MY LOCAL OFFICIALS, WILL: 
         ${NEW_LINE}1. Vote no on all increases to police budgets 
         ${NEW_LINE} 2. Vote yes to decrease police spending and budgets 
         ${NEW_LINE}3. Vote yes to increase spending on Health care, education and community programs that keep us safe.
