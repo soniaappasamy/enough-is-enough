@@ -151,37 +151,6 @@ export const allEmails: IEmail[] = [
             `,
     },
     {
-        title: 'Akron',
-        group: 'Defund The Police',
-        subject: 'Defund the Akron Police Department',
-        secondInputPlaceholder: 'Akron Ward (CITY)...',
-        sendTo: [
-		'Mayor@akronohio.gov', 
-		'AtLarge1@akronohio.gov', 
-		'AtLarge2@akronohio.gov', 
-		'AtLarge3@akronohio.gov', 
-		'Ward1@akronohio.gov', 
-		'Ward2@akronohio.gov', 
-		'Ward3@akronohio.gov', 
-		'Ward4@akronohio.gov', 
-		'Ward5@akronohio.gov', 
-		'Ward6@akronohio.gov', 
-		'Ward7@akronohio.gov', 
-		'Ward8@akronohio.gov', 
-		'Ward9@akronohio.gov', 
-		'Ward10@akronohio.gov',
-        ],
-        body: (name, secondInput) => `Dear Akron City Council Members,
-	    	${NEW_LINE}${NEW_LINE}My name is ${name}, and I am a resident of ${secondInput}.
-		${NEW_LINE}${NEW_LINE}The City of Akron must do better by its residents. I am urging you to divest from the criminalization of our communities and reduce police spending in the budget for the 2021 fiscal year. In May, Mayor Horrigan warned of deep spending cuts due to the pandemic. It is time to cut funding for the Akron Police Department.
-		${NEW_LINE}${NEW_LINE}In the 2020 budget, police receive $59,147,850 out of a total $173,128,930. This is 34% – over a third – of the overall budget.
-		${NEW_LINE}${NEW_LINE}I know many of you feel strongly about racial justice and equity. On June 4, Mayor Horrigan said the City is working on a “culture of outreach, compliance, transparency, and inclusion.” It is time to take action.
-		${NEW_LINE}${NEW_LINE}Individual solutions will not fix systemic problems. It is time for Akron, its leaders, and residents to create a more equitable city for all of us. Have the moral clarity to create a budget focused on communities instead of investing in a racist and destructive institution. Defund the Akron Police Department.
-        	${NEW_LINE}${NEW_LINE}Sincerely,
-          	${NEW_LINE}${name}
-            `,
-    },
-    {
         title: 'Arlington',
         group: 'Defund The Police',
         subject: 'Arlington Resident for Defunding of Arlington PD',
@@ -392,95 +361,6 @@ export const allEmails: IEmail[] = [
             `,
     },
     {
-        title: 'Cleveland',
-        group: 'Defund The Police',
-        subject: 'Redirect money from Cleveland Police Department’s budget',
-        secondInputPlaceholder: 'Cleveland Neighborhood (CITY)...',
-        sendTo: [
-        	'mayorsactioncenter@city.cleveland.oh.us', 
-		'jjones@clevelandcitycouncil.org', 
-		'kbishop@clevelandcitycouncil.org', 
-		'kmccormack@clevelandcitycouncil.org', 
-		'kjohnson@clevelandcitycouncil.org', 
-		'pcleveland@clevelandcitycouncil.org', 
-		'bgriffin@clevelandcitycouncil.org', 
-		'bjones@clevelandcitycouncil.org', 
-		'mpolensek@clevelandcitycouncil.org', 
-		'kconwell@clevelandcitycouncil.org', 
-		'ahairston@clevelandcitycouncil.org', 
-		'bmooney@clevelandcitycouncil.org', 
-		'abrancatelli@clevelandcitycouncil.org', 
-		'kkelley@clevelandcitycouncil.org', 
-		'cflanagan@clevelandcitycouncil.org', 
-		'jsantana@clevelandcitycouncil.org', 
-		'mzone@clevelandcitycouncil.org', 
-		'bkazy@clevelandcitycouncil.org', 
-		'cslife@clevelandcitycouncil.org',
-        ],
-        body: (name, secondInput) => `Dear Cleveland City Officials,
-	    	${NEW_LINE}${NEW_LINE}My name is ${name}, and I am a resident of ${secondInput}.
-		${NEW_LINE}${NEW_LINE}The City of Cleveland needs to address the lack of investment in predominantly Black communities and the over-investment in their criminalization. Although the 2020 city budget was already approved in March, the City of Cleveland must reduce its Division of Police budget.
-		${NEW_LINE}${NEW_LINE}$217,908,375 of the $1.8 billion budget is allocated to the Division of Police, an increase of $10 million from 2019. That increase is greater than the entire 2020 Department of Housing budget. 
-		${NEW_LINE}${NEW_LINE}After a two year investigation ending in 2014, the Justice Department cited CPD for abuse due to a pattern and practice of excessive force. Ohioans understand this resulted in a consent decree that mandates certain budget allocations. Ohioans also expect and deserve compliance and progress with the consent decree. In April 2020, Desmond Franklin was shot and killed by an off-duty police officer. In December 2019, 13-year-old Tamia Chappman was killed in a high-speed police chase while walking to the library. We cannot rely on the Division of Police to “self-evaluate in order to improve in areas of training, efficient and effective delivery of services, officer safety, and community engagement” in the best interest of the public, like the staffing report claims.
-		${NEW_LINE}${NEW_LINE}Mayor Frank Jackson is complicit in the crisis of police brutality. Tragic killings of Black Cleveland citizens by police violence — including Timothy Russell, Malissa Williams, and Tamir Rice — happened under Mayor Jackson’s tenure. 
-		${NEW_LINE}${NEW_LINE}In an interview with The Appeal on June 3 2020, Mayor Jackson said: 
-		${NEW_LINE}a) he would not revisit reallocating police budget now 
-		${NEW_LINE}b) Cleveland cannot rely on the government to help end structural racism and police violence and we should instead look to philanthropy and the private sector.
-		${NEW_LINE}…If not now, when? If government can’t help fix itself, who can? The burden does not lie on citizens. I demand you reconsider these stances to help end, not mitigate, police brutality.
-		${NEW_LINE}${NEW_LINE}Cleveland City Council cares about these issues. The recent unanimous vote to declare racism a public health crisis proves that. I ask that you continue to find sustainable, long-term change for the entire community. 
-		${NEW_LINE}${NEW_LINE}Research shows that a living wage, access to holistic health services and treatment, educational opportunity, and stable housing are far more successful at reducing crime than police or prisons. Redirect money from the Division of Police and instead invest in social services. The policing budget can be better spent on quality of life for all, particularly in predominantly Black and brown communities. Programs like education, housing, healthcare, cooperative businesses, and community centers deserve that funding. 
-           	 ${NEW_LINE}${NEW_LINE}Sincerely,
-           	 ${NEW_LINE}${name}
-            `,
-    },
-    {
-        title: 'Columbus',
-        group: 'Defund The Police',
-        subject: 'We Demand Divestment from Police and an Investment in Black Communities',
-        secondInputPlaceholder: 'Columbus Area (CITY)...',
-        sendTo: [
-        	'zgdavidson@columbus.gov', 
-		'LMCapobianco@columbus.gov', 
-		'kaellingsen@columbus.gov', 
-		'jwcarmean@columbus.gov', 
-		'DFriendFoster@columbus.gov', 
-		'GMAmes@columbus.gov', 
-		'KBMccain@columbus.gov', 
-		'HNMiller@columbus.gov', 
-		'tyharden@columbus.gov', 
-		'cenewman@columbus.gov', 
-		'jdcarter@columbus.gov', 
-		'LJFrank@columbus.gov', 
-		'NNHarper@columbus.gov', 
-		'cgwilliams@columbus.gov', 
-		'311@columbus.gov', 
-		'evremy@columbus.gov, 
-		'ecbrown@columbus.gov', 
-		'prtyson@columbus.gov', 
-		'sdfavor@columbus.gov', 
-		'mjbrown@columbus.gov', 
-		'sghardin@columbus.gov', 
-		'radorans@columbus.gov', 
-		'zmklein@columbus.gov',
-        ],
-        body: (name, secondInput) => `Dear Columbus City Officials,
-	    	${NEW_LINE}${NEW_LINE}My name is ${name}, and I am a resident of ${secondInput}.
-	    	${NEW_LINE}${NEW_LINE}WE ARE JOINING TOGETHER TO DEMAND THAT YOU, MY LOCAL OFFICIALS, WILL: 
-		${NEW_LINE}1. Vote no on all increases to police budgets 
-		${NEW_LINE}2. Vote yes to decrease police spending and budgets 
-		${NEW_LINE}3. Vote yes to increase spending on Health care, education and community programs that keep us safe.
-		${NEW_LINE}${NEW_LINE}Black communities across the nation are mourning the deaths of George Floyd, tortured to death by Minneapolis police, Ahmaud Arbery, a jogger who was killed while running in a residential neighborhood in Brunswick, Georgia, Breonna Taylor an EMT killed while asleep in her bed in Louisville,KY, Dreasjon Reed in Indianapolis and Tony McDade in Tallahassee. Their names are added to a devastatingly long list of Black people who have been killed at the hands of vigilantes or law enforcement. Not to mention the others whose names we don’t yet know, and may never know since they were killed without a camera recording it.
-		${NEW_LINE}${NEW_LINE}At the same time, the United States leads the world in COVID-19 cases. So far, more than 100,000 people — enough to fill a football stadium– have perished from the virus,with over one million cases confirmed, and those numbers don’t reflect all the people dying from virus-related illnesses. Black people are suffering disproportionately from COVID-19, four times more likely to die than their white neighbors. 
-		${NEW_LINE}${NEW_LINE}It is important to state this within the context of the scourge of anti-Black police terror and the resulting uprisings taking place across the U.S. 
-		${NEW_LINE}${NEW_LINE}The COVID-19 deaths and the deaths caused by police terror are connected and consequential to each other. The United States does not have a national healthcare system. Instead, we have the largest military budget in the world, and some of the most well-funded and militarized police departments in the world, too. Policing and militarization overwhelmingly dominate the bulk of national and local budgets. In fact, police and military funding has increased every single year since 1973, and  at the same time, funding for public health decreased every year, crystallized  most recently when the Trump administration eliminated the US Pandemic Response Team in 2018, citing “costs”. 
-		${NEW_LINE}${NEW_LINE}Black communities are living in persistent fear of being killed by state authorities like police, immigration agents or even white vigilantes who are emboldened by state actors. According to the Urban Institute, in 1977, state and local governments spent $60 billion on police and corrections . In 2017, they spent $194 billion. A 220 percent increase. Despite continued profiling, harassment, terror and killing of Black communities, local and federal decision-makers continue to invest in the police, which leaves Black people vulnerable and our communities no safer.
-		${NEW_LINE}${NEW_LINE}Where could that money go? It could go towards building healthy communities, to the health of our elders and children,to neighborhood infrastructure, to education, to childcare, to support a vibrant Black future. The possibilities are endless. 
-		${NEW_LINE}${NEW_LINE}We join in solidarity with the freedom fighters in Minneapolis, Louisville, and across the United States. And we call for the end to police terror. 
-         	${NEW_LINE}${NEW_LINE}Sincerely,
-            	${NEW_LINE}${name}
-            `,
-    },
-    {
         title: 'Dallas',
         group: 'Defund The Police',
         subject: 'We Demand Divestment from Police and an Investment in Black Communities',
@@ -621,36 +501,6 @@ export const allEmails: IEmail[] = [
             ${NEW_LINE}${name}
             `,
     },
-    {
-        title: 'Memphis',
-        group: 'Defund The Police',
-        subject: 'We Demand Divestment from Police and an Investment in Our Communities',
-        secondInputPlaceholder: 'Memphis Neighborhood (CITY)...',
-        sendTo: [
-		'JFord.Canale@memphistn.gov', 
-		'Jeff.Warren@memphistn.gov', 
-		'Chase.Carlisle@memphistn.gov', 
-		'Martavius.Jones@memphistn.gov', 
-		'Cheyenne.Johnson@memphistn.gov', 
-		'JB.Smileyjr@memphistn.gov', 
-		'Michalyn.Easter-Thomas@memphistn.gov', 
-		'Edmund.FordSr@memphistn.gov', 
-		'Worth.Morgan@memphistn.gov',
-		'Jamita.Swearengen@memphistn.gov', 
-		'frank.colvettjr@memphistn.gov', 
-		'Rhonda.Logan@memphistn.gov', 
-		'Patrice.Robinson@memphistn.gov',
-        ],
-        body: (name, secondInput) => `Dear Memphis City Representatives,
-	    ${NEW_LINE}${NEW_LINE}My name is ${name}, and I am a resident of ${secondInput}. I am asking to redirect money away from the Memphis PD and into the following social services: 
-	    ${NEW_LINE}1. Community Development
-	    ${NEW_LINE}2. COVID Relief
-	    ${NEW_LINE}3. Education, Parks & Recreation
-	    ${NEW_LINE}${NEW_LINE}I request that an emergency meeting be called before the fiscal year goes into effect in order to deny the mayor’s proposed budget and reallocate these funds to resources the citizens can benefit from.
-            ${NEW_LINE}${NEW_LINE}Sincerely,
-            ${NEW_LINE}${name}
-            `,
-    },
      {
         title: 'Milwaukee',
         group: 'Defund The Police',
@@ -710,64 +560,6 @@ export const allEmails: IEmail[] = [
             ${NEW_LINE}3. Protect and expand current investment in community-led health and safety strategies, instead of investing in police.
             ${NEW_LINE}4. Do everything in your power to compel all law enforcement agencies to immediately cease enacting violence on community members.
             ${NEW_LINE}${NEW_LINE}We are counting on the you to stand up for Black communities and marginalized communities and defund the MPD. Thank you.
-            ${NEW_LINE}${NEW_LINE}Sincerely,
-            ${NEW_LINE}${name}
-            `,
-    },
-    {
-        title: 'Nashville',
-        group: 'Defund The Police',
-        subject: 'I Oppose Budget Ordinace BL2020-286',
-        secondInputPlaceholder: 'Nashville Area (CITY)...',
-        sendTo: [
-        	'john.cooper@nashville.gov', 
-		'jim.shulman@nashville.gov', 
-		'bob.mendes@nashville.gov', 
-		'sharon.hurt@nashville.gov', 
-		'burkley.allen@nashville.gov', 
-		'steve.glover@nashville.gov', 
-		'zulfat.suara@nashville.gov', 
-		'jonathan.hall@nashville.gov', 
-		'kyonzte.toombs@nashville.gov', 
-		'Jennifer.Gamble@nashville.gov', 
-		'robert.swope@nashville.gov', 
-		'Sean.Parker@nashville.gov', 
-		'brett.withers@nashville.gov', 
-		'Emily.Benedict@nashville.gov', 
-		'nancy.vanreece@nashville.gov', 
-		'Tonya.Hancock@nashville.gov', 
-		'Zach.Young@nashville.gov', 
-		'Larry.hagar@nashville.gov', 
-		'erin.evans@nashville.gov', 
-		'Russ.Bradford@nashville.gov', 
-		'kevin.rhoten@nashville.gov', 
-		'jeff.syracuse@nashville.gov', 
-		'Ginny.Welsch@nashville.gov', 
-		'colby.sledge@nashville.gov', 
-		'Thomas.Cash@Nashville.gov', 
-		'freddie.oconnell@nashville.gov', 
-		'marycarolyn.roberts@nashville.gov', 
-		'Brandon.Taylor@nashville.gov', 
-		'Gloria.Hausser@nashville.gov', 
-		'Thom.Druffel@nashville.gov', 
-		'kathleen.murphy@nashville.gov', 
-		'russ.pulley@nashville.gov', 
-		'Courtney.Johnston@nashville.gov', 
-		'Bob.Nash@nashville.gov', 
-		'tanaka.vercher@nashville.gov', 
-		'Delishia.Porterfield@nashville.gov', 
-		'Sandra.Sepulveda@nashville.gov', 
-		'John.Rutherford@nashville.gov', 
-		'Joy.Styles@nashville.gov', 
-		'Antoinette.Lee@nashville.gov', 
-		'angie.henderson@nashville.gov', 
-		'dave.rosenberg@nashville.gov',
-        ],
-        body: (name, secondInput) => `Dear Nashville Officials,
-	    ${NEW_LINE}${NEW_LINE}My name is ${name}, and I am a resident of ${secondInput}. I am writing to say that I am strongly against BL2020-286.
-	    ${NEW_LINE}${NEW_LINE}The mayor's budget would spend $496 million on a "public safety" system that does not keep us safe. The vast majority of that money would be spent on police, jails, and courts. That means the mayor wants to spend more on cops and cages than on almost all public goods combined. This isn't how we create public safety. True public safety requires fully-funded and community-controlled resources, not more police and jails.
-	    ${NEW_LINE}${NEW_LINE}In the midst of a budget crisis, the mayor is proposing we increase spending on police and jails, and decrease spending on affordable housing, social services, transit, and other critical public goods. This is unacceptable and will not keep us safe.
-            ${NEW_LINE}${NEW_LINE}Overpoliced communities are not safe communities. Thriving communities are safe communities, and communities thrive when they are well-resourced. We deserve a budget that divests from policing and jails and uses that money to invest in our communities.
             ${NEW_LINE}${NEW_LINE}Sincerely,
             ${NEW_LINE}${name}
             `,
@@ -837,96 +629,36 @@ export const allEmails: IEmail[] = [
             ${NEW_LINE}${name}
             `,
     },
-    {
-        title: 'Oklahoma City',
-        group: 'Defund The Police',
-        subject: 'Defund the Oklahoma City Police Department',
-        secondInputPlaceholder: 'Oklahoma City Ward (CITY)...',
-        sendTo: [
-        	'mayor@okc.gov', 
-		'citymanager@okc.gov', 
-		'ward1@okc.gov', 
-		'ward2@okc.gov', 
-		'ward3@okc.gov', 
-		'ward4@okc.gov', 
-		'ward5@okc.gov', 
-		'ward6@okc.gov', 
-		'ward7@okc.gov', 
-		'ward8@okc.gov',
-        ],
-        body: (name, secondInput) => `Dear Oklahoma City Mayor, City Council, and Manager,
-	    ${NEW_LINE}${NEW_LINE}My name is ${name}, and I am a resident of ${secondInput}. he City of Oklahoma City must do better by its residents. I am urging you to divest from the criminalization of our communities and reduce police spending in the budget for the 2021 fiscal year. In May, City Manager Freeman formally proposed deep spending cuts due to the pandemic. I am asking that you make a more overt and visible commitment to racial justice by delaying the budget approval so that the City Council may find ways to divest from OKCPD.
-	    ${NEW_LINE}${NEW_LINE}I urge you to pressure the City Manager’s Office towards an ethical reallocation of the city’s expenditures towards sectors that facilitate the dismantling of racial and class inequality. This includes, but is not limited to improving access to health services and treatment, educational opportunity, and stable housing, which have proven far more successful at promoting community safety and social equity than policing. As such, I demand more aggressive financial support be directed to those areas.
-	    ${NEW_LINE}${NEW_LINE}In the FY2021 budget proposal, police receive $226,051,993 out of a total $1,658,405,738. The police budget is an 11% increase year over FY2020, despite having fewer positions. I know many of you feel strongly about racial justice and equity. On May 30th, Mayor Holt said the City must “continue to seek equity in all things, including opportunities for engagement, leadership and investment.” It is time to take action.
-	    ${NEW_LINE}${NEW_LINE}Individual solutions will not fix systemic problems. It is time for OKC, its leaders, and residents to create a more equitable city for all of us. Have the moral clarity to create a budget focused on communities instead of investing in a racist and destructive institution. Defund the Oklahoma City Police Department.
-            ${NEW_LINE}${NEW_LINE}Sincerely,
-            ${NEW_LINE}${name}
-            `,
-    },
-    {
-        title: 'Philadelphia',
-        group: 'Defund The Police',
-        subject: 'Philadelphia demands a Peoples Budget',
-        secondInputPlaceholder: 'Phildelphia District(CITY)...',
-        sendTo: [
-       		'Cindy.Bass@Phila.gov', 
-		'Kendra.Brooks@phila.gov', 
-		'Kenyatta.Johnson@Phila.gov', 
-		'Helen.Gym@phila.gov', 
-		'Jamie.Gauthier@phila.gov', 
-		'Maria.Q.Sanchez@phila.gov', 
-		'Derek.Green@phila.gov', 
-		'Katherine.Gilmore.Richardson@phila.gov', 
-		'Allan.Domb@Phila.gov', 
-		'Cherelle.Parker@Phila.gov', 
-		'Isaiah.Thomas@phila.gov', 
-		'Darrell.Clarke@phila.gov', 
-		'David.Oh@Phila.gov', 
-		'Brian.Oneill@phila.gov', 
-		'Mark.squilla@phila.gov', 
-		'Brian.Abernathy@phila.gov', 
-		'James.Kenney@phila.gov', 
-		'Bobby.Henon@phila.gov', 
-		'Curtis.Jones@phila.gov',
-        ],
-        body: (name, secondInput) => `Philadelphia Officials,
-	    ${NEW_LINE}${NEW_LINE}My name is ${name}, and I am a resident of ${secondInput}. I am emailing to demand the restructuring of the Philadelphia city budget in a way that prioritizes social services for communities and drastically minimizes spending on police. 
-	    ${NEW_LINE}${NEW_LINE}We are in the midst of widespread upheaval over the systemic violence of policing, embodied by the PPD's well documented history of disproportionately enacting violence against Black communities. We will no longer accept empty gestures and suggestions of “reform.” We are demanding that our voices be heard now, and that real change be made to the way this city allocates its resources.
-	    ${NEW_LINE}${NEW_LINE}The proposed $14 million budget increase for PPD is unacceptable and comes at the cost of affordable housing, support for essential city workers, and other transformative initiatives. These programs are needed now more than ever to alleviate the harms of the COVID-19 pandemic, especially for Black and Brown communities. I ask that the mayor, city managing director, and city council members prove their love and dedication to the people of this city and reallocate funds to directly benefit those in need.
-            ${NEW_LINE}${NEW_LINE}Sincerely,
-            ${NEW_LINE}${name}
-            `,
-    },
-    {
+	{
         title: 'Pittsburgh',
         group: 'Defund The Police',
         subject: 'DEFUND Pittsburgh Bureau of Police',
-        secondInputPlaceholder: 'Pittsburgh Neighborhood (CITY)...',
+        secondInputPlaceholder: 'PITTSBURGH NEIGHBORHOOD',
         sendTo: [
-       		'theresa.kail-smith@pittsburghpa.gov', 
-		'brosha.tkacheva@pittsburghpa.gov', 
-		'district5@pittsburghpa.gov', 
-		'district7@pittsburghpa.gov', 
-		'erika.strassburger@pittsburghpa.gov', 
-		'emilie.yonan@pittsburghpa.gov', 
-		'reverend.burgess@pittsburghpa.gov', 
-		'daniel.wood@pittsburghpa.gov', 
-		'curt.conrad@pittsburghpa.gov', 
-		'blake.plavchak@pittsburghpa.gov', 
-		'Kim.Salinetro@pittsburghpa.gov', 
-		'sally.stadelman@pittsburghpa.gov',
+            'theresa.kail-smith@pittsburghpa.gov', 
+			'brosha.tkacheva@pittsburghpa.gov', 
+			'district5@pittsburghpa.gov', 
+			'district7@pittsburghpa.gov', 
+			'erika.strassburger@pittsburghpa.gov', 
+			'emilie.yonan@pittsburghpa.gov', 
+			'reverend.burgess@pittsburghpa.gov', 
+			'daniel.wood@pittsburghpa.gov', 
+			'curt.conrad@pittsburghpa.gov', 
+			'blake.plavchak@pittsburghpa.gov', 
+			'Kim.Salinetro@pittsburghpa.gov', 
+			'sally.stadelman@pittsburghpa.gov',
         ],
         body: (name, secondInput) => `Dear Pittsburgh City Council Members,
-	    	${NEW_LINE}${NEW_LINE}My name is ${name}, and I am a resident of ${secondInput}.
+          	${NEW_LINE}${NEW_LINE}My name is ${name}, and I am a resident of ${secondInput}.
 	    	${NEW_LINE}${NEW_LINE}I am writing to demand the city stops increasing the Pittsburgh Police Budget and redirects funding into supporting community operations.
-		${NEW_LINE}${NEW_LINE}The Pittsburgh Operating Budget's total designated expenditures allocate 40.0% to Public Safety and only 10.5% to Public Works. This is unacceptable.
-		${NEW_LINE}${NEW_LINE}The 2020 budget for the Bureau of Police is $114,787,000. This is ~18.9% - nearly one fifth - of the overall City Operations Budget.
-		${NEW_LINE}${NEW_LINE}There is only $1,758,022 allocated to the Office of Equity. The Ethics Hearing Board budget went down by $6,974 from 2019-2020 while the Police Bureau budget increased by $10,241,674. What is the need for this increase?
-		${NEW_LINE}${NEW_LINE}The first 2020 goal listed in the Bureau overview is “Continue to increase the ‘boots on the ground’ officers in the field”. Is this what the increase will go toward? What is the reasoning for needing more police on the ground? Due to the overwhelming evidence that the police are targeting Black people in this city (and across the world), it is the correct move to divest from funding boots on the ground operations and invest in upholding policies that support the people.
-		${NEW_LINE}${NEW_LINE}The Neighborhood and Community Development fund was only allocated $7,502,080 for 2020. That is ~6.8% of the 2020 Capital Budget. This is not enough. I demand you take action to re-allocate money away from the Pittsburgh Police and back into community development that includes affordable housing and reparations for Black citizens. Both the state and the Pittsburgh Police owe the Black community a great debt.
-		${NEW_LINE}${NEW_LINE}It is clear that Pittsburgh Police funds are not being appropriately used to maintain safety and freedom on the streets of Pittsburgh. This is not only obvious by the City Budget, it is obvious by how Pittsburghers are treated by the police. Black Pittsburghers are disproportionately subject to this violence. Antwon Rose was shot dead in our city by a police officer and we will always remember. Elijah Brewer was shot dead in our city by a police officer and we will always remember.
-            	${NEW_LINE}${NEW_LINE}Sincerely,
-            	${NEW_LINE}${name}
+			${NEW_LINE}${NEW_LINE}The Pittsburgh Operating Budget's total designated expenditures allocate 40.0% to Public Safety and only 10.5% to Public Works. This is unacceptable.
+			${NEW_LINE}${NEW_LINE}The 2020 budget for the Bureau of Police is $114,787,000. This is ~18.9% - nearly one fifth - of the overall City Operations Budget.
+			${NEW_LINE}${NEW_LINE}There is only $1,758,022 allocated to the Office of Equity. The Ethics Hearing Board budget went down by $6,974 from 2019-2020 while the Police Bureau budget increased by $10,241,674. What is the need for this increase?
+			${NEW_LINE}${NEW_LINE}The first 2020 goal listed in the Bureau overview is “Continue to increase the ‘boots on the ground’ officers in the field”. Is this what the increase will go toward? What is the reasoning for needing more police on the ground? Due to the overwhelming evidence that the police are targeting Black people in this city (and across the world), it is the correct move to divest from funding boots on the ground operations and invest in upholding policies that support the people.
+			${NEW_LINE}${NEW_LINE}The Neighborhood and Community Development fund was only allocated $7,502,080 for 2020. That is ~6.8% of the 2020 Capital Budget. This is not enough. I demand you take action to re-allocate money away from the Pittsburgh Police and back into community development that includes affordable housing and reparations for Black citizens. Both the state and the Pittsburgh Police owe the Black community a great debt.
+			${NEW_LINE}${NEW_LINE}It is clear that Pittsburgh Police funds are not being appropriately used to maintain safety and freedom on the streets of Pittsburgh. This is not only obvious by the City Budget, it is obvious by how Pittsburghers are treated by the police. Black Pittsburghers are disproportionately subject to this violence. Antwon Rose was shot dead in our city by a police officer and we will always remember. Elijah Brewer was shot dead in our city by a police officer and we will always remember.
+            ${NEW_LINE}${NEW_LINE}Sincerely,
+           	${NEW_LINE}${name}
             `,
     },
     {
