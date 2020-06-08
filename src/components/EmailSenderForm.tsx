@@ -82,7 +82,7 @@ const EmailSenderForm: React.FC<IEmailSenderFormProps> = (props) => {
         backgroundColor: '#10161A',
         textAlign: 'center',
         borderStyle: 'solid',
-        borderWidth: '0.5px',
+        borderWidth: 'thin',
         borderColor: '#D1D1D1',
         borderRadius: 4,
     };
