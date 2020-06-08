@@ -10,6 +10,7 @@ import {
     WhatsappShareButton,
     WhatsappIcon,
 } from 'react-share';
+import ReactGA from 'react-ga';
 import {
     HEADER_LOGO, HOME_BUTTON_LOGO, SHARE_BUTTON_LOGO, BASE_URL,
 } from '../consts';
@@ -55,15 +56,23 @@ export const ShareDrawer: React.FC<IShareDrawerProps> = (props) => {
             {shareIconsVisibility
                 && <div>
                     <TwitterShareButton url={BASE_URL}>
-                        <TwitterIcon borderRadius={4} style={{ height: 50 }}/>
+                        <TwitterIcon borderRadius={4} style={{ height: 50 }} onClick={sendReactGAEvent('twitter')}/>
                     </TwitterShareButton>
                     <FacebookShareButton url={BASE_URL}>
-                        <FacebookIcon borderRadius={4} style={{ height: 50 }}/>
+                        <FacebookIcon borderRadius={4} style={{ height: 50 }} onClick={sendReactGAEvent('facebook')}/>
                     </FacebookShareButton>
                     <WhatsappShareButton url={BASE_URL}>
-                        <WhatsappIcon borderRadius={4} style={{ height: 50 }}/>
+                        <WhatsappIcon borderRadius={4} style={{ height: 50 }} onClick={sendReactGAEvent('whatsapp')}/>
                     </WhatsappShareButton>
                 </div>}
         </Drawer>
     );
+};
+
+const sendReactGAEvent = (shareType: string) => () => {
+    ReactGA.event({
+        category: 'Email form',
+        action: 'Clicked send',
+        label: `Clicked ${shareType} share button`,
+    });
 };
