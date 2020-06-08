@@ -27,14 +27,12 @@ const App: React.FC = () => {
             <img src={HEADER_LOGO} alt="" height={140}/>
         </div>
         <EmailSenderForm emails={allEmails} onSendEmail={openShareDrawer} />
-        <div>
-            <Button
-                className="bottom-button"
-                icon="help"
-                minimal
-                small
-                onClick={openHelpDrawer} />
-        </div>
+        <Button
+            className="bottom-button"
+            icon="help"
+            minimal
+            small
+            onClick={openHelpDrawer} />
         <Drawer
             className="drawer"
             isOpen={isHelpDrawerOpen}
