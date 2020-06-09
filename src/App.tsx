@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import {
     Classes, Drawer, Button, H3,
 } from '@blueprintjs/core';
@@ -14,6 +14,19 @@ import { ShareDrawer } from './components/ShareDrawer';
 ReactGA.initialize(GOOGLE_ANALYTICS_TRACKING_ID);
 
 const App: React.FC = () => {
+    // Allow for preselecting the group and email via url parameters
+    const urlQuery = window.location.search;
+    const [urlGroupFilter, urlEmailFilter] = useMemo(() => {
+        if (urlQuery !== '') {
+            const groupQuery = urlQuery.split('group=');
+            const group = groupQuery.length === 2 ? cleanUrlParam(groupQuery[1]) : undefined;
+            const emailQuery = urlQuery.split('email=');
+            const email = emailQuery.length === 2 ? cleanUrlParam(emailQuery[1]) : undefined;
+            return [group, email];
+        }
+        return [undefined, undefined];
+    }, [urlQuery]);
+
     const [isHelpDrawerOpen, setHelpDrawerOpen] = useState(false);
     const openHelpDrawer = () => setHelpDrawerOpen(true);
     const closeHelpDrawer = () => setHelpDrawerOpen(false);
@@ -26,7 +39,11 @@ const App: React.FC = () => {
         <div className="header">
             <img src={HEADER_LOGO} alt="" height={140}/>
         </div>
-        <EmailSenderForm emails={allEmails} onSendEmail={openShareDrawer} />
+        <EmailSenderForm
+            emails={allEmails}
+            urlGroupFilter={urlGroupFilter}
+            urlEmailFilter={urlEmailFilter}
+            onSendEmail={openShareDrawer} />
         <Button
             className="bottom-button"
             icon="help"
@@ -50,5 +67,9 @@ const App: React.FC = () => {
         <ShareDrawer isOpen={isShareDrawerOpen} onClose={closeShareDrawer} />
     </div>;
 };
+
+function cleanUrlParam(param: string): string {
+    return param.split('&')[0].replace('%20', ' ');
+}
 
 export default App;

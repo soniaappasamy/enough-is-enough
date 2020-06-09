@@ -1,6 +1,8 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
-import React, { useState, useMemo, useCallback } from 'react';
+import React, {
+    useState, useMemo, useCallback, useEffect,
+} from 'react';
 import {
     FormGroup, InputGroup, Button, MenuItem, Menu, Classes, Intent,
 } from '@blueprintjs/core';
@@ -17,23 +19,31 @@ import { groupDescriptions } from '../emails/templates';
 
 interface IEmailSenderFormProps {
     emails: IEmail[];
+    urlGroupFilter: string | undefined;
+    urlEmailFilter: string | undefined;
     onSendEmail: () => void;
 }
 
 const EmailSenderForm: React.FC<IEmailSenderFormProps> = (props) => {
-    const { emails, onSendEmail } = props;
+    const {
+        emails, urlGroupFilter, urlEmailFilter, onSendEmail,
+    } = props;
 
     // Only want event to trigger once
     useMemo(() => ReactGA.pageview('Email form'), []);
 
     const [emailGroups, groupKeys] = useMemo(() => emailsToGroupsMap(emails), [emails]);
-
-    const [name, setName] = useState<string | undefined>(undefined);
     const [selectedGroup, setSelectedGroup] = useState<string | undefined>(
-        groupKeys.length > 0 ? groupKeys[0] : undefined,
+        initSelectedGroup(urlGroupFilter, emailGroups, groupKeys),
     );
     const [selectedEmail, setSelectedEmail] = useState<IEmail | undefined>(undefined);
+    const [name, setName] = useState<string | undefined>(undefined);
     const [secondInput, setSecondInput] = useState<string | undefined>(undefined);
+
+    useEffect(() => maybeUpdateSelectedEmail(
+        selectedGroup, emailGroups, urlEmailFilter, setSelectedEmail,
+    ),
+    [emailGroups, selectedGroup, urlEmailFilter]);
 
     const cleanText = useCallback((rawText: string) => (rawText === '' ? undefined : rawText), []);
     const onTypeName = useCallback(
@@ -95,7 +105,7 @@ const EmailSenderForm: React.FC<IEmailSenderFormProps> = (props) => {
                         className={Classes.TEXT_MUTED}
                         style={{ textAlign: 'center', paddingBottom: 5 }}
                     >
-                      Select one topic:
+                        Select one topic:
                     </div>
                     <div className="group-button-area">
                         {groupKeys.map((groupKey) => (
@@ -114,9 +124,9 @@ const EmailSenderForm: React.FC<IEmailSenderFormProps> = (props) => {
                             >
                                 <div style={{ textAlign: 'center', paddingBottom: 5 }}>{groupKey}</div>
                                 {groupDescriptions[groupKey] !== undefined
-                                  && <div className={`${Classes.TEXT_MUTED} ${Classes.TEXT_SMALL}`} style={{ bottom: 0 }}>
-                                      {groupDescriptions[groupKey]}
-                                  </div>}
+                                    && <div className={`${Classes.TEXT_MUTED} ${Classes.TEXT_SMALL}`} style={{ bottom: 0 }}>
+                                        {groupDescriptions[groupKey]}
+                                    </div>}
                             </Button>))}
                     </div>
                 </FormGroup>
@@ -186,6 +196,10 @@ const EmailSenderForm: React.FC<IEmailSenderFormProps> = (props) => {
     );
 };
 
+/**
+ * Render functions
+ */
+
 const emailSelectItemListRenderer: ItemListRenderer<IEmail> = ({
     items: allEmails, itemsParentRef, query, renderItem,
 }: IItemListRendererProps<IEmail>) => {
@@ -231,5 +245,36 @@ const sendReactGAEvent = (email: IEmail | undefined, secondInput: string | undef
         label: `Second Input ${secondInput || 'N/A'} Sent ${email?.title || 'N/A'}`,
     });
 };
+
+/**
+ * Helper functions
+ */
+
+function initSelectedGroup(
+    urlGroupFilter: string | undefined,
+    emailGroups: Map<string, IEmail[]>,
+    groupKeys: string[],
+): string | undefined {
+    return urlGroupFilter !== undefined && emailGroups.has(urlGroupFilter)
+        ? urlGroupFilter
+        : groupKeys.length > 0 ? groupKeys[0] : undefined;
+}
+
+function maybeUpdateSelectedEmail(
+    selectedGroup: string | undefined,
+    emailGroups: Map<string, IEmail[]>,
+    urlEmailFilter: string | undefined,
+    setSelectedEmail: (email: IEmail) => void,
+) {
+    if (selectedGroup !== undefined && urlEmailFilter !== undefined) {
+        const filteredEmails = filterEmails(
+            urlEmailFilter,
+            emailGroups.get(selectedGroup) || [],
+        );
+        if (filteredEmails.length > 0) {
+            setSelectedEmail(filteredEmails[0]);
+        }
+    }
+}
 
 export default EmailSenderForm;
